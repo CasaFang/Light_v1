@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IndexLeftUserContentView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="862"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKV-m2-5zC" userLabel="基础信息">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="基础信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojB-pU-Sb5">
+                            <rect key="frame" x="8" y="4" width="304" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D8H-q6-d27" userLabel="line1">
+                    <rect key="frame" x="0.0" y="30" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GYx-7g-poJ" userLabel="昵称" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="31" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="昵称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLs-0a-6hg">
+                            <rect key="frame" x="37" y="12" width="61" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="咖啡豆" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usp-wv-TKg" userLabel="咖啡店">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="8W8-Yq-BdR">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="AGz-jD-CIb"/>
+                    </connections>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ibz-Fe-kNP" userLabel="line2">
+                    <rect key="frame" x="-3" y="76" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wcp-bs-GkY" userLabel="生日" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="77" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="生日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNG-qf-bCg">
+                            <rect key="frame" x="37" y="12" width="61" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1988年2月22日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTZ-Kx-PW3">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="pfY-qr-off">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="WC0-x8-YfA"/>
+                    </connections>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gh5-PG-2GH" userLabel="line3">
+                    <rect key="frame" x="-3" y="122" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gK5-iH-fAR" userLabel="个性签名" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="123" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="个性签名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEw-q1-dBm">
+                            <rect key="frame" x="37" y="12" width="87" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="双鱼座" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWF-4m-q6X">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="0vc-98-ZHh">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="taz-G0-2KQ"/>
+                    </connections>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="odi-nq-BIz" userLabel="line4">
+                    <rect key="frame" x="-3" y="168" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dc0-go-OYM" userLabel="生理性别" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="169" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="生理性别" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xy4-MQ-pI0">
+                            <rect key="frame" x="37" y="12" width="67" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="女" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rP5-Zh-NLL">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="2KF-cR-ilo">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="xqQ-LU-F7N"/>
+                    </connections>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ff-fJ-ALP" userLabel="line5">
+                    <rect key="frame" x="-3" y="214" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H02-JY-lOi" userLabel="社会性别" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="215" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="社会性别" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n7-Yg-joc">
+                            <rect key="frame" x="37" y="12" width="67" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="女" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGj-Pt-LlO">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="FVz-f6-Abf">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Qw0-uf-cZr"/>
+                    </connections>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ihy-1o-QTO" userLabel="line6">
+                    <rect key="frame" x="-3" y="260" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kh2-PA-Z7F" userLabel="详细信息">
+                    <rect key="frame" x="0.0" y="260" width="320" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="详细信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyN-fj-mng">
+                            <rect key="frame" x="8" y="4" width="304" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="woU-Fo-D96" userLabel="line1">
+                    <rect key="frame" x="0.0" y="290" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view tag="5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wiP-OT-CQn" userLabel="所在地" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="291" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="所在地" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJC-IH-79a">
+                            <rect key="frame" x="37" y="12" width="102" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="北京" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txj-dE-N9o" userLabel="北京">
+                            <rect key="frame" x="172" y="12" width="123" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="hdT-0L-mP7">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="IW3-Zl-9AO"/>
+                    </connections>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UzS-mb-Sih" userLabel="line7">
+                    <rect key="frame" x="-3" y="336" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view hidden="YES" tag="6" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1q6-uK-aqU" userLabel="目标社会性别" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="337" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="目标社会性别" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh2-uB-493">
+                            <rect key="frame" x="37" y="12" width="100" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="女" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qn9-tu-5Qj">
+                            <rect key="frame" x="195" y="12" width="100" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="l73-X0-nOp">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7eI-q6-tda" userLabel="line8">
+                    <rect key="frame" x="-3" y="382" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view hidden="YES" tag="7" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oYe-cB-be5" userLabel="家乡" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="383" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="家乡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSV-1C-k4O">
+                            <rect key="frame" x="37" y="12" width="61" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="北京" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDg-Kc-lCL">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="fhP-K1-bFz">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gNe-ub-RWq" userLabel="line9">
+                    <rect key="frame" x="-3" y="428" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view hidden="YES" tag="8" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uPd-Vr-6hL" userLabel="宗教信仰" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="429" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="宗教信仰" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="082-rG-cNp">
+                            <rect key="frame" x="37" y="12" width="67" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wo-3Y-WjA">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="HL6-Q8-jZc">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S5T-0A-BMT" userLabel="line10">
+                    <rect key="frame" x="-3" y="474" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view hidden="YES" tag="9" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01H-7u-d51" userLabel="专业技能" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="475" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="专业技能" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoL-vb-HTl">
+                            <rect key="frame" x="37" y="12" width="67" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="装逼" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbk-tX-RVt">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="emG-Pw-yds">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztv-3G-dAe" userLabel="line11">
+                    <rect key="frame" x="-3" y="520" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view hidden="YES" tag="10" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mJk-sK-Tmf" userLabel="教育" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="521" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="教育" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bN-Ct-s6p">
+                            <rect key="frame" x="37" y="12" width="102" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="女" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x89-z2-yMc">
+                            <rect key="frame" x="172" y="12" width="123" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="795-Wf-2Vs">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vmB-IM-Zzs" userLabel="line12">
+                    <rect key="frame" x="-3" y="566" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view hidden="YES" tag="11" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qmv-SJ-vFR" userLabel="工作" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="567" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="工作" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmV-a5-1S1">
+                            <rect key="frame" x="37" y="12" width="100" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="女" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQT-dd-0TP">
+                            <rect key="frame" x="195" y="12" width="100" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="O3P-Ok-wah">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7y5-Yb-dAV" userLabel="line13">
+                    <rect key="frame" x="-3" y="612" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view hidden="YES" tag="12" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ab4-uQ-dnj" userLabel="喜欢的书籍" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="613" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="喜欢的书籍" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCj-VA-LQy">
+                            <rect key="frame" x="37" y="12" width="87" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="北京" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giY-uc-Vf0">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="e8N-rn-m8w">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vxN-SA-J3d" userLabel="line14">
+                    <rect key="frame" x="-3" y="658" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view hidden="YES" tag="13" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JcJ-Fl-UcT" userLabel="喜欢的运动" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="659" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="喜欢的运动" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4Z-b9-3YU">
+                            <rect key="frame" x="37" y="12" width="80" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHl-VD-Qf0">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="B9k-Jc-9l4">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QLN-8s-4lu" userLabel="line15">
+                    <rect key="frame" x="-3" y="704" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view hidden="YES" tag="14" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4I-eE-HOz" userLabel="喜欢的电影" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="705" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="喜欢的电影" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lf7-qP-gG2">
+                            <rect key="frame" x="37" y="12" width="80" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="装逼" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvH-zg-1F1">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="fQ5-be-YjD">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e4w-Id-7SL" userLabel="line16">
+                    <rect key="frame" x="-3" y="750" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view hidden="YES" tag="15" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhJ-A9-qdd" userLabel="喜欢的音乐" customClass="LightControl">
+                    <rect key="frame" x="0.0" y="751" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="喜欢的音乐" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGj-fE-eTO">
+                            <rect key="frame" x="37" y="12" width="80" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="装逼" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgW-iP-PyH">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="2bv-sQ-5tg">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXA-F8-v8a" userLabel="line17">
+                    <rect key="frame" x="-3" y="796" width="326" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="areaLabel" destination="Txj-dE-N9o" id="KRH-lZ-CVv"/>
+                <outlet property="birthdayLabel" destination="XTZ-Kx-PW3" id="fZh-45-y4d"/>
+                <outlet property="nickLabel" destination="Usp-wv-TKg" id="8yN-vV-YlP"/>
+                <outlet property="physiology_genderLabel" destination="rP5-Zh-NLL" id="00C-ss-gWZ"/>
+                <outlet property="signLabel" destination="nWF-4m-q6X" id="J05-Vc-h1u"/>
+                <outlet property="society_genderLabel" destination="oGj-Pt-LlO" id="j3S-bg-AH8"/>
+            </connections>
+            <point key="canvasLocation" x="235" y="475"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cpy_arrow.png" width="8" height="15"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

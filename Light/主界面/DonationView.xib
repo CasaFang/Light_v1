@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DonationView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="569"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vr-Pr-0rp">
+                    <rect key="frame" x="8" y="18" width="304" height="316"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="316" id="Olg-9b-nK0"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="         ">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="如果您比较认同和支持">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Light">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="的理念和服务">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=", ">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="那么您可以捐助">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Light">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="的系统开发。">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="特别声明">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=": 1.">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="本捐助纯属于对">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Light">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="的公益捐助；">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" 2.">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="不接受任何抱有自身目的的捐助。">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="  ">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="捐助的主要用途；">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="  1.">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="搭建从软件到硬件，">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="到软件升级的一体化解决方案；">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="  2.">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="支持业务运营和">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="APP">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="开发。">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="捐助方式">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=": ">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="扫描以下二维码，想">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Light">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="官方微信号捐助。">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" Light">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="感谢您的捐助。">
+                            <attributes>
+                                <color key="NSColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="7"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BJK-6o-gWo" userLabel="line1">
+                    <rect key="frame" x="0.0" y="208" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="49G-Y7-3Gq"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STX-lx-uaV">
+                    <rect key="frame" x="0.0" y="208" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fVo-je-6eH"/>
+                        <constraint firstAttribute="width" constant="50" id="y9I-mj-aca"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="34"/>
+                    <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U6H-l0-pS3" userLabel="line2">
+                    <rect key="frame" x="0.0" y="258" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="4z4-JI-nCV"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YA0-Xx-Y7v" userLabel="line3">
+                    <rect key="frame" x="50" y="214" width="1" height="40"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="ZtQ-xq-G02"/>
+                        <constraint firstAttribute="height" constant="40" id="jYY-dj-Uiw"/>
+                    </constraints>
+                </imageView>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="捐助金额" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRt-Rz-iU9">
+                    <rect key="frame" x="105" y="217" width="207" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="QmK-hv-j44"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="向我们稍句鼓励的话" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3p6-bo-mdp">
+                    <rect key="frame" x="105" y="267" width="207" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="S3T-fy-Tz3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r2S-Xc-Bp2" userLabel="line4">
+                    <rect key="frame" x="0.0" y="308" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="mH2-iX-0bG"/>
+                    </constraints>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYw-Ah-4v2">
+                    <rect key="frame" x="40" y="342" width="240" height="35"/>
+                    <color key="backgroundColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="DA9-SH-jj8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确认捐助">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通过我的支付宝(1111)捐助" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJR-dk-WdE">
+                    <rect key="frame" x="0.0" y="385" width="320" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="vXk-CK-4VJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2015 LightApp.  All right reserved" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhW-xz-2K7">
+                    <rect key="frame" x="8" y="497" width="304" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="ISp-nz-UTX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="捐助.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AHC-tE-Y7z">
+                    <rect key="frame" x="40" y="361" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="Vsq-Pf-RyS"/>
+                        <constraint firstAttribute="width" constant="240" id="ndt-jz-jFE"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3p6-bo-mdp" firstAttribute="top" secondItem="U6H-l0-pS3" secondAttribute="bottom" constant="8" id="2Qj-R6-6PS"/>
+                <constraint firstItem="xYw-Ah-4v2" firstAttribute="top" secondItem="r2S-Xc-Bp2" secondAttribute="bottom" constant="33" id="31p-cN-waw"/>
+                <constraint firstItem="QJR-dk-WdE" firstAttribute="top" secondItem="xYw-Ah-4v2" secondAttribute="bottom" constant="8" id="3u4-zq-9c6"/>
+                <constraint firstItem="r2S-Xc-Bp2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6Hy-Sw-UJz"/>
+                <constraint firstAttribute="trailing" secondItem="3p6-bo-mdp" secondAttribute="trailing" constant="8" id="7Cb-Li-Ew9"/>
+                <constraint firstAttribute="trailing" secondItem="r2S-Xc-Bp2" secondAttribute="trailing" id="Cc8-FB-9yy"/>
+                <constraint firstItem="dhW-xz-2K7" firstAttribute="top" secondItem="AHC-tE-Y7z" secondAttribute="bottom" constant="8" id="GZu-ZR-7Hb"/>
+                <constraint firstItem="U6H-l0-pS3" firstAttribute="top" secondItem="DRt-Rz-iU9" secondAttribute="bottom" constant="8" id="Gvk-it-Kzk"/>
+                <constraint firstItem="STX-lx-uaV" firstAttribute="top" secondItem="BJK-6o-gWo" secondAttribute="bottom" constant="-1" id="H2a-2q-4Ia"/>
+                <constraint firstAttribute="bottom" secondItem="dhW-xz-2K7" secondAttribute="bottom" id="JnQ-pu-v0Y"/>
+                <constraint firstItem="6vr-Pr-0rp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="L5A-eg-39b"/>
+                <constraint firstItem="xYw-Ah-4v2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="LQT-Oh-GGu"/>
+                <constraint firstItem="YA0-Xx-Y7v" firstAttribute="leading" secondItem="STX-lx-uaV" secondAttribute="trailing" id="N3Y-Xb-sSa"/>
+                <constraint firstAttribute="trailing" secondItem="U6H-l0-pS3" secondAttribute="trailing" id="NPt-w9-ef4"/>
+                <constraint firstAttribute="centerX" secondItem="AHC-tE-Y7z" secondAttribute="centerX" id="QYe-bJ-hUG"/>
+                <constraint firstItem="YA0-Xx-Y7v" firstAttribute="top" secondItem="BJK-6o-gWo" secondAttribute="bottom" constant="5" id="Qes-kV-tCg"/>
+                <constraint firstItem="6vr-Pr-0rp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Whe-nx-IeP"/>
+                <constraint firstAttribute="trailing" secondItem="DRt-Rz-iU9" secondAttribute="trailing" constant="8" id="X1V-zh-0Tg"/>
+                <constraint firstItem="dhW-xz-2K7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="YPn-jj-eSC"/>
+                <constraint firstItem="U6H-l0-pS3" firstAttribute="top" secondItem="YA0-Xx-Y7v" secondAttribute="bottom" constant="4" id="Zor-yw-chr"/>
+                <constraint firstAttribute="trailing" secondItem="xYw-Ah-4v2" secondAttribute="trailing" constant="40" id="b3t-g8-QF9"/>
+                <constraint firstItem="BJK-6o-gWo" firstAttribute="top" secondItem="6vr-Pr-0rp" secondAttribute="bottom" constant="-126" id="b8z-P7-635"/>
+                <constraint firstItem="3p6-bo-mdp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="105" id="eN2-Nz-EG2"/>
+                <constraint firstItem="BJK-6o-gWo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gDm-Mg-psx"/>
+                <constraint firstAttribute="trailing" secondItem="BJK-6o-gWo" secondAttribute="trailing" id="hSh-cO-L79"/>
+                <constraint firstItem="STX-lx-uaV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hYr-S8-bQl"/>
+                <constraint firstItem="DRt-Rz-iU9" firstAttribute="top" secondItem="BJK-6o-gWo" secondAttribute="bottom" constant="8" id="hik-ob-AQZ"/>
+                <constraint firstItem="DRt-Rz-iU9" firstAttribute="leading" secondItem="YA0-Xx-Y7v" secondAttribute="trailing" constant="54" id="k98-7C-aRc"/>
+                <constraint firstAttribute="trailing" secondItem="QJR-dk-WdE" secondAttribute="trailing" id="mvu-eb-RNZ"/>
+                <constraint firstItem="U6H-l0-pS3" firstAttribute="top" secondItem="STX-lx-uaV" secondAttribute="bottom" id="oqG-nW-iLQ"/>
+                <constraint firstItem="QJR-dk-WdE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sqW-or-h1t"/>
+                <constraint firstAttribute="trailing" secondItem="6vr-Pr-0rp" secondAttribute="trailing" constant="8" id="x1N-bo-Egw"/>
+                <constraint firstItem="r2S-Xc-Bp2" firstAttribute="top" secondItem="3p6-bo-mdp" secondAttribute="bottom" constant="8" id="xNr-Mz-1o9"/>
+                <constraint firstAttribute="trailing" secondItem="dhW-xz-2K7" secondAttribute="trailing" constant="8" id="zWG-eP-Cer"/>
+                <constraint firstItem="U6H-l0-pS3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ziq-jl-XRq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="313" y="364.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="捐助.jpg" width="1496" height="1492"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

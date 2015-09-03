@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoveContentView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="572"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jlc-M0-QaK" userLabel="求婚" customClass="LightControl">
+                    <rect key="frame" x="8" y="10" width="304" height="172"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="love1.png" translatesAutoresizingMaskIntoConstraints="NO" id="z1f-7x-0Y2">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="172"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Light 求婚" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPy-Yo-Hzy">
+                            <rect key="frame" x="10" y="129" width="285" height="35"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="172" id="E0h-2B-drJ"/>
+                        <constraint firstAttribute="width" constant="304" id="IUt-d2-RO5"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="zFg-ss-hx1"/>
+                    </connections>
+                </view>
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oO3-Zb-pav" userLabel="证书墙" customClass="LightControl">
+                    <rect key="frame" x="8" y="195" width="304" height="172"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="love2.png" translatesAutoresizingMaskIntoConstraints="NO" id="CtW-hD-ESs">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="172"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="证书墙" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJa-ia-7CX">
+                            <rect key="frame" x="10" y="129" width="285" height="35"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="172" id="exh-KU-rL3"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="3k8-vj-RDQ"/>
+                    </connections>
+                </view>
+                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5EQ-6F-viv" userLabel="海外结婚" customClass="LightControl">
+                    <rect key="frame" x="8" y="380" width="304" height="172"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="love3.png" translatesAutoresizingMaskIntoConstraints="NO" id="YsW-AP-LcB">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="172"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="海外结婚" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yda-f8-hZx">
+                            <rect key="frame" x="10" y="129" width="285" height="35"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="172" id="uUJ-Sv-Bho"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="jQB-lu-HiJ"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Jlc-M0-QaK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="0Mf-zE-eZl"/>
+                <constraint firstItem="Jlc-M0-QaK" firstAttribute="leading" secondItem="5EQ-6F-viv" secondAttribute="leading" id="8Pa-pS-tLf"/>
+                <constraint firstItem="5EQ-6F-viv" firstAttribute="top" secondItem="oO3-Zb-pav" secondAttribute="bottom" constant="13" id="Cn8-ep-lu1"/>
+                <constraint firstAttribute="centerX" secondItem="Jlc-M0-QaK" secondAttribute="centerX" id="Nmt-7f-adA"/>
+                <constraint firstItem="oO3-Zb-pav" firstAttribute="top" secondItem="Jlc-M0-QaK" secondAttribute="bottom" constant="13" id="don-Hd-BuL"/>
+                <constraint firstItem="Jlc-M0-QaK" firstAttribute="leading" secondItem="oO3-Zb-pav" secondAttribute="leading" id="fLo-mK-mSP"/>
+                <constraint firstItem="oO3-Zb-pav" firstAttribute="top" secondItem="Jlc-M0-QaK" secondAttribute="bottom" constant="13" id="fgm-yq-cul"/>
+                <constraint firstItem="Jlc-M0-QaK" firstAttribute="trailing" secondItem="5EQ-6F-viv" secondAttribute="trailing" id="hhD-vB-6B7"/>
+                <constraint firstItem="Jlc-M0-QaK" firstAttribute="trailing" secondItem="oO3-Zb-pav" secondAttribute="trailing" id="uF4-o2-M9m"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="290" y="320"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="love1.png" width="285" height="172"/>
+        <image name="love2.png" width="285" height="172"/>
+        <image name="love3.png" width="285" height="172"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

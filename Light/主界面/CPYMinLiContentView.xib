@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CPYMinLiContentView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="425"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cpy_minli_head.png" translatesAutoresizingMaskIntoConstraints="NO" id="zyr-Fn-fK4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="iWv-ys-DD5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIGHT独家算法,神准" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqo-p6-41I">
+                    <rect key="frame" x="8" y="188" width="299" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="K63-tS-aBv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZz-we-Ajq">
+                    <rect key="frame" x="165" y="229" width="119" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="119" id="YAQ-PF-3pW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-6" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="紫薇" image="cpy_minli_star.png">
+                        <color key="titleColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="U09-yF-zpJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q02-b8-2FZ">
+                    <rect key="frame" x="30" y="306" width="119" height="58"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-6" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="星座" image="cpy_minli_star.png">
+                        <color key="titleColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="x1n-rB-UVc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLP-6v-DQn">
+                    <rect key="frame" x="165" y="306" width="119" height="58"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-6" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="塔罗" image="cpy_minli_star.png">
+                        <color key="titleColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="oRp-fb-H52"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCd-ub-gmm">
+                    <rect key="frame" x="30" y="229" width="119" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="G7H-1r-f6d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-6" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="八字" image="cpy_minli_star.png">
+                        <color key="titleColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Pa8-PS-xSK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8XA-vI-2e4">
+                    <rect key="frame" x="8" y="378" width="304" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="u4z-ID-okU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                    <state key="normal" title="&gt;&gt;命理为什么适用于LGBT">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="v0t-j5-dHy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zyr-Fn-fK4" secondAttribute="trailing" id="07d-Tg-p5b"/>
+                <constraint firstItem="tZz-we-Ajq" firstAttribute="height" secondItem="RCd-ub-gmm" secondAttribute="height" id="56d-QD-SMH"/>
+                <constraint firstItem="Q02-b8-2FZ" firstAttribute="top" secondItem="RCd-ub-gmm" secondAttribute="bottom" constant="19" id="5N7-5P-RqL"/>
+                <constraint firstItem="tZz-we-Ajq" firstAttribute="height" secondItem="Q02-b8-2FZ" secondAttribute="height" id="BAR-3B-Y9G"/>
+                <constraint firstItem="tZz-we-Ajq" firstAttribute="leading" secondItem="RCd-ub-gmm" secondAttribute="trailing" constant="16" id="EGi-hb-OIZ"/>
+                <constraint firstItem="8XA-vI-2e4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="EV0-FC-Xqw"/>
+                <constraint firstItem="tZz-we-Ajq" firstAttribute="height" secondItem="jLP-6v-DQn" secondAttribute="height" id="G0a-qZ-0fZ"/>
+                <constraint firstAttribute="trailing" secondItem="tZz-we-Ajq" secondAttribute="trailing" constant="36" id="G7U-zZ-REg"/>
+                <constraint firstItem="jLP-6v-DQn" firstAttribute="top" secondItem="tZz-we-Ajq" secondAttribute="bottom" constant="19" id="GZS-qJ-nw1"/>
+                <constraint firstItem="aqo-p6-41I" firstAttribute="top" secondItem="zyr-Fn-fK4" secondAttribute="bottom" constant="8" id="Rcc-9D-yZ2"/>
+                <constraint firstAttribute="trailing" secondItem="jLP-6v-DQn" secondAttribute="trailing" constant="36" id="TvV-zB-XiN"/>
+                <constraint firstItem="RCd-ub-gmm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="XVz-rR-rH4"/>
+                <constraint firstItem="tZz-we-Ajq" firstAttribute="leading" secondItem="RCd-ub-gmm" secondAttribute="trailing" constant="16" id="ZTn-SL-UE8"/>
+                <constraint firstAttribute="trailing" secondItem="aqo-p6-41I" secondAttribute="trailing" constant="13" id="aRd-uW-S6Z"/>
+                <constraint firstItem="RCd-ub-gmm" firstAttribute="top" secondItem="aqo-p6-41I" secondAttribute="bottom" constant="8" id="fg2-DB-q7I"/>
+                <constraint firstItem="zyr-Fn-fK4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gow-jP-Thb"/>
+                <constraint firstItem="8XA-vI-2e4" firstAttribute="top" secondItem="Q02-b8-2FZ" secondAttribute="bottom" constant="14" id="guU-bL-5lk"/>
+                <constraint firstItem="Q02-b8-2FZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="hiV-GY-cja"/>
+                <constraint firstItem="jLP-6v-DQn" firstAttribute="leading" secondItem="Q02-b8-2FZ" secondAttribute="trailing" constant="16" id="hoo-lz-jdO"/>
+                <constraint firstItem="jLP-6v-DQn" firstAttribute="leading" secondItem="tZz-we-Ajq" secondAttribute="leading" id="iux-o0-zqG"/>
+                <constraint firstAttribute="trailing" secondItem="8XA-vI-2e4" secondAttribute="trailing" constant="8" id="qgf-5I-m5T"/>
+                <constraint firstItem="tZz-we-Ajq" firstAttribute="top" secondItem="aqo-p6-41I" secondAttribute="bottom" constant="8" id="r0Q-oq-YG6"/>
+                <constraint firstItem="aqo-p6-41I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="veF-Yw-786"/>
+                <constraint firstItem="zyr-Fn-fK4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wQK-il-Snd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="300" y="247.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cpy_minli_head.png" width="346" height="170"/>
+        <image name="cpy_minli_star.png" width="51" height="47"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

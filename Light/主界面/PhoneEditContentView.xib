@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PhoneEditContentView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L1j-Su-s85" userLabel="line1">
+                    <rect key="frame" x="24" y="71" width="272" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="OTG-Ws-8JE"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Qod-XD-Lov">
+                    <rect key="frame" x="24" y="39" width="272" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Rsu-ZX-oOI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如果您更改了手机号，您需要对手机号重新验证" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdN-1B-wEe">
+                    <rect key="frame" x="24" y="77" width="272" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="ifx-mf-mbq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                    <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="L1j-Su-s85" firstAttribute="trailing" secondItem="xdN-1B-wEe" secondAttribute="trailing" id="1ej-Ap-2p0"/>
+                <constraint firstItem="xdN-1B-wEe" firstAttribute="top" secondItem="L1j-Su-s85" secondAttribute="bottom" constant="5" id="5oM-Kv-yuZ"/>
+                <constraint firstItem="L1j-Su-s85" firstAttribute="leading" secondItem="xdN-1B-wEe" secondAttribute="leading" id="6fT-4a-BZ9"/>
+                <constraint firstItem="Qod-XD-Lov" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="39" id="AGX-xo-nsh"/>
+                <constraint firstItem="L1j-Su-s85" firstAttribute="top" secondItem="Qod-XD-Lov" secondAttribute="bottom" constant="2" id="Pq5-Ko-liz"/>
+                <constraint firstItem="L1j-Su-s85" firstAttribute="trailing" secondItem="Qod-XD-Lov" secondAttribute="trailing" id="YWb-Hp-8ep"/>
+                <constraint firstAttribute="trailing" secondItem="Qod-XD-Lov" secondAttribute="trailing" constant="24" id="hmd-2a-jGx"/>
+                <constraint firstItem="Qod-XD-Lov" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="iWd-Mp-ep3"/>
+                <constraint firstItem="L1j-Su-s85" firstAttribute="leading" secondItem="Qod-XD-Lov" secondAttribute="leading" id="wbi-rW-dtR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="phoneTextField" destination="Qod-XD-Lov" id="WzC-Lw-9zg"/>
+            </connections>
+            <point key="canvasLocation" x="343" y="144.5"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
