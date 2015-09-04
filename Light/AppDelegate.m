@@ -56,7 +56,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     //Mob短信验证SDK初始化
-    // test svn git 22
     [SMS_SDK registerApp:LightKey withSecret:LightSecret];
     
 //    NSString *_deviceTokenCache = [[NSUserDefaults standardUserDefaults]objectForKey:kDeviceToken];

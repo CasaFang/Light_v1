@@ -1,70 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="indexleftnoticellidentifier" rowHeight="80" id="2C8-ug-Bs0" customClass="IndexLeftNotiTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="indexleftnoticellidentifier" rowHeight="59" id="2C8-ug-Bs0" customClass="IndexLeftNotiTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2C8-ug-Bs0" id="RLz-6x-oNS">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZFO-gR-w63">
-                        <rect key="frame" x="15" y="10" width="60" height="60"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="60" id="jFi-sv-TAo"/>
-                            <constraint firstAttribute="width" constant="60" id="neT-BN-Qwu"/>
-                        </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="30"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KJ-xQ-HCu">
-                        <rect key="frame" x="83" y="44" width="229" height="21"/>
+                        <rect key="frame" x="20" y="13" width="272" height="32"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="BQ5-HJ-Mkk"/>
+                            <constraint firstAttribute="height" constant="32" id="FtB-z3-F3X"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                         <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LB5-fO-YGv">
-                        <rect key="frame" x="83" y="10" width="229" height="21"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sam-cM-Hid">
+                        <rect key="frame" x="300" y="23" width="9" height="12"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="RFO-zm-5dO"/>
+                            <constraint firstAttribute="width" constant="9" id="TFk-yP-ME4"/>
+                            <constraint firstAttribute="height" constant="12" id="WqI-tW-jeo"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
-                        <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="LB5-fO-YGv" firstAttribute="leading" secondItem="ZFO-gR-w63" secondAttribute="trailing" constant="8" id="1yc-At-suu"/>
-                    <constraint firstItem="1KJ-xQ-HCu" firstAttribute="top" secondItem="RLz-6x-oNS" secondAttribute="top" constant="44" id="2uR-vg-tIw"/>
-                    <constraint firstAttribute="centerY" secondItem="ZFO-gR-w63" secondAttribute="centerY" id="5hs-d1-ihy"/>
-                    <constraint firstItem="ZFO-gR-w63" firstAttribute="leading" secondItem="RLz-6x-oNS" secondAttribute="leading" constant="15" id="EyH-IV-h2t"/>
-                    <constraint firstAttribute="trailing" secondItem="LB5-fO-YGv" secondAttribute="trailing" constant="8" id="IiH-iB-LmK"/>
-                    <constraint firstAttribute="trailing" secondItem="1KJ-xQ-HCu" secondAttribute="trailing" constant="8" id="Qib-dW-RWd"/>
-                    <constraint firstItem="1KJ-xQ-HCu" firstAttribute="top" secondItem="LB5-fO-YGv" secondAttribute="bottom" constant="13" id="cfe-h7-1M5"/>
-                    <constraint firstItem="1KJ-xQ-HCu" firstAttribute="leading" secondItem="ZFO-gR-w63" secondAttribute="trailing" constant="8" id="dkG-Is-zLp"/>
-                    <constraint firstItem="LB5-fO-YGv" firstAttribute="top" secondItem="RLz-6x-oNS" secondAttribute="top" constant="10" id="lrQ-N1-WsE"/>
+                    <constraint firstItem="Sam-cM-Hid" firstAttribute="leading" secondItem="1KJ-xQ-HCu" secondAttribute="trailing" constant="8" id="95z-47-of7"/>
+                    <constraint firstItem="1KJ-xQ-HCu" firstAttribute="leading" secondItem="RLz-6x-oNS" secondAttribute="leading" constant="20" id="BN0-9O-Z7Y"/>
+                    <constraint firstAttribute="centerY" secondItem="Sam-cM-Hid" secondAttribute="centerY" id="IqF-bD-DeV"/>
+                    <constraint firstAttribute="trailing" secondItem="Sam-cM-Hid" secondAttribute="trailing" constant="11" id="Mop-yU-uSM"/>
+                    <constraint firstAttribute="centerY" secondItem="1KJ-xQ-HCu" secondAttribute="centerY" id="xk0-4r-1sk"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="avatarImageView" destination="ZFO-gR-w63" id="PxK-Fn-7zi"/>
                 <outlet property="contentLabel" destination="1KJ-xQ-HCu" id="nf8-86-Y3K"/>
-                <outlet property="nameLabel" destination="LB5-fO-YGv" id="nhm-Bj-grN"/>
             </connections>
-            <point key="canvasLocation" x="313" y="382"/>
+            <point key="canvasLocation" x="313" y="371.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="arrow.png" width="8" height="15"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

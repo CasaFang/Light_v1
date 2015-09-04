@@ -20,7 +20,6 @@
 @interface ChatListViewController ()<MsgMsgHeadViewDelegate>
 {
     MsgMsgHeadView *npcHeadView;
-    MsgMsgHeadView *newFriendHeadView;
 }
 
 @end
@@ -33,13 +32,11 @@
 
     [self setDisplayConversationTypes:@[@(ConversationType_PRIVATE)]];
     
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reciveRemotoNoti:) name:LightPushAddFriendNoti object:nil];
-    
 }
 
-- (void)buildNPCUI
-{
+- (void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
     
     if (npcHeadView == nil) {
         
@@ -50,152 +47,20 @@
         
         CGRect f1 = npcHeadView.frame;
         f1.size.width = WINSIZE.width;
-        f1.origin.y = newFriendHeadView == nil?0:newFriendHeadView.frame.size.height;
+        f1.origin.y = 0;
         f1.size.height = 70;
         npcHeadView.frame = f1;
         
-        //    [self.conversationListTableView setTableHeaderView:msgHeadView];
-        
         [self.view addSubview:npcHeadView];
-    }
-    else{
-        
-    }
-
-}
-
-- (void)buildNewFriendUI
-{
-    
-    if (newFriendHeadView == nil) {
-        
-        newFriendHeadView = [MsgMsgHeadView initFromNib];
-        newFriendHeadView.delegate  = self;
-        newFriendHeadView.backgroundColor = [UIColor whiteColor];
-        newFriendHeadView.titleLabel.text = @"好友申请";
-        CGRect f1 = newFriendHeadView.frame;
-        f1.size.width = WINSIZE.width;
-        f1.origin.y = 0;
-        f1.size.height = 70;
-        newFriendHeadView.frame = f1;
-        
-        //    [self.conversationListTableView setTableHeaderView:msgHeadView];
-        
-        [self.view addSubview:newFriendHeadView];
-        
-    }
-    else{
-    
-    }
-    
-}
-
-- (void)resetTableViewFrame{
-
-    if (newFriendHeadView) {
         
         CGRect f = self.conversationListTableView.frame;
-        f.origin.y = newFriendHeadView.frame.size.height;
-        f.size.height = f.size.height- newFriendHeadView.frame.size.height;
-        self.conversationListTableView.frame = f;
-    }
-    else{
-    
-        CGRect f = self.conversationListTableView.frame;
-        f.origin.y = 0;
-        f.size.height = f.size.height+ newFriendHeadView.frame.size.height;
+        f.origin.y = npcHeadView.frame.size.height+npcHeadView.frame.origin.y;
+        f.size.height = f.size.height- npcHeadView.frame.size.height;
         self.conversationListTableView.frame = f;
     }
     
-    if (npcHeadView) {
-        
-        if (newFriendHeadView) {
-            
-            CGRect f = self.conversationListTableView.frame;
-            f.origin.y = newFriendHeadView.frame.size.height+npcHeadView.frame.size.height;
-            f.size.height = f.size.height- newFriendHeadView.frame.size.height;
-            self.conversationListTableView.frame = f;
-        }
-        else{
-        
-            CGRect f = self.conversationListTableView.frame;
-            f.origin.y = newFriendHeadView.frame.size.height;
-            f.size.height = f.size.height+ newFriendHeadView.frame.size.height;
-            self.conversationListTableView.frame = f;
-        }
-       
-    }
-    else{
-        
-        if (newFriendHeadView) {
-            
-            CGRect f = self.conversationListTableView.frame;
-            f.origin.y = newFriendHeadView.frame.size.height;
-            f.size.height = f.size.height+ newFriendHeadView.frame.size.height;
-            self.conversationListTableView.frame = f;
-        }
-        else{
-            
-            CGRect f = self.conversationListTableView.frame;
-            f.origin.y = 0;
-            f.size.height = f.size.height- newFriendHeadView.frame.size.height;
-            self.conversationListTableView.frame = f;
-        }
-
-    }
     
-}
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    [[LightMyShareManager shareUser].owner getNewFriendsWithBLock:^(BOOL isSuccess, NSArray *newFriends, NSError *error) {
-        
-        if (isSuccess) {
-            
-            if (newFriends.count>=1) {
-                
-                if (!newFriendHeadView) {
-                    
-                    [self buildNewFriendUI];
-                     [self resetTableViewFrame];
-                }
-                
-            }
-            else{
-                
-                [newFriendHeadView removeFromSuperview];
-                newFriendHeadView = nil;
-                 [self resetTableViewFrame];
-            }
-            
-            [self.view bringSubviewToFront:newFriendHeadView];
-            [[LightNPC new] getNpcsWithBlock:^(BOOL isSuccess, NSArray *npcs, NSError *error) {
-                
-                if (isSuccess) {
-                    
-                    if (npcs.count>=1) {
-                        
-                        if (!npcHeadView) {
-                            
-                            [self buildNPCUI];
-                             [self resetTableViewFrame];
-                        }
-                        
-                    }
-                }
-                else{
-                    
-                    [npcHeadView removeFromSuperview];
-                     npcHeadView = nil;
-                     [self resetTableViewFrame];
-                }
-                
-                [self.view bringSubviewToFront:npcHeadView];
-            }];
-        }
-    }];
-    
+    [self.view bringSubviewToFront:npcHeadView];
 }
 
 /**
@@ -258,31 +123,9 @@
         
         [self.navigationController pushViewController:c animated:YES];
     }
-    else if ([v isEqual:newFriendHeadView]){
-    
-        MsgNewFriendsTableViewController *c = [MsgNewFriendsTableViewController new];
-        
-        NSInteger newFirendCount = newFriendHeadView.badgeLabel.text.integerValue;
-        
-        newFriendHeadView.badgeLabel.text = @"";
-        newFriendHeadView.badgeLabel.hidden = YES;
-        
-        [[LightPushCenter shareCenter] didReadRemotoPushNotiWithCount:newFirendCount];
-        
-        c.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:c animated:YES];
-    }
-   
 }
 
 
-#pragma mark -- remote push noti
-- (void)reciveRemotoNoti:(NSNotification *)noti{
 
-    NSString *badgeVale = [[noti.object valueForKey:@"aps"] valueForKey:@"badge"];
-    
-    newFriendHeadView.badgeLabel.text = [NSString stringWithFormat:@"%@",badgeVale];
-    newFriendHeadView.badgeLabel.hidden = NO;
-}
 
 @end

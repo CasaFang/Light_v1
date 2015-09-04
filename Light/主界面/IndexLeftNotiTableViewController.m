@@ -11,6 +11,9 @@
 #import "LightNoti.h"
 #import "UIView+Hud.h"
 #import "IndexLeftNotiTableViewCell.h"
+#import "MarryInvitationViewController.h"
+#import "LightUser+Marry.h"
+#import "MarryCertificationViewController.h"
 
 @interface IndexLeftNotiTableViewController ()
 
@@ -29,9 +32,13 @@ static NSString *cellIdentifier = @"indexleftnoticellidentifier";
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"regiser_back"] style:UIBarButtonItemStyleDone target:self action:@selector(backToMain:)];
     self.navigationItem.leftBarButtonItem = leftItem;
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(marryNoti:) name:LightUserMarryNoti object:nil];
+    
+    
     _tableArray = [NSMutableArray new];
     
     [self requestData];
+    
     
 }
 
@@ -47,6 +54,11 @@ static NSString *cellIdentifier = @"indexleftnoticellidentifier";
     [delegate resetRevealController];
 }
 
+#pragma mark -- noti
+- (void)marryNoti:(NSNotification *)noti{
+
+    [self requestData];
+}
 
 - (void)requestData{
     
@@ -73,21 +85,36 @@ static NSString *cellIdentifier = @"indexleftnoticellidentifier";
         cell = [IndexLeftNotiTableViewCell initFromNib];
     }
     
-    LightNoti *expert = [_tableArray objectAtIndex:indexPath.row];
-    [cell displayCellWithNoti:expert];
+    LightNoti *noti = [_tableArray objectAtIndex:indexPath.row];
+    [cell displayCellWithNoti:noti];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+     LightNoti *noti = [_tableArray objectAtIndex:indexPath.row];
+    
+    if (noti.type == 3) {
+        
+        MarryInvitationViewController *c = [MarryInvitationViewController new];
+        c.noti = noti;
+        [self.navigationController pushViewController:c animated:YES];
+    }
+    else if(noti.type == 4)
+    {
+        MarryCertificationViewController *c = [MarryCertificationViewController new];
+        [self.navigationController pushViewController:c animated:YES];
+    }
+   
+    
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 80;
+    return 59;
 }
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 80;
+    return 59;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

@@ -60,11 +60,15 @@
         
         [_actionBtn setTitle:@"同意" forState:UIControlStateNormal];
         _actionBtn.enabled = YES;
+        _actionBtn.backgroundColor = LightColor(0, 157, 212);
+       
     }
     else{
         
         [_actionBtn setTitle:@"已添加" forState:UIControlStateNormal];
         _actionBtn.enabled = NO;
+        
+         _actionBtn.backgroundColor = [UIColor lightGrayColor];
     }
 }
 

@@ -9,11 +9,18 @@
 #import "LightUser.h"
 
 
+extern NSString *const LightUserMarryNoti;
+
+
 typedef void(^marryBlock)(BOOL isSuccess ,NSError *error);
 @interface LightUser (Marry)
 
 - (void)marryToUser:(NSInteger )userId
          andContent:(NSString *)content
   andCompletedBlock:(marryBlock )completedBlock;
+
+- (void)marryReponseWithMarryId:(NSInteger )marrayId
+                      andStatus:(NSInteger )status
+                       andBlock:(marryBlock )completedBlock;
 
 @end

@@ -11,10 +11,16 @@
 #import "LightUser+Friend.h"
 #import "UIView+Hud.h"
 #import "MsgContactsTableViewCell.h"
+#import "MsgMsgHeadView.h"
+#import "MsgNewFriendsTableViewController.h"
+#import "LightPushCenter.h"
 
 static NSString *contactCellIdentifier = @"msgContactsTableCellIndentifier";
 
-@interface ContactsTableViewController ()<UISearchBarDelegate>
+@interface ContactsTableViewController ()<UISearchBarDelegate,MsgMsgHeadViewDelegate>
+{
+     MsgMsgHeadView *newFriendHeadView;
+}
 
 @property (strong , nonatomic) NSArray *contacts;
 @property (strong , nonatomic) UIButton *cancleBtn;
@@ -32,18 +38,6 @@ static NSString *contactCellIdentifier = @"msgContactsTableCellIndentifier";
     self.tableView.sectionIndexTrackingBackgroundColor = [UIColor clearColor];
     self.tableView.sectionIndexBackgroundColor = LightWhite;
     self.tableView.separatorColor = LightColor(235, 235, 235);
-//    
-//    UISearchBar *searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 0, WINSIZE.width, 44)];
-//    searchBar.delegate = self;
-//    searchBar.tintColor = LightColor(235, 235, 235);
-//    searchBar.barTintColor = LightColor(235, 235, 235);
-//    searchBar.backgroundColor = [UIColor clearColor];
-//    searchBar.clipsToBounds = YES;
-//    searchBar.backgroundImage = nil;
-//    searchBar.delegate = self;
-//    searchBar.showsCancelButton = NO;
-//    searchBar.placeholder = @"按LightID/手机号/邮箱搜索";
-//    [self.tableView setTableHeaderView:searchBar];
     
     
     _cancleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -60,9 +54,37 @@ static NSString *contactCellIdentifier = @"msgContactsTableCellIndentifier";
     
     [self requestContacts];
     
+    newFriendHeadView = [MsgMsgHeadView initFromNib];
+    newFriendHeadView.delegate  = self;
+    newFriendHeadView.backgroundColor = [UIColor whiteColor];
+    newFriendHeadView.titleLabel.text = @"好友申请";
+    CGRect f1 = newFriendHeadView.frame;
+    f1.size.width = WINSIZE.width;
+    f1.origin.y = 0;
+    f1.size.height = 70;
+    newFriendHeadView.frame = f1;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reciveRemotoNoti:) name:LightPushAddFriendNoti object:nil];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
 
+    [super viewWillAppear:animated];
+    
+    [[LightMyShareManager shareUser].owner getNewFriendsWithBLock:^(BOOL isSuccess, NSArray *newFriends, NSError *error) {
+        
+        if (newFriends.count>0) {
+            
+            [self.tableView setTableHeaderView:newFriendHeadView];
+        }
+        else{
+            [self.tableView setTableHeaderView:nil];
+        }
+    }];
+    
+    
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -79,7 +101,10 @@ static NSString *contactCellIdentifier = @"msgContactsTableCellIndentifier";
 #pragma mark -- noti
 - (void)hideLeftCancleBtn:(BOOL)isHidden{
     _cancleBtn.hidden = isHidden;
-
+    if (!isHidden) {
+        
+        self.tableView.tableHeaderView = nil;
+    }
 }
 - (void)addFriendRequestSuccess:(NSNotification *)noti
 {
@@ -180,6 +205,36 @@ static NSString *contactCellIdentifier = @"msgContactsTableCellIndentifier";
 - (void)searchBarTextDidEndEditing:(UISearchBar *)_searchBar
 {
     _searchBar.showsCancelButton = NO;
+}
+
+
+#pragma mark --head Delegate
+- (void)msgMsgHeadDidClickedView:(MsgMsgHeadView *)v
+{
+    if ([v isEqual:newFriendHeadView]){
+        
+        MsgNewFriendsTableViewController *c = [MsgNewFriendsTableViewController new];
+        
+        NSInteger newFirendCount = newFriendHeadView.badgeLabel.text.integerValue;
+        
+        newFriendHeadView.badgeLabel.text = @"";
+        newFriendHeadView.badgeLabel.hidden = YES;
+        
+        [[LightPushCenter shareCenter] didReadRemotoPushNotiWithCount:newFirendCount];
+        
+        c.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:c animated:YES];
+    }
+    
+}
+
+#pragma mark -- remote push noti
+- (void)reciveRemotoNoti:(NSNotification *)noti{
+    
+    NSString *badgeVale = [[noti.object valueForKey:@"aps"] valueForKey:@"badge"];
+    
+    newFriendHeadView.badgeLabel.text = [NSString stringWithFormat:@"%@",badgeVale];
+    newFriendHeadView.badgeLabel.hidden = NO;
 }
 
 

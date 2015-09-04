@@ -187,6 +187,13 @@
 		C9E3EE471B6F6772002FBD64 /* IndexAboutDonationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E3EE461B6F6772002FBD64 /* IndexAboutDonationViewController.m */; };
 		C9E3EE4E1B6F6AFF002FBD64 /* DonationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E3EE4D1B6F6AFF002FBD64 /* DonationView.m */; };
 		C9E3EE501B6F6B13002FBD64 /* DonationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E3EE4F1B6F6B13002FBD64 /* DonationView.xib */; };
+		C9E41F6F1B99D9DB00415456 /* MarryInvitationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E41F6B1B99D9DB00415456 /* MarryInvitationViewController.m */; };
+		C9E41F701B99D9DB00415456 /* MarryInvitationContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E41F6D1B99D9DB00415456 /* MarryInvitationContentView.m */; };
+		C9E41F711B99D9DB00415456 /* MarryInvitationContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E41F6E1B99D9DB00415456 /* MarryInvitationContentView.xib */; };
+		C9E41F751B99E11F00415456 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E41F741B99E11F00415456 /* arrow@2x.png */; };
+		C9E41F7A1B99EF9D00415456 /* MarryCertificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E41F791B99EF9D00415456 /* MarryCertificationViewController.m */; };
+		C9E41F7D1B99EFC900415456 /* MarryCertificationContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E41F7C1B99EFC900415456 /* MarryCertificationContentView.m */; };
+		C9E41F7F1B99EFE000415456 /* MarryCertificationContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E41F7E1B99EFE000415456 /* MarryCertificationContentView.xib */; };
 		C9E58D3C1B92F7D700D85071 /* LightPushCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E58D3B1B92F7D700D85071 /* LightPushCenter.m */; };
 		C9E58D431B9317AC00D85071 /* IndexMainNPCSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E58D411B9317AC00D85071 /* IndexMainNPCSTableViewCell.m */; };
 		C9E58D441B9317AC00D85071 /* IndexMainNPCSTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E58D421B9317AC00D85071 /* IndexMainNPCSTableViewCell.xib */; };
@@ -622,6 +629,17 @@
 		C9E3EE4C1B6F6AFF002FBD64 /* DonationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DonationView.h; path = "主界面/DonationView.h"; sourceTree = "<group>"; };
 		C9E3EE4D1B6F6AFF002FBD64 /* DonationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DonationView.m; path = "主界面/DonationView.m"; sourceTree = "<group>"; };
 		C9E3EE4F1B6F6B13002FBD64 /* DonationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DonationView.xib; path = "主界面/DonationView.xib"; sourceTree = "<group>"; };
+		C9E41F6A1B99D9DB00415456 /* MarryInvitationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarryInvitationViewController.h; sourceTree = "<group>"; };
+		C9E41F6B1B99D9DB00415456 /* MarryInvitationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarryInvitationViewController.m; sourceTree = "<group>"; };
+		C9E41F6C1B99D9DB00415456 /* MarryInvitationContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarryInvitationContentView.h; sourceTree = "<group>"; };
+		C9E41F6D1B99D9DB00415456 /* MarryInvitationContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarryInvitationContentView.m; sourceTree = "<group>"; };
+		C9E41F6E1B99D9DB00415456 /* MarryInvitationContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarryInvitationContentView.xib; sourceTree = "<group>"; };
+		C9E41F741B99E11F00415456 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		C9E41F781B99EF9D00415456 /* MarryCertificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarryCertificationViewController.h; path = "主界面/MarryCertificationViewController.h"; sourceTree = "<group>"; };
+		C9E41F791B99EF9D00415456 /* MarryCertificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarryCertificationViewController.m; path = "主界面/MarryCertificationViewController.m"; sourceTree = "<group>"; };
+		C9E41F7B1B99EFC900415456 /* MarryCertificationContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarryCertificationContentView.h; path = "主界面/MarryCertificationContentView.h"; sourceTree = "<group>"; };
+		C9E41F7C1B99EFC900415456 /* MarryCertificationContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarryCertificationContentView.m; path = "主界面/MarryCertificationContentView.m"; sourceTree = "<group>"; };
+		C9E41F7E1B99EFE000415456 /* MarryCertificationContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MarryCertificationContentView.xib; path = "主界面/MarryCertificationContentView.xib"; sourceTree = "<group>"; };
 		C9E58D3A1B92F7D700D85071 /* LightPushCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightPushCenter.h; sourceTree = "<group>"; };
 		C9E58D3B1B92F7D700D85071 /* LightPushCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightPushCenter.m; sourceTree = "<group>"; };
 		C9E58D401B9317AC00D85071 /* IndexMainNPCSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndexMainNPCSTableViewCell.h; path = "主界面/IndexMainNPCSTableViewCell.h"; sourceTree = "<group>"; };
@@ -1100,6 +1118,8 @@
 				C9E7442E1B7092C300AA31E8 /* IndexLeftNotiTableViewCell.h */,
 				C9E7442F1B7092C300AA31E8 /* IndexLeftNotiTableViewCell.m */,
 				C9E744301B7092C300AA31E8 /* IndexLeftNotiTableViewCell.xib */,
+				C9E41F771B99EF4600415456 /* 认证主页 */,
+				C9E41F721B99D9E500415456 /* 邀请函 */,
 			);
 			name = "通知";
 			sourceTree = "<group>";
@@ -1234,6 +1254,7 @@
 		04D1A4531B2C944D005823E4 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				C9E41F731B99E11F00415456 /* common */,
 				C9E7448F1B71270B00AA31E8 /* tab */,
 				C9E3EDF71B6EF42D002FBD64 /* love */,
 				C9E3EDDC1B6E675C002FBD64 /* indexLeft */,
@@ -1612,6 +1633,38 @@
 				C9E3EE4F1B6F6B13002FBD64 /* DonationView.xib */,
 			);
 			name = "捐赠";
+			sourceTree = "<group>";
+		};
+		C9E41F721B99D9E500415456 /* 邀请函 */ = {
+			isa = PBXGroup;
+			children = (
+				C9E41F6A1B99D9DB00415456 /* MarryInvitationViewController.h */,
+				C9E41F6B1B99D9DB00415456 /* MarryInvitationViewController.m */,
+				C9E41F6C1B99D9DB00415456 /* MarryInvitationContentView.h */,
+				C9E41F6D1B99D9DB00415456 /* MarryInvitationContentView.m */,
+				C9E41F6E1B99D9DB00415456 /* MarryInvitationContentView.xib */,
+			);
+			name = "邀请函";
+			sourceTree = "<group>";
+		};
+		C9E41F731B99E11F00415456 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				C9E41F741B99E11F00415456 /* arrow@2x.png */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		C9E41F771B99EF4600415456 /* 认证主页 */ = {
+			isa = PBXGroup;
+			children = (
+				C9E41F781B99EF9D00415456 /* MarryCertificationViewController.h */,
+				C9E41F791B99EF9D00415456 /* MarryCertificationViewController.m */,
+				C9E41F7B1B99EFC900415456 /* MarryCertificationContentView.h */,
+				C9E41F7C1B99EFC900415456 /* MarryCertificationContentView.m */,
+				C9E41F7E1B99EFE000415456 /* MarryCertificationContentView.xib */,
+			);
+			name = "认证主页";
 			sourceTree = "<group>";
 		};
 		C9E58D4D1B934E1700D85071 /* address */ = {
@@ -2083,7 +2136,7 @@
 				TargetAttributes = {
 					04D1A4291B2C915C005823E4 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = TS3L5T3FT9;
+						DevelopmentTeam = MT35RR2SHM;
 					};
 					04D1A4421B2C915C005823E4 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -2186,6 +2239,7 @@
 				C9381EA51B6A908800D8C804 /* LightValidateCodeViewController.xib in Resources */,
 				C9E744831B71210400AA31E8 /* female_blue@2x.png in Resources */,
 				C9E3EDFD1B6EF42D002FBD64 /* love3@2x.png in Resources */,
+				C9E41F7F1B99EFE000415456 /* MarryCertificationContentView.xib in Resources */,
 				C9E7449B1B71270B00AA31E8 /* home_32_selected@2x.png in Resources */,
 				C9E7448B1B71218D00AA31E8 /* female_btn@2x.png in Resources */,
 				C9E3EE1A1B6F0BD4002FBD64 /* LoveAuthAddContentView.xib in Resources */,
@@ -2196,11 +2250,13 @@
 				C9E744841B71210400AA31E8 /* female_white@2x.png in Resources */,
 				DC4EDC581B5E0A220056EC40 /* skip@2x.png in Resources */,
 				C9DAA5F71B95FBB700545D21 /* AboutBriefContentView.xib in Resources */,
+				C9E41F751B99E11F00415456 /* arrow@2x.png in Resources */,
 				C9381E8D1B6A680700D8C804 /* password_icon@2x.png in Resources */,
 				C9E58D491B934BA900D85071 /* PickerView.xib in Resources */,
 				C95DB84B1B8247A20054EAA1 /* AccomPanyUploadImageContentView.xib in Resources */,
 				C9381E891B6A646500D8C804 /* LightLoginNewViewController.xib in Resources */,
 				04D1A4AA1B2C944D005823E4 /* Intro05.png in Resources */,
+				C9E41F711B99D9DB00415456 /* MarryInvitationContentView.xib in Resources */,
 				C9E7449F1B71270B00AA31E8 /* love_32_selected@2x.png in Resources */,
 				04D1A4A91B2C944D005823E4 /* Intro04.png in Resources */,
 				C9DC81C31B6BBD0100BDAA37 /* index_swipe@2x.png in Resources */,
@@ -2342,6 +2398,7 @@
 				C9DC82061B6CB22400BDAA37 /* LightMyShareManager.m in Sources */,
 				C9E3EE0D1B6EFCE4002FBD64 /* LoveAuthTableViewCell.m in Sources */,
 				C9E3EE031B6EF90C002FBD64 /* LoveQiuHunViewController.m in Sources */,
+				C9E41F6F1B99D9DB00415456 /* MarryInvitationViewController.m in Sources */,
 				C9E3EDBD1B6E1287002FBD64 /* LightFPCodeViewController.m in Sources */,
 				C9E743E41B70479A00AA31E8 /* CPYNeedPeopleTableViewCell.m in Sources */,
 				C9E3EE471B6F6772002FBD64 /* IndexAboutDonationViewController.m in Sources */,
@@ -2400,6 +2457,7 @@
 				C9E3EDF01B6E6EB8002FBD64 /* IndexAboutViewController.m in Sources */,
 				C9E3ED8B1B6DD6AE002FBD64 /* ContactsSearchViewController.m in Sources */,
 				C95DB8501B8256840054EAA1 /* AccompanyTagViewController.m in Sources */,
+				C9E41F7A1B99EF9D00415456 /* MarryCertificationViewController.m in Sources */,
 				C9DFC5001B94ABEC00A064F1 /* EditNickNameViewController.m in Sources */,
 				C9E3EE1D1B6F2230002FBD64 /* LightUser+Change.m in Sources */,
 				C9DAA5EA1B95E32A00545D21 /* AvatarEditContentView.m in Sources */,
@@ -2429,6 +2487,7 @@
 				C9E58D531B93640100D85071 /* EditSignatureViewController.m in Sources */,
 				C9381EA91B6A936B00D8C804 /* LightRegUserInfoViewController.m in Sources */,
 				C9381EA41B6A908800D8C804 /* LightValidateCodeViewController.m in Sources */,
+				C9E41F7D1B99EFC900415456 /* MarryCertificationContentView.m in Sources */,
 				048384E01B2D622300ED7693 /* LightRegisterUser.m in Sources */,
 				C9E7442D1B70914E00AA31E8 /* LightNoti.m in Sources */,
 				C9E743DF1B70475B00AA31E8 /* CPYLayerTableViewCell.m in Sources */,
@@ -2442,6 +2501,7 @@
 				C9381EB61B6B1BB700D8C804 /* UIView+Hud.m in Sources */,
 				C9E743E81B70532A00AA31E8 /* CPYMinLiContentView.m in Sources */,
 				C9E3ED951B6DEF92002FBD64 /* LightControl.m in Sources */,
+				C9E41F701B99D9DB00415456 /* MarryInvitationContentView.m in Sources */,
 				C9E3ED901B6DEB03002FBD64 /* CPYContentView.m in Sources */,
 				C9381E791B6A5D1000D8C804 /* LightRegPhoneViewController.m in Sources */,
 				C9DC81FF1B6C6D2200BDAA37 /* LightUser+Login.m in Sources */,
@@ -2570,7 +2630,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yiying Shao (A786KR2YL9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: zheng Laixian (597K7ZRE8U)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Light",
@@ -2586,7 +2646,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lightdomain.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5a578224-d452-403f-bc81-278cfd254887";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -2598,7 +2658,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yiying Shao (TS3L5T3FT9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: zheng Laixian (MT35RR2SHM)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Light",
@@ -2614,7 +2674,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lightdomain.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5a578224-d452-403f-bc81-278cfd254887";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};

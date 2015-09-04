@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -27,7 +28,7 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmc-mv-HVg">
-                        <rect key="frame" x="67" y="5" width="245" height="21"/>
+                        <rect key="frame" x="67" y="8" width="245" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="IXU-uE-lTC"/>
                             <constraint firstAttribute="height" constant="21" id="uAl-Pr-eWI"/>
@@ -37,20 +38,24 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wl7-YA-XFI">
-                        <rect key="frame" x="67" y="34" width="245" height="21"/>
+                        <rect key="frame" x="67" y="32" width="245" height="21"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                         <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nhW-Gr-Roc">
+                        <rect key="frame" x="0.0" y="59" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Wl7-YA-XFI" firstAttribute="top" secondItem="tmc-mv-HVg" secondAttribute="bottom" constant="8" id="2dJ-PY-ABu"/>
-                    <constraint firstAttribute="bottom" secondItem="Wl7-YA-XFI" secondAttribute="bottom" constant="4" id="5IN-Wv-1pu"/>
+                    <constraint firstItem="Wl7-YA-XFI" firstAttribute="top" secondItem="tmc-mv-HVg" secondAttribute="bottom" constant="3" id="2dJ-PY-ABu"/>
+                    <constraint firstAttribute="bottom" secondItem="Wl7-YA-XFI" secondAttribute="bottom" constant="6" id="5IN-Wv-1pu"/>
                     <constraint firstItem="HL1-jQ-8cS" firstAttribute="top" secondItem="9Ny-N4-tH7" secondAttribute="top" constant="10" id="F0g-3k-IDD"/>
                     <constraint firstItem="Wl7-YA-XFI" firstAttribute="leading" secondItem="9Ny-N4-tH7" secondAttribute="leading" constant="67" id="GCG-Bp-6uk"/>
                     <constraint firstItem="tmc-mv-HVg" firstAttribute="leading" secondItem="9Ny-N4-tH7" secondAttribute="leading" constant="67" id="ZDl-3s-Ewy"/>
                     <constraint firstAttribute="trailing" secondItem="Wl7-YA-XFI" secondAttribute="trailing" constant="8" id="jz5-Gy-LQd"/>
-                    <constraint firstItem="tmc-mv-HVg" firstAttribute="top" secondItem="9Ny-N4-tH7" secondAttribute="top" constant="5" id="uTH-gX-Tz2"/>
+                    <constraint firstItem="tmc-mv-HVg" firstAttribute="top" secondItem="9Ny-N4-tH7" secondAttribute="top" constant="8" id="uTH-gX-Tz2"/>
                     <constraint firstItem="HL1-jQ-8cS" firstAttribute="leading" secondItem="9Ny-N4-tH7" secondAttribute="leading" constant="19" id="wX4-0o-QCh"/>
                     <constraint firstAttribute="trailing" secondItem="tmc-mv-HVg" secondAttribute="trailing" constant="8" id="zuw-5u-OyD"/>
                 </constraints>

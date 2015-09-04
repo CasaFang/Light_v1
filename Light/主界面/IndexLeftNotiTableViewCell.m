@@ -29,11 +29,34 @@
 
 - (void)displayCellWithNoti:(LightNoti *)noti{
     
-    //    [_avatarImageView setImageWithURL:[NSURL URLWithString:[expert.avatar stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-    //
-    //    } usingActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    //    _nameLabel.text = expert.name;
-    //    _contentLabel.text = expert.brief;
+    NSString *contentStr = @"";
+    
+    if (noti.type == 3) {
+        
+        LightMarry *marry = noti.notiObject;
+        contentStr = [NSString stringWithFormat:@"@ %@像你发出了求婚请求",marry.marryerName];
+    }
+    else if (noti.type == 4){
+        
+        LightMarry *marry = noti.notiObject;
+    
+        if (marry.status == -1) {
+            
+             contentStr = [NSString stringWithFormat:@"@ %@拒绝你的认证请求",marry.marryedName];
+        }
+        else if(marry.status == 1){
+        
+             contentStr = [NSString stringWithFormat:@"@ %@同意你的认证请求,Light为你们创建认证请求",marry.marryedName];
+        }
+        else if (marry.status == 0){
+            
+            contentStr = [NSString stringWithFormat:@"@ %@的求婚请求已发送",marry.marryedName];
+        }
+       
+    }
+    _contentLabel.text = contentStr;
+   
+    
 }
 
 

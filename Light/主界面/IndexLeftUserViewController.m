@@ -123,6 +123,7 @@
         {
             // 修改昵称
             EditNickNameViewController *c = [EditNickNameViewController new];
+            c.nickName = _user.name;
             [self.navigationController pushViewController:c animated:YES];
         }
             break;
@@ -144,6 +145,7 @@
         case 2:
         {
             EditSignatureViewController *c = [EditSignatureViewController new];
+            c.signture = _user.sigNature;
             [self.navigationController pushViewController:c animated:YES];
         }
             break;

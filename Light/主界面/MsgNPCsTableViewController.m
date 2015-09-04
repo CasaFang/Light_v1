@@ -28,6 +28,10 @@ static NSString *cellIdentifier = @"msgNPCsTableCellIndentifier";
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"regiser_back"] style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = leftItem;
     
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    self.tableView.backgroundColor = LightColor(240, 240, 240);
+    
     _tableArray = [NSMutableArray new];
     
     [self requestData];

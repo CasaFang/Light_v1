@@ -59,10 +59,15 @@
 
     int index = (int)sender.tag;
     
-    if ([_delegate respondsToSelector:@selector(cell:didSelectedUser:)]) {
-        
-        [_delegate cell:self didSelectedUser:lightNPCS[index]];
+    if (lightNPCS.count >= index) {
+      
+        if ([_delegate respondsToSelector:@selector(cell:didSelectedUser:)]) {
+            
+            [_delegate cell:self didSelectedUser:lightNPCS[index]];
+        }
     }
+    
+    
     
 }
 

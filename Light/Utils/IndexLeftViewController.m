@@ -111,11 +111,11 @@
         {
             c = [IndexLeftNotiTableViewController new];
         }
+            break;
         case 2:
         {
             c = [IndexLeftUserViewController new];
         }
-            break;
             break;
         case 3:
         {

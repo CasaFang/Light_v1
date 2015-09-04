@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MarryInvitationContentView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="277"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAu-uH-BZ3">
+                    <rect key="frame" x="212" y="79" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Ufk-8w-6px"/>
+                        <constraint firstAttribute="height" constant="50" id="qIC-AB-mwc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bMU-AU-ew9">
+                    <rect key="frame" x="119" y="89" width="82" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="ShN-nd-0xQ"/>
+                        <constraint firstAttribute="width" constant="82" id="wkw-ZR-YEa"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xq-IX-dwc">
+                    <rect key="frame" x="28" y="151" width="257" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="udV-Mm-AIX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ui3-Nf-nYa">
+                    <rect key="frame" x="28" y="227" width="110" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.61568627450000002" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="HhD-4X-Hi6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="同意">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="cipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="FhE-KG-meQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKq-U4-ocn">
+                    <rect key="frame" x="175" y="227" width="110" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ayx-Ez-C40"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="拒绝">
+                        <color key="titleColor" red="0.0" green="0.61568627450000002" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="i6w-Wc-T4s"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dk7-l9-3Zq">
+                    <rect key="frame" x="60" y="79" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="IZ1-lb-7Zk"/>
+                        <constraint firstAttribute="width" constant="50" id="kh4-q3-jNH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ui3-Nf-nYa" firstAttribute="width" secondItem="aKq-U4-ocn" secondAttribute="width" id="0fX-iP-qAg"/>
+                <constraint firstAttribute="trailing" secondItem="0xq-IX-dwc" secondAttribute="trailing" constant="35" id="BAS-a4-0q0"/>
+                <constraint firstItem="ui3-Nf-nYa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="227" id="C2D-oa-mEk"/>
+                <constraint firstItem="BAu-uH-BZ3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="79" id="CDs-DE-wco"/>
+                <constraint firstAttribute="centerX" secondItem="bMU-AU-ew9" secondAttribute="centerX" id="EOz-Fk-AYx"/>
+                <constraint firstItem="aKq-U4-ocn" firstAttribute="leading" secondItem="ui3-Nf-nYa" secondAttribute="trailing" constant="37" id="MvA-7F-OOL"/>
+                <constraint firstAttribute="trailing" secondItem="aKq-U4-ocn" secondAttribute="trailing" constant="35" id="R5A-Wo-1GS"/>
+                <constraint firstItem="0xq-IX-dwc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="Tnc-5b-Fas"/>
+                <constraint firstItem="aKq-U4-ocn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="227" id="XD5-NI-GT5"/>
+                <constraint firstItem="bMU-AU-ew9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="89" id="cLx-zA-h0u"/>
+                <constraint firstItem="BAu-uH-BZ3" firstAttribute="leading" secondItem="bMU-AU-ew9" secondAttribute="trailing" constant="11" id="g92-xX-cLv"/>
+                <constraint firstItem="0xq-IX-dwc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="151" id="gEx-Wx-yVB"/>
+                <constraint firstItem="dk7-l9-3Zq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="79" id="h69-kh-JAM"/>
+                <constraint firstItem="bMU-AU-ew9" firstAttribute="leading" secondItem="dk7-l9-3Zq" secondAttribute="trailing" constant="9" id="lsm-94-rby"/>
+                <constraint firstItem="ui3-Nf-nYa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="quF-gL-aZF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLabel" destination="0xq-IX-dwc" id="7eA-oo-n9U"/>
+                <outlet property="marryedAvatar" destination="BAu-uH-BZ3" id="CuO-Yl-35S"/>
+                <outlet property="marryerAvatar" destination="dk7-l9-3Zq" id="ccK-yo-ovQ"/>
+                <outlet property="refusedBtn" destination="aKq-U4-ocn" id="6Tc-Mz-RwZ"/>
+            </connections>
+            <point key="canvasLocation" x="188" y="234.5"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
