@@ -33,14 +33,12 @@
 		04C7CF0A1B31B4FB00FED3DB /* PostInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C7CF091B31B4FB00FED3DB /* PostInfo.m */; };
 		04D1A4301B2C915C005823E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D1A42F1B2C915C005823E4 /* main.m */; };
 		04D1A4331B2C915C005823E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D1A4321B2C915C005823E4 /* AppDelegate.m */; };
-		04D1A43B1B2C915C005823E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D1A43A1B2C915C005823E4 /* Images.xcassets */; };
 		04D1A43E1B2C915C005823E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D1A43C1B2C915C005823E4 /* LaunchScreen.xib */; };
 		04D1A44A1B2C915C005823E4 /* LightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D1A4491B2C915C005823E4 /* LightTests.m */; };
 		04D1A4811B2C944D005823E4 /* blue_login_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D1A4551B2C944D005823E4 /* blue_login_disable@2x.png */; };
 		04D1A4821B2C944D005823E4 /* blue_login_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D1A4561B2C944D005823E4 /* blue_login_highlight@2x.png */; };
 		04D1A4831B2C944D005823E4 /* blue_login_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D1A4571B2C944D005823E4 /* blue_login_normal@2x.png */; };
 		04D1A4841B2C944D005823E4 /* default_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D1A4581B2C944D005823E4 /* default_icon.png */; };
-		04D1A4851B2C944D005823E4 /* login_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04D1A4591B2C944D005823E4 /* login_background.jpg */; };
 		04D1A4A51B2C944D005823E4 /* operationbox_text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D1A47A1B2C944D005823E4 /* operationbox_text@2x.png */; };
 		04D1A4A61B2C944D005823E4 /* Intro01.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D1A47C1B2C944D005823E4 /* Intro01.png */; };
 		04D1A4A71B2C944D005823E4 /* Intro02.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D1A47D1B2C944D005823E4 /* Intro02.png */; };
@@ -48,6 +46,8 @@
 		04D1A4A91B2C944D005823E4 /* Intro04.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D1A47F1B2C944D005823E4 /* Intro04.png */; };
 		04D1A4AA1B2C944D005823E4 /* Intro05.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D1A4801B2C944D005823E4 /* Intro05.png */; };
 		82A48D23DA85FA16C51A39D8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EC1FD83FEC27A3928D6EC6 /* libPods.a */; };
+		BB0DAB891B9AD5A400A85C72 /* login_background.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0DAB881B9AD5A400A85C72 /* login_background.png */; };
+		BB0DAB8B1B9ADDD400A85C72 /* logo@1.5x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB0DAB8A1B9ADDD400A85C72 /* logo@1.5x.png */; };
 		C9381E791B6A5D1000D8C804 /* LightRegPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9381E771B6A5D1000D8C804 /* LightRegPhoneViewController.m */; };
 		C9381E7A1B6A5D1000D8C804 /* LightRegPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9381E781B6A5D1000D8C804 /* LightRegPhoneViewController.xib */; };
 		C9381E7E1B6A636B00D8C804 /* LightRegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9381E7C1B6A636B00D8C804 /* LightRegViewController.m */; };
@@ -387,7 +387,6 @@
 		04D1A42F1B2C915C005823E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04D1A4311B2C915C005823E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04D1A4321B2C915C005823E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04D1A43A1B2C915C005823E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04D1A43D1B2C915C005823E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04D1A4431B2C915C005823E4 /* LightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D1A4481B2C915C005823E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -396,7 +395,6 @@
 		04D1A4561B2C944D005823E4 /* blue_login_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue_login_highlight@2x.png"; sourceTree = "<group>"; };
 		04D1A4571B2C944D005823E4 /* blue_login_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue_login_normal@2x.png"; sourceTree = "<group>"; };
 		04D1A4581B2C944D005823E4 /* default_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_icon.png; sourceTree = "<group>"; };
-		04D1A4591B2C944D005823E4 /* login_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_background.jpg; sourceTree = "<group>"; };
 		04D1A47A1B2C944D005823E4 /* operationbox_text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "operationbox_text@2x.png"; sourceTree = "<group>"; };
 		04D1A47C1B2C944D005823E4 /* Intro01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intro01.png; sourceTree = "<group>"; };
 		04D1A47D1B2C944D005823E4 /* Intro02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intro02.png; sourceTree = "<group>"; };
@@ -405,6 +403,8 @@
 		04D1A4801B2C944D005823E4 /* Intro05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intro05.png; sourceTree = "<group>"; };
 		359C9068AA524CD188EE9486 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B7360CFEED96929D7B7DB565 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BB0DAB881B9AD5A400A85C72 /* login_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_background.png; sourceTree = "<group>"; };
+		BB0DAB8A1B9ADDD400A85C72 /* logo@1.5x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@1.5x.png"; sourceTree = "<group>"; };
 		C9381E761B6A5D1000D8C804 /* LightRegPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LightRegPhoneViewController.h; path = register/LightRegPhoneViewController.h; sourceTree = "<group>"; };
 		C9381E771B6A5D1000D8C804 /* LightRegPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LightRegPhoneViewController.m; path = register/LightRegPhoneViewController.m; sourceTree = "<group>"; };
 		C9381E781B6A5D1000D8C804 /* LightRegPhoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LightRegPhoneViewController.xib; path = register/LightRegPhoneViewController.xib; sourceTree = "<group>"; };
@@ -1217,7 +1217,6 @@
 				04D1A4531B2C944D005823E4 /* resources */,
 				04D1A4311B2C915C005823E4 /* AppDelegate.h */,
 				04D1A4321B2C915C005823E4 /* AppDelegate.m */,
-				04D1A43A1B2C915C005823E4 /* Images.xcassets */,
 				04D1A43C1B2C915C005823E4 /* LaunchScreen.xib */,
 				04D1A42D1B2C915C005823E4 /* Supporting Files */,
 			);
@@ -1282,17 +1281,18 @@
 				C9E7447F1B71210400AA31E8 /* female_blue@2x.png */,
 				C9E744801B71210400AA31E8 /* female_white@2x.png */,
 				C9E744811B71210400AA31E8 /* male_blue@2x.png */,
+				BB0DAB8A1B9ADDD400A85C72 /* logo@1.5x.png */,
 				C9E744821B71210400AA31E8 /* male_white@2x.png */,
 				C9E7447B1B7119BF00AA31E8 /* eyeSee@2x.png */,
 				C9E7447C1B7119BF00AA31E8 /* eyeUnSee@2x.png */,
 				C9381EAB1B6A9EF100D8C804 /* phone_icon.png */,
 				C9381E9C1B6A8C6200D8C804 /* regiser_back@2x.png */,
 				04D1A4551B2C944D005823E4 /* blue_login_disable@2x.png */,
+				BB0DAB881B9AD5A400A85C72 /* login_background.png */,
 				C9381E9A1B6A839D00D8C804 /* email_icon@2x.png */,
 				04D1A4561B2C944D005823E4 /* blue_login_highlight@2x.png */,
 				04D1A4571B2C944D005823E4 /* blue_login_normal@2x.png */,
 				04D1A4581B2C944D005823E4 /* default_icon.png */,
-				04D1A4591B2C944D005823E4 /* login_background.jpg */,
 				C9381E8A1B6A680700D8C804 /* user_icon@2x.png */,
 				C9381E8B1B6A680700D8C804 /* password_icon@2x.png */,
 			);
@@ -2186,6 +2186,7 @@
 				C9E744061B707AB900AA31E8 /* CPYMingLiBaZiTableViewCell.xib in Resources */,
 				C9E3EE501B6F6B13002FBD64 /* DonationView.xib in Resources */,
 				C9381E9B1B6A839D00D8C804 /* email_icon@2x.png in Resources */,
+				BB0DAB891B9AD5A400A85C72 /* login_background.png in Resources */,
 				C9E3EDF61B6EF374002FBD64 /* LoveContentView.xib in Resources */,
 				C9E3EDDE1B6E676C002FBD64 /* left_setting@2x.png in Resources */,
 				C9E744181B7083D100AA31E8 /* left_feedback@2x.png in Resources */,
@@ -2262,6 +2263,7 @@
 				C9DC81C31B6BBD0100BDAA37 /* index_swipe@2x.png in Resources */,
 				C9E3EDB91B6E0E39002FBD64 /* Light服务协议.rtf in Resources */,
 				C9E7449D1B71270B00AA31E8 /* knowledge_32_selected@2x.png in Resources */,
+				BB0DAB8B1B9ADDD400A85C72 /* logo@1.5x.png in Resources */,
 				C9E744B71B719CE500AA31E8 /* MainArticleDetailContentView.xib in Resources */,
 				C9E7441E1B7086C200AA31E8 /* topbarbg_ios7@2x.jpg in Resources */,
 				C9E744BC1B71AFB100AA31E8 /* LoveQiuHunContentView.xib in Resources */,
@@ -2284,7 +2286,6 @@
 				049F3D201B2D5AAC0014F09A /* Default-568h@2x.png in Resources */,
 				C9E3EDFC1B6EF42D002FBD64 /* love2@2x.png in Resources */,
 				C9E3EDC81B6E1602002FBD64 /* LightFPResetPwdViewController.xib in Resources */,
-				04D1A43B1B2C915C005823E4 /* Images.xcassets in Resources */,
 				C9E744EB1B71E8A800AA31E8 /* BindingEmailContentView.xib in Resources */,
 				C9E744C01B71B2D400AA31E8 /* love_ok@2x.png in Resources */,
 				C9E744D41B71C02D00AA31E8 /* QiuHun1ContentView.xib in Resources */,
@@ -2298,7 +2299,6 @@
 				C9E744121B70822500AA31E8 /* left_head_bg@2x.png in Resources */,
 				C9E744A21B71270B00AA31E8 /* same_32_default@2x.png in Resources */,
 				C9381E8C1B6A680700D8C804 /* user_icon@2x.png in Resources */,
-				04D1A4851B2C944D005823E4 /* login_background.jpg in Resources */,
 				C9E3EE3A1B6F5F98002FBD64 /* IndexAboutContentView.xib in Resources */,
 				C9E744321B7092C300AA31E8 /* IndexLeftNotiTableViewCell.xib in Resources */,
 				C9E744861B71210400AA31E8 /* male_white@2x.png in Resources */,

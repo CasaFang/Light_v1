@@ -5,29 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>064E031A-B3D5-4506-9E8B-60A72F4D26E8</string>
+	<string>0C89C9D6-71F3-483B-BFF3-16D6CBE10C60</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Light</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D9AB86894003452EED6136482C991BF4B4381A93</key>
 		<string>https://github.com/CasaFang/Light_v1</string>
-		<key>a97e2a2a-aaa1-e2ae-e683-ce57b7db7bff++7158</key>
-		<string>https://github.com/CasaFang/Light/trunk/Light</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Light.xcworkspace</string>
+	<string>Light.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D9AB86894003452EED6136482C991BF4B4381A93</key>
-		<string>..</string>
-		<key>a97e2a2a-aaa1-e2ae-e683-ce57b7db7bff++7158</key>
-		<string>../../Light%205</string>
-	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>a97e2a2a-aaa1-e2ae-e683-ce57b7db7bff++7158</key>
-		<string>https://github.com/CasaFang/Light</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/CasaFang/Light_v1</string>
@@ -44,14 +35,6 @@
 			<string>D9AB86894003452EED6136482C991BF4B4381A93</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Light_v1</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>a97e2a2a-aaa1-e2ae-e683-ce57b7db7bff++7158</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Light%205</string>
 		</dict>
 	</array>
 </dict>

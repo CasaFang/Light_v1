@@ -30,7 +30,7 @@
 
 - (void)initDeaultValue{
 
-    _placeHolderColor = [UIColor lightGrayColor];
+    _placeHolderColor = [UIColor whiteColor];
 }
 
 // placeholder position
