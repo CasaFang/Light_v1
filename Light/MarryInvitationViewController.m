@@ -32,6 +32,7 @@
     
     [self buildUI];
     
+
     [contentView displayWithNoti:_noti];
     
 }
