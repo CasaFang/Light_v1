@@ -15,6 +15,7 @@ extern NSString *const  LightUserChangeAvatarSuccessNoti;
 
 
 typedef void(^changeNameBlock)(BOOL isSuccess ,NSError *error);
+typedef void(^changeInfoBlock)(BOOL isSuccess ,NSError *error);
 typedef void(^getUserInfoBlock)(BOOL isSuccess ,NSError *error);
 typedef void(^uploadImageBlock)(BOOL isSuccess, NSError *error);
 typedef void(^uploadImageProgressBlock)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite);
@@ -38,5 +39,15 @@ typedef void(^uploadImageProgressBlock)(NSUInteger bytesWritten, long long total
 - (void)changeSociety_gender:(NSInteger )society_gender andBlock:(changeNameBlock )block;
 
 - (void)upLoadAvatarWithImageData:(NSData *)data andBlock:(uploadImageBlock)compeletedBLock andProgressBlock:(uploadImageProgressBlock)progressBlock;
+
+
+- (void)updateEmailWithEmail:(NSString *)email andCompletedBlock:(changeInfoBlock)completedBlock;
+
+- (void)updateEmailWithPhome:(NSString *)phone andCompletedBlock:(changeInfoBlock)completedBlock;
+
+- (void)updatePwdWithNewPwd:(NSString *)newPwd andOriginalPwd:(NSString *)originalPwd andCompletedBlock:(changeInfoBlock)completedBlock;
+
+- (void)updateUserDetailInfoWithCompletedBlock:(changeInfoBlock)completedBlock;
+
 
 @end

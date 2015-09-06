@@ -231,6 +231,11 @@ static NSString *contactCellIdentifier = @"msgContactsTableCellIndentifier";
 #pragma mark -- remote push noti
 - (void)reciveRemotoNoti:(NSNotification *)noti{
     
+    if (self.tableView.tableHeaderView == nil) {
+        
+         [self.tableView setTableHeaderView:newFriendHeadView];
+    }
+    
     NSString *badgeVale = [[noti.object valueForKey:@"aps"] valueForKey:@"badge"];
     
     newFriendHeadView.badgeLabel.text = [NSString stringWithFormat:@"%@",badgeVale];
