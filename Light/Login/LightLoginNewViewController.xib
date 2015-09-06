@@ -43,24 +43,24 @@
                     </constraints>
                 </imageView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="请输入密码" clearsOnBeginEditing="YES" minimumFontSize="10" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kkS-00-joL" customClass="LightTextField">
-                    <rect key="frame" x="64" y="209" width="214" height="26"/>
+                    <rect key="frame" x="64" y="209" width="214" height="25"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="26" id="sEg-F0-0Bv"/>
+                        <constraint firstAttribute="height" constant="25" id="sEg-F0-0Bv"/>
                     </constraints>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="irc-w9-Wxt" userLabel="line2">
-                    <rect key="frame" x="40" y="238" width="240" height="1"/>
+                    <rect key="frame" x="40" y="237" width="240" height="1"/>
                     <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="ZBQ-Cc-otv"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6L4-f3-s3H">
-                    <rect key="frame" x="40" y="291" width="240" height="35"/>
+                    <rect key="frame" x="40" y="290" width="240" height="35"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="hMy-EK-948"/>
@@ -81,7 +81,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1l-LC-40P">
-                    <rect key="frame" x="40" y="341" width="240" height="35"/>
+                    <rect key="frame" x="40" y="340" width="240" height="35"/>
                     <color key="backgroundColor" red="0.0" green="0.61960784310000006" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="rJT-px-Yv4"/>
@@ -115,9 +115,6 @@
                         <action selector="onForgotPasswrod:" destination="-1" eventType="touchUpInside" id="C8G-bs-zKf"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo@1.5x.png" translatesAutoresizingMaskIntoConstraints="NO" id="ydp-Ib-ST6">
-                    <rect key="frame" x="128" y="47" width="60" height="80"/>
-                </imageView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="手机号/邮箱地址" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bdL-aq-rdq" customClass="LightTextField">
                     <rect key="frame" x="64" y="140" width="214" height="25"/>
                     <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -128,6 +125,9 @@
                     <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="12"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo@1.5x.png" translatesAutoresizingMaskIntoConstraints="NO" id="ydp-Ib-ST6">
+                    <rect key="frame" x="130" y="52" width="60" height="80"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

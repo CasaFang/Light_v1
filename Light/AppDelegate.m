@@ -32,7 +32,7 @@
 
 #define RONGCLOUD_IM_APPKEY @"25wehl3uwr33w"//@"pwe86ga5elcq6"
 #define kDeviceToken @"kDeviceToken"
-#define JPushKey @"f4d45570ced0ec2591c75638"
+#define JPushKey @"963d312127bc743b25d0dd2b"
 
 
 

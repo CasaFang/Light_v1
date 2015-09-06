@@ -306,6 +306,7 @@
 		C9E745051B71FE4100AA31E8 /* PhoneEditContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E745041B71FE4100AA31E8 /* PhoneEditContentView.m */; };
 		C9E745071B71FE5000AA31E8 /* PhoneEditContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9E745061B71FE5000AA31E8 /* PhoneEditContentView.xib */; };
 		DC4EDC581B5E0A220056EC40 /* skip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4EDC571B5E0A220056EC40 /* skip@2x.png */; };
+		DCE178391B9CB9010080D8A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE178381B9CB9010080D8A4 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -804,6 +805,7 @@
 		C9E745061B71FE5000AA31E8 /* PhoneEditContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhoneEditContentView.xib; path = "主界面/PhoneEditContentView.xib"; sourceTree = "<group>"; };
 		D8EC1FD83FEC27A3928D6EC6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4EDC571B5E0A220056EC40 /* skip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skip@2x.png"; sourceTree = "<group>"; };
+		DCE178381B9CB9010080D8A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Light/Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1184,6 +1186,7 @@
 		04D1A4211B2C915B005823E4 = {
 			isa = PBXGroup;
 			children = (
+				DCE178381B9CB9010080D8A4 /* Images.xcassets */,
 				044E2AB61B4F5F8200C8AA2D /* framework */,
 				04D1A42C1B2C915C005823E4 /* Light */,
 				04D1A4461B2C915C005823E4 /* LightTests */,
@@ -2136,7 +2139,7 @@
 				TargetAttributes = {
 					04D1A4291B2C915C005823E4 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = MT35RR2SHM;
+						DevelopmentTeam = TS3L5T3FT9;
 					};
 					04D1A4421B2C915C005823E4 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -2216,6 +2219,7 @@
 				C9E7441A1B7083D100AA31E8 /* left_noti@2x.png in Resources */,
 				C9E743EE1B70577A00AA31E8 /* cpy_minli_head@2x.png in Resources */,
 				C9E3EDA01B6DF684002FBD64 /* cpy_peiBanShi@2x.png in Resources */,
+				DCE178391B9CB9010080D8A4 /* Images.xcassets in Resources */,
 				C9E743FE1B707A3B00AA31E8 /* Light星座解密.rtf in Resources */,
 				C9E744A11B71270B00AA31E8 /* msg_32_selected@2x.png in Resources */,
 				C9E743EA1B70533800AA31E8 /* CPYMinLiContentView.xib in Resources */,
@@ -2629,8 +2633,9 @@
 			baseConfigurationReference = B7360CFEED96929D7B7DB565 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yiying Shao (A786KR2YL9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Light",
@@ -2646,7 +2651,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lightdomain.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "64df5595-a64b-4ece-8fc7-c364967ac4e8";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -2657,8 +2662,9 @@
 			baseConfigurationReference = 359C9068AA524CD188EE9486 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: zheng Laixian (MT35RR2SHM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Light",
@@ -2674,7 +2680,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lightdomain.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "64df5595-a64b-4ece-8fc7-c364967ac4e8";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
