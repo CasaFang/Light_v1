@@ -25,6 +25,9 @@ typedef void(^validateBlock)(BOOL isSuccess, NSError *error);
 - (void)registerWithPhoneCode:(NSString *)code
            andCompeletedBlock:(registerBlock)compeletedBLock;
 
+- (void)addRegisterWithPassword:(NSString *)password
+                        andName:(NSString *)name
+             andCompeletedBlock:(AddRegisterBlock)compeletedBlock;
 
 - (void)addRegisterWithPassword:(NSString *)password
                         andName:(NSString *)name

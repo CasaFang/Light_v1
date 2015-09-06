@@ -210,6 +210,46 @@
     }
 }
 
+- (void)addRegisterWithPassword:(NSString *)password andName:(NSString *)name andCompeletedBlock:(AddRegisterBlock)compeletedBlock
+{
+    NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/addInfo.shtml";
+    
+    NSMutableDictionary *parameters = [NSMutableDictionary new];
+    [parameters setValue:[NSNumber numberWithInteger:self.Id] forKey:@"user_id"];
+    [parameters setValue:password forKey:@"pwd"];
+    [parameters setValue:name forKey:@"name"];
+    [parameters  setValue:[NSNumber numberWithInteger:2] forKey:@"society_gender"];
+    [parameters  setValue:[NSNumber numberWithInteger:2] forKey:@"physiology_gender"];
+    
+    
+    [HtttpReques httpRequestWithUlr:server andParameters:parameters andBlock:^(BOOL isSuccess, NSDictionary *resturnDic, NSError *error) {
+        
+        if (isSuccess) {
+            
+            LightValidateCode *validate = [[LightValidateCode alloc]initWithDic:resturnDic];
+            
+            
+            if (validate. result_code == 0) {
+                
+                [self parseData:resturnDic];
+                
+                compeletedBlock(YES,nil);
+            }
+            else
+            {
+                compeletedBlock(NO,[NSError errorWithDomain:validate. result_msg code:validate.result_code userInfo:nil]);
+            }
+        }
+        else
+        {
+            compeletedBlock(NO,error);
+        }
+        
+    }];
+    
+}
+
+
 - (void)addRegisterWithPassword:(NSString *)password andName:(NSString *)name andSociety_gender:(NSInteger)society_gender andCompeletedBlock:(AddRegisterBlock)compeletedBlock
 {
     NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/addInfo.shtml";

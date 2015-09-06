@@ -8,9 +8,11 @@
 
 #import "LightRegUserInfoViewController.h"
 #import "LightRegSexViewController.h"
+#import "LightUser+Register.h"
 #import "LightUser.h"
 #import "UIView+Hud.h"
 #import "NSString+Extention.h"
+#import "AppDelegate.h"
 
 @interface LightRegUserInfoViewController ()
 
@@ -30,6 +32,8 @@
 
 #pragma make lifeCycle
 - (void)viewDidLoad {
+    _passwordTextField.secureTextEntry = YES;
+    _confirmPasswordTextField.secureTextEntry = YES;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -63,7 +67,9 @@
 -(void)onNext:(id)sender{
 
     [self.view endEditing:YES];
-    
+    [self.view showHudWithText:@"正在注册用户信息..."];
+    __weak typeof(self)  weakSelf = self;
+
     user.name = [_nameTextField.text trimWhiteSpace];
     user.password = [_passwordTextField.text trimWhiteSpace];
     NSString *confirmPwd = [_confirmPasswordTextField.text trimWhiteSpace];
@@ -80,11 +86,31 @@
         return;
     }
     
+    /**
     LightRegSexViewController *c = [[LightRegSexViewController alloc]initWithNibName:@"LightRegSexViewController" bundle:nil];
     c.user = user;
     
     [self.navigationController pushViewController:c animated:YES];
+     **/
     
+    //跳过设定性别的环节
+    
+    [user addRegisterWithPassword:user.password andName:user.name andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
+        
+        [weakSelf.view hideHud];
+        
+        if (isSuccess) {
+            
+            AppDelegate * delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            [delegate toLogin];
+            
+        }
+        else
+        {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:error.domain delegate:nil cancelButtonTitle:nil otherButtonTitles:@"知道了", nil];
+            [alert show];
+        }
+    }];
 }
 - (void)onSeePwd:(UIButton *)sender
 {
