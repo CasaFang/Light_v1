@@ -24,8 +24,8 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="54" id="WUK-QC-816"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                    <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WM-iX-VHJ" userLabel="code">
@@ -33,38 +33,17 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="YNS-Bg-gYX"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnx-kB-5uR">
-                    <rect key="frame" x="40" y="215" width="240" height="35"/>
-                    <color key="backgroundColor" red="0.0" green="0.61960784310000006" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="35" id="UKl-ph-d83"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="继续">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="5"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="onNext:" destination="-1" eventType="touchUpInside" id="Bzt-mI-Au8"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ea9-SJ-VUn">
                     <rect key="frame" x="40" y="270" width="240" height="35"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="2pI-Mj-E2a"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
                     <state key="normal" title="取消">
                         <color key="titleColor" red="0.0" green="0.61960784310000006" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,6 +56,27 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="onCancle:" destination="-1" eventType="touchUpInside" id="en2-U4-beL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnx-kB-5uR">
+                    <rect key="frame" x="40" y="215" width="240" height="35"/>
+                    <color key="backgroundColor" red="0.0" green="0.61960784310000006" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="UKl-ph-d83"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                    <state key="normal" title="继续">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onNext:" destination="-1" eventType="touchUpInside" id="Bzt-mI-Au8"/>
                     </connections>
                 </button>
             </subviews>
@@ -93,8 +93,9 @@
                 <constraint firstAttribute="trailing" secondItem="Ea9-SJ-VUn" secondAttribute="trailing" constant="40" id="P4L-xE-QAJ"/>
                 <constraint firstItem="9WM-iX-VHJ" firstAttribute="leading" secondItem="nnQ-Bl-lDn" secondAttribute="leading" constant="40" id="ZfE-IX-W67"/>
                 <constraint firstItem="Ea9-SJ-VUn" firstAttribute="leading" secondItem="nnQ-Bl-lDn" secondAttribute="leading" constant="40" id="dQx-Nq-oNr"/>
+                <constraint firstAttribute="centerX" secondItem="9WM-iX-VHJ" secondAttribute="centerX" id="hhr-Gd-PiU"/>
                 <constraint firstItem="dnx-kB-5uR" firstAttribute="top" secondItem="9WM-iX-VHJ" secondAttribute="bottom" constant="44" id="hnh-Ot-BGW"/>
-                <constraint firstItem="hPH-ia-nGF" firstAttribute="leading" secondItem="nnQ-Bl-lDn" secondAttribute="leading" constant="10" id="uTn-hf-CY5"/>
+                <constraint firstAttribute="centerX" secondItem="hPH-ia-nGF" secondAttribute="centerX" id="qxI-hG-LPp"/>
                 <constraint firstItem="9WM-iX-VHJ" firstAttribute="top" secondItem="hPH-ia-nGF" secondAttribute="bottom" constant="8" id="uwo-p4-F8L"/>
                 <constraint firstItem="dnx-kB-5uR" firstAttribute="leading" secondItem="nnQ-Bl-lDn" secondAttribute="leading" constant="40" id="vn9-zX-ry6"/>
                 <constraint firstAttribute="trailing" secondItem="9WM-iX-VHJ" secondAttribute="trailing" constant="40" id="y4b-dR-R8N"/>
