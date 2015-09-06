@@ -84,23 +84,6 @@
 }
 
 
-/**
- *  重载右边导航按钮的事件
- *
- *  @param sender <#sender description#>
- */
--(void)rightBarButtonItemPressed:(id)sender
-{
-    RCConversationViewController *conversationVC = [[RCConversationViewController alloc]init];
-    conversationVC.conversationType =ConversationType_PRIVATE;
-    conversationVC.targetId = @"2440";
-    conversationVC.userName = @"my";
-    conversationVC.title = @"2440";
-    conversationVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:conversationVC animated:YES];
-
-}
-
 - (void)openConversionWithUser:(LightUser *)user
 {
     RCConversationViewController *conversationVC = [[RCConversationViewController alloc]init];

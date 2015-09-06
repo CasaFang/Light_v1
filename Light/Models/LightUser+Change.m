@@ -316,4 +316,9 @@
     }];
 }
 
+- (void)updateEmailWithEmail:(NSString *)email{
+
+
+}
+
 @end
