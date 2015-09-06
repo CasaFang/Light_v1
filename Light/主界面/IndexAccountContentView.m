@@ -13,6 +13,7 @@
 + (instancetype)initFromNib
 {
     NSArray *arr = [[NSBundle mainBundle] loadNibNamed:@"IndexAccountContentView" owner:self options:nil];
+    
     return arr[0];
 }
 
