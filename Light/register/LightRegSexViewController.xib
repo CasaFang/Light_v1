@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="qne-Rw-MHr" userLabel="bgImageVIew">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="qne-Rw-MHr" userLabel="bgImageVIew">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您稍后可以更改设置" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaH-IZ-UvN">
@@ -168,6 +168,7 @@
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="qne-Rw-MHr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0TO-At-bjZ"/>
                 <constraint firstItem="Y6H-WQ-HjS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="2F5-OG-k5l"/>
                 <constraint firstAttribute="centerX" secondItem="t7w-u4-ENO" secondAttribute="centerX" id="68F-6E-Iho"/>
                 <constraint firstItem="nUY-Av-KzR" firstAttribute="bottom" secondItem="Jsp-p3-yRR" secondAttribute="bottom" id="68e-e9-Zqd"/>
@@ -178,6 +179,7 @@
                 <constraint firstItem="Y6H-WQ-HjS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="155" id="I3N-4T-RVB"/>
                 <constraint firstItem="IRQ-FH-vEQ" firstAttribute="bottom" secondItem="VWG-bZ-vtd" secondAttribute="bottom" id="KC8-Yh-Szn"/>
                 <constraint firstItem="aaH-IZ-UvN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="250" id="PL0-J0-OBg"/>
+                <constraint firstAttribute="trailing" secondItem="qne-Rw-MHr" secondAttribute="trailing" id="S4F-ae-Myd"/>
                 <constraint firstItem="IRQ-FH-vEQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="106" id="TVO-eJ-m21"/>
                 <constraint firstItem="nUY-Av-KzR" firstAttribute="width" secondItem="t7w-u4-ENO" secondAttribute="width" id="Xxp-2V-vNF"/>
                 <constraint firstItem="aaH-IZ-UvN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="b23-RG-yyc"/>
@@ -190,10 +192,12 @@
                 <constraint firstItem="nUY-Av-KzR" firstAttribute="bottom" secondItem="t7w-u4-ENO" secondAttribute="bottom" id="hoI-5f-FLE"/>
                 <constraint firstItem="IRQ-FH-vEQ" firstAttribute="width" secondItem="VWG-bZ-vtd" secondAttribute="width" id="htl-Ru-3ay"/>
                 <constraint firstItem="IRQ-FH-vEQ" firstAttribute="height" secondItem="bo3-9w-Vx1" secondAttribute="height" id="kgC-Wk-1GW"/>
+                <constraint firstAttribute="bottom" secondItem="qne-Rw-MHr" secondAttribute="bottom" id="kjZ-ro-Od2"/>
                 <constraint firstItem="IIo-gI-SZD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="pGx-y3-Sze"/>
                 <constraint firstItem="bo3-9w-Vx1" firstAttribute="leading" secondItem="IRQ-FH-vEQ" secondAttribute="trailing" constant="21" id="rza-Bf-nXQ"/>
                 <constraint firstItem="IRQ-FH-vEQ" firstAttribute="leading" secondItem="VWG-bZ-vtd" secondAttribute="trailing" constant="23" id="vL6-B7-lg7"/>
                 <constraint firstItem="wXI-a8-WdQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="21" id="xZj-nN-drf"/>
+                <constraint firstItem="qne-Rw-MHr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yij-5V-YvG"/>
             </constraints>
             <point key="canvasLocation" x="354" y="152"/>
         </view>

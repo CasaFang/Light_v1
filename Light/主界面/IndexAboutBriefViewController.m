@@ -24,15 +24,7 @@
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"regiser_back"] style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = leftItem;
     
-    
-    UIWebView *textWeb = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, WINSIZE.width, WINSIZE.height-(64))];
-    [self.view addSubview:textWeb];
-    
-    
-    NSURL *rtfUrl = [[NSBundle mainBundle] URLForResource:@"Light 关于" withExtension:@"rtf"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:rtfUrl];
-    [textWeb loadRequest:request];
-
+    [self buildUI];
 }
 
 - (void)buildUI{

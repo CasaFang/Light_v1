@@ -32,13 +32,20 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </imageView>
-                <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BF-Mr-pYn">
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9BF-Mr-pYn">
                     <rect key="frame" x="0.0" y="50" width="320" height="20"/>
                     <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="5ux-g6-z59"/>
+                    </constraints>
                 </view>
-                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkc-yt-PZc">
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkc-yt-PZc">
                     <rect key="frame" x="14" y="2" width="20" height="14"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="LBq-SO-chM"/>
+                        <constraint firstAttribute="height" constant="14" id="MA9-xr-9Aq"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -52,11 +59,16 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="9BF-Mr-pYn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Yj-Xb-SGD"/>
                 <constraint firstItem="BED-HE-fpq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-10" id="5J9-Pa-Cvc"/>
                 <constraint firstItem="8MY-em-ioa" firstAttribute="leading" secondItem="BED-HE-fpq" secondAttribute="trailing" constant="8" id="Gak-gu-9pa"/>
                 <constraint firstItem="8MY-em-ioa" firstAttribute="leading" secondItem="BED-HE-fpq" secondAttribute="trailing" constant="8" id="Kbj-n5-fh4"/>
                 <constraint firstItem="BED-HE-fpq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="27" id="TPb-IV-aeG"/>
+                <constraint firstAttribute="bottom" secondItem="9BF-Mr-pYn" secondAttribute="bottom" id="Vev-3k-pVb"/>
+                <constraint firstItem="gkc-yt-PZc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="YBW-Xn-caQ"/>
+                <constraint firstItem="gkc-yt-PZc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="aBI-ma-N3u"/>
                 <constraint firstItem="BED-HE-fpq" firstAttribute="bottom" secondItem="8MY-em-ioa" secondAttribute="bottom" id="duh-Md-vNw"/>
+                <constraint firstAttribute="trailing" secondItem="9BF-Mr-pYn" secondAttribute="trailing" id="jHN-Ia-zfx"/>
                 <constraint firstItem="BED-HE-fpq" firstAttribute="top" secondItem="8MY-em-ioa" secondAttribute="top" id="oc9-SI-Oar"/>
                 <constraint firstAttribute="trailing" secondItem="8MY-em-ioa" secondAttribute="trailing" constant="21" id="pp2-78-BxT"/>
                 <constraint firstItem="8MY-em-ioa" firstAttribute="centerY" secondItem="BED-HE-fpq" secondAttribute="centerY" id="vIz-vF-CFh"/>

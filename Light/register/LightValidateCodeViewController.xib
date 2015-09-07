@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="SkZ-uF-JYk" userLabel="bgImageVIew">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="SkZ-uF-JYk" userLabel="bgImageVIew">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOj-w0-KGu">
@@ -75,14 +75,18 @@
             <constraints>
                 <constraint firstItem="f9q-Qh-IEG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="81" id="4Y5-Vb-gLx"/>
                 <constraint firstAttribute="trailing" secondItem="vH2-lt-Uy8" secondAttribute="trailing" constant="40" id="61v-c4-yQu"/>
+                <constraint firstItem="SkZ-uF-JYk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dhf-1b-kNU"/>
                 <constraint firstItem="f9q-Qh-IEG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="FKY-ng-TIW"/>
                 <constraint firstItem="XPx-3U-XgE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="G6W-6s-OEJ"/>
                 <constraint firstItem="WOj-w0-KGu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="HXN-CK-cBV"/>
                 <constraint firstItem="XPx-3U-XgE" firstAttribute="top" secondItem="vH2-lt-Uy8" secondAttribute="bottom" constant="34" id="Ubt-I9-AVk"/>
                 <constraint firstAttribute="trailing" secondItem="XPx-3U-XgE" secondAttribute="trailing" constant="40" id="VsQ-i3-yHL"/>
+                <constraint firstAttribute="trailing" secondItem="SkZ-uF-JYk" secondAttribute="trailing" id="YP3-ah-Muq"/>
                 <constraint firstItem="vH2-lt-Uy8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="bDO-AD-dsL"/>
                 <constraint firstItem="vH2-lt-Uy8" firstAttribute="top" secondItem="f9q-Qh-IEG" secondAttribute="bottom" constant="3" id="lg9-3f-foi"/>
+                <constraint firstItem="SkZ-uF-JYk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mab-2W-AWe"/>
                 <constraint firstAttribute="trailing" secondItem="f9q-Qh-IEG" secondAttribute="trailing" constant="40" id="oou-a6-sDC"/>
+                <constraint firstAttribute="bottom" secondItem="SkZ-uF-JYk" secondAttribute="bottom" id="qJa-mI-r48"/>
                 <constraint firstItem="WOj-w0-KGu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="28" id="qw6-8w-Asb"/>
             </constraints>
             <point key="canvasLocation" x="333" y="10"/>

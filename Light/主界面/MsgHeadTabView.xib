@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
@@ -10,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmk-gU-a6c">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmk-gU-a6c">
                     <rect key="frame" x="0.0" y="0.0" width="160" height="49"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                     <state key="normal" title="消息">
@@ -24,7 +25,7 @@
                         <action selector="onMsgBtnClicked:" destination="HTH-n3-2Gi" eventType="touchUpInside" id="7Qf-ed-vrN"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vD5-Be-wPx">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vD5-Be-wPx">
                     <rect key="frame" x="160" y="0.0" width="160" height="50"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                     <state key="normal" title="通讯录">
@@ -38,16 +39,38 @@
                         <action selector="onContactBtnClicked:" destination="HTH-n3-2Gi" eventType="touchUpInside" id="aYD-Nf-Frf"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pP7-Fr-0vM" userLabel="contactTip">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pP7-Fr-0vM" userLabel="contactTip">
                     <rect key="frame" x="160" y="49" width="160" height="1"/>
                     <color key="backgroundColor" red="0.0039215686269999999" green="0.46666666670000001" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="xHd-zu-lGi"/>
+                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVv-QJ-jbf" userLabel="msgTip">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iVv-QJ-jbf" userLabel="msgTip">
                     <rect key="frame" x="0.0" y="49" width="160" height="1"/>
                     <color key="backgroundColor" red="0.0039215686269999999" green="0.46666666670000001" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="6ht-E0-rjy"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zmk-gU-a6c" firstAttribute="leading" secondItem="HTH-n3-2Gi" secondAttribute="leading" id="1i5-kf-fp3"/>
+                <constraint firstAttribute="bottom" secondItem="zmk-gU-a6c" secondAttribute="bottom" constant="1" id="3L0-6U-dHJ"/>
+                <constraint firstItem="iVv-QJ-jbf" firstAttribute="width" secondItem="pP7-Fr-0vM" secondAttribute="width" id="86e-LL-BvR"/>
+                <constraint firstItem="zmk-gU-a6c" firstAttribute="width" secondItem="vD5-Be-wPx" secondAttribute="width" id="AM8-bv-ieF"/>
+                <constraint firstAttribute="bottom" secondItem="iVv-QJ-jbf" secondAttribute="bottom" id="GxG-g2-3v2"/>
+                <constraint firstItem="vD5-Be-wPx" firstAttribute="top" secondItem="HTH-n3-2Gi" secondAttribute="top" id="JOp-gd-FHT"/>
+                <constraint firstAttribute="bottom" secondItem="pP7-Fr-0vM" secondAttribute="bottom" id="LaM-u4-Aeb"/>
+                <constraint firstItem="zmk-gU-a6c" firstAttribute="top" secondItem="HTH-n3-2Gi" secondAttribute="top" id="NkJ-qz-6pU"/>
+                <constraint firstItem="pP7-Fr-0vM" firstAttribute="leading" secondItem="iVv-QJ-jbf" secondAttribute="trailing" id="ZLs-5e-eC7"/>
+                <constraint firstAttribute="bottom" secondItem="vD5-Be-wPx" secondAttribute="bottom" id="ZUp-fK-6Mw"/>
+                <constraint firstAttribute="trailing" secondItem="pP7-Fr-0vM" secondAttribute="trailing" id="bgF-Z5-fF1"/>
+                <constraint firstItem="vD5-Be-wPx" firstAttribute="leading" secondItem="zmk-gU-a6c" secondAttribute="trailing" id="sVv-so-w8W"/>
+                <constraint firstAttribute="trailing" secondItem="vD5-Be-wPx" secondAttribute="trailing" id="uig-nv-Mbf"/>
+                <constraint firstItem="iVv-QJ-jbf" firstAttribute="leading" secondItem="HTH-n3-2Gi" secondAttribute="leading" id="yLw-5k-xfw"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

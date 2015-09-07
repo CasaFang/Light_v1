@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="XAl-Ns-d9x" userLabel="bgImageVIew">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="XAl-Ns-d9x" userLabel="bgImageVIew">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41h-Gl-LFi" userLabel="back">
@@ -149,8 +149,8 @@
                         <action selector="onSeePwd:" destination="-1" eventType="touchUpInside" id="4fT-YX-cbr"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="10" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rrv-KX-U5X" customClass="LightTextField">
-                    <rect key="frame" x="40" y="203" width="212" height="18"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="10" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rrv-KX-U5X" customClass="LightTextField">
+                    <rect key="frame" x="40" y="204" width="212" height="18"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="BKF-qF-4XQ"/>
@@ -173,9 +173,11 @@
                 <constraint firstItem="yQj-MA-NRC" firstAttribute="top" secondItem="SZf-fd-hN9" secondAttribute="bottom" constant="4" id="D10-Q8-ZWE"/>
                 <constraint firstItem="Rrv-KX-U5X" firstAttribute="top" secondItem="7Mx-gs-TBk" secondAttribute="bottom" constant="12" id="Fpu-kI-FgH"/>
                 <constraint firstItem="ZFP-xJ-Ew2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="GQv-wC-0yl"/>
+                <constraint firstAttribute="trailing" secondItem="XAl-Ns-d9x" secondAttribute="trailing" id="HO1-WD-ly5"/>
                 <constraint firstItem="845-in-Kij" firstAttribute="top" secondItem="Rrv-KX-U5X" secondAttribute="bottom" constant="2" id="INO-4a-7Ap"/>
                 <constraint firstItem="l4c-8q-xzl" firstAttribute="top" secondItem="5Dp-i3-4JC" secondAttribute="bottom" constant="12" id="JSg-6C-Qym"/>
                 <constraint firstItem="SZf-fd-hN9" firstAttribute="top" secondItem="o47-X7-kQb" secondAttribute="bottom" constant="14" id="LEC-4E-lHH"/>
+                <constraint firstAttribute="bottom" secondItem="XAl-Ns-d9x" secondAttribute="bottom" id="Lko-pE-32W"/>
                 <constraint firstItem="Rrv-KX-U5X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="M3z-F0-zAH"/>
                 <constraint firstAttribute="trailing" secondItem="l8L-FK-LVq" secondAttribute="trailing" constant="40" id="Mdy-ad-dtO"/>
                 <constraint firstAttribute="trailing" secondItem="ZFP-xJ-Ew2" secondAttribute="trailing" constant="40" id="N8m-bJ-eUD"/>
@@ -185,6 +187,8 @@
                 <constraint firstAttribute="trailing" secondItem="Rrv-KX-U5X" secondAttribute="trailing" constant="68" id="XA2-BU-uAZ"/>
                 <constraint firstItem="l4c-8q-xzl" firstAttribute="top" secondItem="5Dp-i3-4JC" secondAttribute="bottom" constant="12" id="Xmq-uS-Bt4"/>
                 <constraint firstItem="41h-Gl-LFi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="ZxB-St-krl"/>
+                <constraint firstItem="XAl-Ns-d9x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aFO-dP-Xp2"/>
+                <constraint firstItem="XAl-Ns-d9x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cEh-pK-jRX"/>
                 <constraint firstAttribute="trailing" secondItem="uA1-vp-yNW" secondAttribute="trailing" constant="41" id="ds7-fL-cux"/>
                 <constraint firstItem="845-in-Kij" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="f4c-Uu-WwT"/>
                 <constraint firstItem="SZf-fd-hN9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="fj2-e7-BiG"/>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
@@ -108,6 +109,7 @@
                 <constraints>
                     <constraint firstItem="ndD-gP-Mjf" firstAttribute="leading" secondItem="JVc-8X-Up4" secondAttribute="leading" constant="14" id="04M-ta-rnz"/>
                     <constraint firstItem="hp3-pk-yRR" firstAttribute="top" secondItem="JVc-8X-Up4" secondAttribute="top" constant="18" id="1LF-QM-9U2"/>
+                    <constraint firstItem="H2r-RY-ddy" firstAttribute="leading" secondItem="JVc-8X-Up4" secondAttribute="leading" constant="36" id="680-cE-tX0"/>
                     <constraint firstAttribute="bottom" secondItem="H2r-RY-ddy" secondAttribute="bottom" constant="12" id="9Vm-Fd-TJp"/>
                     <constraint firstAttribute="bottom" secondItem="YCs-ik-IlP" secondAttribute="bottom" constant="3" id="BZc-Ir-7aX"/>
                     <constraint firstItem="hp3-pk-yRR" firstAttribute="leading" secondItem="ndD-gP-Mjf" secondAttribute="trailing" constant="23" id="DQ5-i6-FFk"/>
@@ -124,6 +126,11 @@
                     <constraint firstItem="4zO-1m-8TU" firstAttribute="top" secondItem="JVc-8X-Up4" secondAttribute="top" constant="9" id="rGA-44-zTZ"/>
                     <constraint firstAttribute="trailing" secondItem="fCl-mp-52z" secondAttribute="trailing" constant="16" id="y1D-rT-Uj7"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Rrx-ia-02B"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="avatarImageView" destination="ndD-gP-Mjf" id="LEX-gP-Mqn"/>

@@ -78,6 +78,10 @@
     container.backgroundColor = [UIColor whiteColor];
     
     tabView = [MsgHeadTabView initFromNib];
+    CGRect f = tabView.frame;
+    f.size.width = WINSIZE.width;
+    tabView.frame = f;
+    
     tabView.delegate = self;
     [container addSubview:tabView];
     [tabView setSelectedIndex:0];
