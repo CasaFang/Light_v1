@@ -66,7 +66,6 @@
     switch (section) {
         case 0:
         {
-            return;
             BindingPhoneViewController *c = [BindingPhoneViewController new];
             [self.navigationController pushViewController:c animated:YES];
         }
