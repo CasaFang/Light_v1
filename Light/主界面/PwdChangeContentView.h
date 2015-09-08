@@ -8,13 +8,25 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol PwdChangeContentViewDelegate;
 @interface PwdChangeContentView : UIView
 
-@property (weak , nonatomic) IBOutlet UITextField *oldPwdTextField;
 @property (weak , nonatomic) IBOutlet UITextField *nPwdTextField;
 @property (weak , nonatomic) IBOutlet UITextField *confirmPwdTextField;
 
+@property (weak , nonatomic) IBOutlet UIButton  *fistBtn;
+@property (weak , nonatomic) IBOutlet UIButton  *secondBtn;
+
+
+@property (weak , nonatomic) id<PwdChangeContentViewDelegate >delegate;
+
 + (instancetype)initFromNib;
+
+@end
+
+@protocol PwdChangeContentViewDelegate <NSObject>
+
+- (void)pwdChangeContentViewDidCompleted:(PwdChangeContentView *)v;
 
 @end
 

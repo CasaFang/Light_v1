@@ -23,9 +23,14 @@
 
 - (UIAlertView *)showTipAlertWithContent:(NSString *)content
 {
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:content delegate:nil cancelButtonTitle:nil otherButtonTitles:@"知道了", nil];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:content delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
     [alert show];
     return alert;
+}
+
+- (void)showStatus:(NSString *)status{
+
+    [WSProgressHUD showWithStatus:status];
 }
 
 - (void)showProgress:(CGFloat)progress status:(NSString *)status{

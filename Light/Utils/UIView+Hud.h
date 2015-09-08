@@ -13,6 +13,9 @@
 - (void)showHudWithText:(NSString *)text;
 - (void)hideHud;
 
+
+- (void)showStatus:(NSString *)status;
+
 - (UIAlertView *)showTipAlertWithContent:(NSString *)content;
 
 

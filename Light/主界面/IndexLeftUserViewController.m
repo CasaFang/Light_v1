@@ -71,10 +71,18 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (instancetype)weakSelf{
 
+     __weak IndexLeftUserViewController *weakSelf = self;
+    return weakSelf;
+}
 - (void)requestUserInfo{
-
+    
+    __weak typeof(self) weakSelf = self;
+    [self.view showHudWithText:@"在获取用户信息..."];
     [_user getUserInfoWithBlock:^(BOOL isSuccess, NSError *error) {
+        
+        [weakSelf.view hideHud];
         
         if (isSuccess) {
             
@@ -134,12 +142,18 @@
             
             NSString *birthdayStr = [NSString stringWithFormat:@"%ld",(long)_user.birthday];
             
+            if (birthdayStr.length >8) {
+                
+                 birthdayStr = [birthdayStr substringToIndex:8];
+                
+            }
+            if (birthdayStr.length <8) {
+                return;
+            }
             if (birthdayStr.length > 0&&birthdayStr.integerValue != 0) {
                 
                 [pickerView setCurrentDate: [birthdayStr stringToDateWithFormat:@"YYYYMMdd"]];
             }
-            
-            
         }
             break;
         case 2:
@@ -233,6 +247,7 @@
     
     [UIView animateWithDuration:1 animations:^{
         pickerFrame.origin.y = WINSIZE.height - pickerFrame.size.height-64;
+        pickerFrame.size.width = WINSIZE.width;
         pickerView.frame = pickerFrame;
     } completion:^(BOOL finished) {
         
@@ -245,6 +260,7 @@
     
     [UIView animateWithDuration:1 animations:^{
         pickerFrame.origin.y = WINSIZE.height;
+        pickerFrame.size.width = WINSIZE.width;
         pickerView.frame = pickerFrame;
     } completion:^(BOOL finished) {
         

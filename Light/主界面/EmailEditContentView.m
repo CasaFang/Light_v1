@@ -15,4 +15,6 @@
     NSArray *arr = [[NSBundle mainBundle]loadNibNamed:@"EmailEditContentView" owner:self options:nil];
     return arr[0];
 }
+
+
 @end

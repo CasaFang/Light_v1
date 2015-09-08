@@ -52,6 +52,17 @@
             if (validate.result_code == 0) {
                 
                 [self parseData:resturnDic];
+                self.password = password;
+                
+                if ([code isPhoneFormat]) {
+                    
+                    self.phone = code;
+                }
+                else{
+                
+                    self.email = code;
+                }
+                
                 
                 [LightMyShareManager shareUser].owner = self;
                 

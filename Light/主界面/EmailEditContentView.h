@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LightUser+Change.h"
+#import "LightMyShareManager.h"
 
 @interface EmailEditContentView : UIView
 
@@ -15,3 +17,5 @@
 + (instancetype)initFromNib;
 
 @end
+
+

@@ -7,10 +7,20 @@
 //
 
 #import "BindingEmailViewController.h"
-#import "BindingEmailContentView.h"
+#import "UnBindingEmailContentView.h"
 #import "EmailEditViewController.h"
+#import "BindingEmailContentView.h"
+#import "NSString+Extention.h"
+#import "LightUser+Change.h"
+#import "UIView+Hud.h"
+#import "LightUser+Change.h"
+#import "LightMyShareManager.h"
 
-@interface BindingEmailViewController ()
+@interface BindingEmailViewController ()<BindingEmailContentViewDelegate,UnBindingEmailContentViewDelegate,UIAlertViewDelegate>{
+
+    BindingEmailContentView *bindingContentView;
+    UnBindingEmailContentView *unbindingcontentView;
+}
 
 @end
 
@@ -25,10 +35,16 @@
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"regiser_back"] style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = leftItem;
     
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"修改" style:UIBarButtonItemStyleDone target:self action:@selector(edit:)];
-    self.navigationItem.rightBarButtonItem = rightItem;
+    
+    if (_email) {
+        
+        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"修改" style:UIBarButtonItemStyleDone target:self action:@selector(edit:)];
+        self.navigationItem.rightBarButtonItem = rightItem;
+    }
+   
     
     [self buildUI];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,14 +70,84 @@
     container.backgroundColor = [UIColor whiteColor];
     container.alwaysBounceVertical = YES;
     
+    if (_email&&_email.trimWhiteSpace.length >0) {
+        
+        unbindingcontentView = [UnBindingEmailContentView initFromNib];
+        CGRect f = unbindingcontentView.frame;
+        f.size.width = WINSIZE.width;
+        unbindingcontentView.frame = f;
+        
+        [container addSubview:unbindingcontentView];
+        container.contentSize = unbindingcontentView.frame.size;
+    }
+    else{
     
-    BindingEmailContentView *contentView = [BindingEmailContentView initFromNib];
-    CGRect f = contentView.frame;
-    f.size.width = WINSIZE.width;
-    contentView.frame = f;
-    
-    [container addSubview:contentView];
-    container.contentSize = contentView.frame.size;
+        bindingContentView = [BindingEmailContentView initFromNib];
+        CGRect f = bindingContentView.frame;
+        f.size.width = WINSIZE.width;
+        bindingContentView.frame = f;
+        bindingContentView.delegate = self;
+        
+        [container addSubview:bindingContentView];
+        container.contentSize = bindingContentView.frame.size;
+    }
 }
 
+#pragma mark --BindingEmailContentViewDelegate
+
+- (void)bindingEmailContentViewDidBindingEmail:(BindingEmailContentView *)v{
+
+    EmailEditViewController *c = [[EmailEditViewController alloc]init];
+  
+    [self.navigationController pushViewController:c animated:YES];
+    c.title = @"绑定邮箱";
+}
+
+#pragma mark -- UnBindingEmailContentViewDelegate
+- (void)unBindingEmailContentViewDidUnbindingEmail:(UnBindingEmailContentView *)v{
+
+    LightUser *user = [LightMyShareManager shareUser].owner;
+    if (!user.phone) {
+        
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"解绑失败" message:@"您缺少一个账号信息来登录到LIGHT，请先绑定邮箱，再解绑该手机号。" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+        alert.tag = 201;
+        [alert show];
+        
+        return;
+    }
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"解绑手机" message:@"解绑后，您将无法使用此邮箱登陆LIGHT，也无法通过此邮箱找回密码。" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"解绑", nil];
+    alert.tag = 200;
+    [alert show];
+}
+
+
+#pragma mark -- UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+
+    if (alertView.tag == 200) {
+        if (buttonIndex == 1) {
+            
+            [self.view showHudWithText:@"正在解绑邮箱..."];
+            
+            __weak typeof(self) weakSelf = self;
+            LightUser *user = [LightMyShareManager shareUser].owner;
+            
+            [user updateEmailWithEmail:nil andCompletedBlock:^(BOOL isSuccess, NSError *error) {
+                
+                [weakSelf.view hideHud];
+                
+                if (isSuccess) {
+                    
+                     [weakSelf.view showStatus:@"解绑成功"];
+                }
+                else{
+                    
+                    [weakSelf.view showTipAlertWithContent:error.domain];
+                }
+            }];
+
+        }
+    }
+}
 @end

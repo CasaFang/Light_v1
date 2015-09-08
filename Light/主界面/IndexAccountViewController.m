@@ -12,8 +12,14 @@
 #import "PwdChangeViewController.h"
 #import "BindingEmailViewController.h"
 #import "BindingPhoneViewController.h"
+#import "LightUser+Change.h"
+#import "LightMyShareManager.h"
+#import "UIView+Hud.h"
 
-@interface IndexAccountViewController ()<IndexAccountContentViewDelegate>
+@interface IndexAccountViewController ()<IndexAccountContentViewDelegate,UIAlertViewDelegate>
+{
+    IndexAccountContentView *contentView;
+}
 
 @end
 
@@ -28,6 +34,15 @@
     self.navigationItem.leftBarButtonItem = leftItem;
     
     [self buildUI];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changePhoneNoti:) name:LightUserChangePhoneSuccessNoti object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(bindingEmailNoti:) name:LightUserChangeEmailSuccessNoti object:nil];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changPwdNoti:) name:LightUserChangePWDSuccessNoti object:nil];
+    
+    [contentView displayViewUser:[LightMyShareManager shareUser].owner];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,7 +65,7 @@
     container.alwaysBounceVertical = YES;
     
     
-    IndexAccountContentView *contentView = [IndexAccountContentView initFromNib];
+    contentView = [IndexAccountContentView initFromNib];
     CGRect f = contentView.frame;
     f.size.width = WINSIZE.width;
     contentView.frame = f;
@@ -66,7 +81,6 @@
     switch (section) {
         case 0:
         {
-            return;
             BindingPhoneViewController *c = [BindingPhoneViewController new];
             [self.navigationController pushViewController:c animated:YES];
         }
@@ -79,8 +93,10 @@
             break;
         case 2:
         {
-            PwdChangeViewController *c = [PwdChangeViewController new];
-            [self.navigationController pushViewController:c animated:YES];
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"验证原密码" message:@"为了保护您的数据安全，修改前请填写原密码" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+            alert.alertViewStyle = UIAlertViewStyleSecureTextInput;
+            alert.tag = 200;
+            [alert show];
         }
             break;
         case 3:
@@ -89,6 +105,49 @@
         }
             break;
 
+    }
+}
+
+
+#pragma mark -- noti
+- (void)changePhoneNoti:(NSNotification *)noti{
+    
+    [contentView displayViewUser:[LightMyShareManager shareUser].owner];
+    [self.navigationController popToViewController:self animated:YES];
+}
+
+- (void)bindingEmailNoti:(NSNotification *)noti{
+    
+    [contentView displayViewUser:[LightMyShareManager shareUser].owner];
+    
+    [self.navigationController popToViewController:self animated:YES];
+}
+
+- (void)changPwdNoti:(NSNotification *)noti{
+    
+    [self.navigationController popToViewController:self animated:YES];
+}
+
+
+#pragma mark--UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (alertView.tag == 200) {
+        if (buttonIndex == 1) {
+            
+            UITextField *field = [alertView textFieldAtIndex:0];
+            NSString *inputPwd = field.text;
+            
+            if ([inputPwd isEqualToString:[LightMyShareManager shareUser].owner.password]) {
+                
+                PwdChangeViewController *c = [PwdChangeViewController new];
+                [self.navigationController pushViewController:c animated:YES];
+            }
+            else{
+            
+                [self.view showTipAlertWithContent:@"请重新输入密码，如果密码丢失，可推出登录，重新找回密码"];
+            }
+        }
     }
 }
 @end

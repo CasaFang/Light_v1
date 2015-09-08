@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="277"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAu-uH-BZ3">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAu-uH-BZ3">
                     <rect key="frame" x="212" y="79" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="Ufk-8w-6px"/>
@@ -24,7 +24,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bMU-AU-ew9">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bMU-AU-ew9">
                     <rect key="frame" x="119" y="89" width="82" height="29"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="29" id="ShN-nd-0xQ"/>
@@ -81,7 +81,7 @@
                         <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="i6w-Wc-T4s"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dk7-l9-3Zq">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dk7-l9-3Zq">
                     <rect key="frame" x="60" y="79" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="IZ1-lb-7Zk"/>

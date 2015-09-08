@@ -7,10 +7,21 @@
 //
 
 #import "BindingPhoneViewController.h"
+#import "UnBindingPhoneContentView.h"
+#import "PhoneEditViewController.h"
+#import "LightMyShareManager.h"
+#import "LightUser+Change.h"
+#import "UIView+Hud.h"
 #import "BindingPhoneContentView.h"
+#import "NSString+Extention.h"
 #import "PhoneEditViewController.h"
 
-@interface BindingPhoneViewController ()
+@interface BindingPhoneViewController ()<BindingPhoneContentViewDelegate,UIAlertViewDelegate,UnBindingPhoneContentViewDelegate>
+{
+
+    UnBindingPhoneContentView *unbindingcontentView;
+    BindingPhoneContentView   *bindingContentView;
+}
 
 @end
 
@@ -29,7 +40,7 @@
     self.navigationItem.rightBarButtonItem = rightItem;
     
     [self buildUI];
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,14 +66,82 @@
     container.backgroundColor = [UIColor whiteColor];
     container.alwaysBounceVertical = YES;
     
-    
-    BindingPhoneContentView *contentView = [BindingPhoneContentView initFromNib];
-    CGRect f = contentView.frame;
-    f.size.width = WINSIZE.width;
-    contentView.frame = f;
-    
-    [container addSubview:contentView];
-    container.contentSize = contentView.frame.size;
+    if (_phone &&_phone.trimWhiteSpace.length >0) {
+        
+        unbindingcontentView = [UnBindingPhoneContentView initFromNib];
+        CGRect f = unbindingcontentView.frame;
+        f.size.width = WINSIZE.width;
+        unbindingcontentView.frame = f;
+        
+        [container addSubview:unbindingcontentView];
+        container.contentSize = unbindingcontentView.frame.size;
+    }
+    else{
+        
+        bindingContentView = [BindingPhoneContentView initFromNib];
+        CGRect f = bindingContentView.frame;
+        f.size.width = WINSIZE.width;
+        bindingContentView.frame = f;
+        
+        [container addSubview:bindingContentView];
+        container.contentSize = bindingContentView.frame.size;
+    }
+   
 }
 
+#pragma mark --UnBindingPhoneContentViewDelegate
+
+- (void)unbindingPhoneContentViewDidUnbinding:(UnBindingPhoneContentView *)v{
+
+    LightUser *user = [LightMyShareManager shareUser].owner;
+    if (!user.email) {
+        
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"解绑失败" message:@"您缺少一个账号信息来登录到LIGHT，请先绑定手机号，再解绑该邮箱地址。" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+        alert.tag = 201;
+        [alert show];
+        
+        return;
+    }
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"解绑手机" message:@"解绑后，您将无法使用手机号登陆LIGHT，也无法通过此号码找回密码。" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"解绑", nil];
+    alert.tag = 200;
+    [alert show];
+    
+}
+
+#pragma mark --BindingPhoneContentViewDelegate
+- (void)bindingPhoneContentViewDidBinding:(BindingPhoneContentView *)v{
+
+    PhoneEditViewController *c = [PhoneEditViewController new];
+    [self.navigationController pushViewController:c animated:YES];
+}
+
+
+#pragma mark --UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (alertView.tag == 200) {
+        
+        if (buttonIndex == 1) {
+            
+            [self.view showHudWithText:@"正在解绑手机..."];
+            __weak typeof(self) weakSelf = self;
+            
+            [[LightMyShareManager shareUser].owner updatePhoneWithPhone:nil andCompletedBlock:^(BOOL isSuccess, NSError *error) {
+                
+                [weakSelf.view hideHud];
+                
+                if (isSuccess) {
+                    
+                    [weakSelf.view showStatus:@"解绑成功"];
+                }
+                else{
+                    
+                    [weakSelf.view showTipAlertWithContent:error.domain];
+                }
+                
+            }];
+
+        }
+    }
+}
 @end

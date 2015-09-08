@@ -8,8 +8,16 @@
 
 #import "PhoneEditViewController.h"
 #import "PhoneEditContentView.h"
+#import "UIView+Hud.h"
+#import "NSString+Extention.h"
+#import "LightUser+Register.h"
+#import "LightMyShareManager.h"
+#import "LightUser+Change.h"
 
-@interface PhoneEditViewController ()
+@interface PhoneEditViewController ()<UIAlertViewDelegate>
+{
+    PhoneEditContentView *contentView;
+}
 
 @end
 
@@ -23,6 +31,10 @@
     
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"regiser_back"] style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = leftItem;
+    
+    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"继续" style:UIBarButtonItemStylePlain target:self action:@selector(next:)];;
+    self.navigationItem.rightBarButtonItem = rightItem;
     
     [self buildUI];
 
@@ -39,6 +51,30 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)next:(UIButton *)btn{
+    
+    NSString *phone = contentView.phoneTextField.text;
+    
+    if (phone == nil||phone.trimWhiteSpace.length == 0 ) {
+        
+        [self.view showTipAlertWithContent:@"请填写手机号"];
+        return;
+        
+    }
+    if (!phone.isEmailFormat) {
+        
+        [self.view showTipAlertWithContent:@"请填写正确的手机号码"];
+        return;
+    }
+    
+    NSString *content = [NSString stringWithFormat:@"我们将发送验证码到这个号码 +86%@",phone];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"确认手机号" message:content delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"好", nil];
+    alert.tag = 200;
+    [alert show];
+    
+}
+
+
 - (void)buildUI{
     
     UIScrollView *container = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, WINSIZE.width, WINSIZE.height- (64))];
@@ -47,13 +83,47 @@
     container.alwaysBounceVertical = YES;
     
     
-    PhoneEditContentView *contentView = [PhoneEditContentView initFromNib];
+    contentView = [PhoneEditContentView initFromNib];
     CGRect f = contentView.frame;
     f.size.width = WINSIZE.width;
     contentView.frame = f;
     
     [container addSubview:contentView];
     container.contentSize = contentView.frame.size;
+}
+
+#pragma mark --UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+
+    if (alertView.tag == 200) {
+        if (buttonIndex == 1) {
+            
+            
+            [self.view endEditing:YES];
+            
+            [self.view showHudWithText:@"正在请求手机验证码..."];
+            __weak typeof(self)  weakSelf = self;
+            
+             LightUser *user = [LightMyShareManager shareUser].owner;
+            
+            [user registerWithPhoneCode:contentView.phoneTextField.text andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
+                
+                [weakSelf.view hideHud];
+                
+                if (isSuccess) {
+                    
+                   
+                }
+                else
+                {
+                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:error.domain delegate:nil cancelButtonTitle:nil otherButtonTitles:@"知道了", nil];
+                    [alert show];
+                }
+                
+            }];
+
+        }
+    }
 }
 
 @end

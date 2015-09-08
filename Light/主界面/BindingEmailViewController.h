@@ -10,4 +10,6 @@
 
 @interface BindingEmailViewController : UIViewController
 
+@property (strong  , nonatomic) NSString *email;
+
 @end

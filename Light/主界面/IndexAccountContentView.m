@@ -24,4 +24,27 @@
     }
 }
 
+- (void)displayViewUser:(LightUser *)user{
+
+    if (user.phone) {
+        
+        _phoneLabel.text = user.phone;
+        
+    }
+    else {
+    
+        _phoneLabel.text=  @"未绑定";
+    }
+    
+    if (user.email) {
+        
+        _emailLabel.text = user.email;
+        
+    }
+    else {
+        
+        _emailLabel.text=  @"未绑定";
+    }
+}
+
 @end

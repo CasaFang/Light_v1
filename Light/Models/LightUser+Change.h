@@ -11,6 +11,9 @@
 extern NSString *const  LightUserChangeNickNameSuccessNoti;
 extern NSString *const  LightUserChangeSigntureSuccessNoti;
 extern NSString *const  LightUserChangeAvatarSuccessNoti;
+extern NSString *const  LightUserChangePhoneSuccessNoti;
+extern NSString *const  LightUserChangePWDSuccessNoti;
+extern NSString *const  LightUserChangeEmailSuccessNoti;
 
 
 
@@ -42,8 +45,8 @@ typedef void(^uploadImageProgressBlock)(NSUInteger bytesWritten, long long total
 
 
 - (void)updateEmailWithEmail:(NSString *)email andCompletedBlock:(changeInfoBlock)completedBlock;
-
-- (void)updateEmailWithPhome:(NSString *)phone andCompletedBlock:(changeInfoBlock)completedBlock;
+// phone 有值是位绑定， 为空位解绑
+- (void)updatePhoneWithPhone:(NSString *)phone andCompletedBlock:(changeInfoBlock)completedBlock;
 
 - (void)updatePwdWithNewPwd:(NSString *)newPwd andOriginalPwd:(NSString *)originalPwd andCompletedBlock:(changeInfoBlock)completedBlock;
 

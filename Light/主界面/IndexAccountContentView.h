@@ -7,12 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LightUser.h"
 @protocol IndexAccountContentViewDelegate ;
 @interface IndexAccountContentView : UIView
 
 @property (weak , nonatomic) id<IndexAccountContentViewDelegate > delegate;
 
+@property (weak , nonatomic) IBOutlet UILabel *phoneLabel;
+@property (weak , nonatomic) IBOutlet UILabel *emailLabel;
+@property (weak , nonatomic) IBOutlet UILabel *Label;
+
 - (IBAction)onClicked:(UIControl *)sender;
+
+- (void)displayViewUser:(LightUser *)user;
 
 + (instancetype)initFromNib;
 

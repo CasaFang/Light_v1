@@ -55,4 +55,9 @@
 #endif
 
 
+#define WeakSelf(a) {\
+    __weak typeof(a) weakSelf = self;\
+     weakSelf;\
+}
+
 #endif
