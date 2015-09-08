@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -16,7 +16,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niS-3V-5pg" userLabel="账户绑定">
                     <rect key="frame" x="-1" y="0.0" width="320" height="30"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户绑定" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxC-nn-NYw">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxC-nn-NYw">
                             <rect key="frame" x="8" y="4" width="304" height="21"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,47 +38,6 @@
                         <constraint firstAttribute="height" constant="1" id="iSF-Nd-oB7"/>
                     </constraints>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Hz-9g-oji" userLabel="手机号" customClass="LightControl">
-                    <rect key="frame" x="-1" y="31" width="320" height="45"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFD-4O-44W">
-                            <rect key="frame" x="37" y="12" width="61" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="61" id="yy4-XI-u2z"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="139154119876" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxr-rs-eVp">
-                            <rect key="frame" x="132" y="12" width="163" height="21"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
-                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="erD-2Q-gdm">
-                            <rect key="frame" x="303" y="15" width="9" height="15"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="9" id="oMT-7W-cNR"/>
-                            </constraints>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="Uxr-rs-eVp" firstAttribute="top" secondItem="eFD-4O-44W" secondAttribute="top" id="1eE-0C-LZC"/>
-                        <constraint firstItem="eFD-4O-44W" firstAttribute="leading" secondItem="0Hz-9g-oji" secondAttribute="leading" constant="37" id="AFz-em-xKx"/>
-                        <constraint firstItem="Uxr-rs-eVp" firstAttribute="centerY" secondItem="0Hz-9g-oji" secondAttribute="centerY" id="Dxt-om-2Aw"/>
-                        <constraint firstItem="eFD-4O-44W" firstAttribute="top" secondItem="0Hz-9g-oji" secondAttribute="top" constant="12" id="DzD-8Z-zxW"/>
-                        <constraint firstItem="eFD-4O-44W" firstAttribute="baseline" secondItem="Uxr-rs-eVp" secondAttribute="baseline" id="PGN-lC-Q7A"/>
-                        <constraint firstItem="Uxr-rs-eVp" firstAttribute="leading" secondItem="eFD-4O-44W" secondAttribute="trailing" constant="34" id="UPy-2I-Hyk"/>
-                        <constraint firstItem="erD-2Q-gdm" firstAttribute="trailing" secondItem="0Hz-9g-oji" secondAttribute="trailingMargin" id="ddK-W6-0B1"/>
-                        <constraint firstItem="erD-2Q-gdm" firstAttribute="leading" secondItem="Uxr-rs-eVp" secondAttribute="trailing" constant="8" symbolic="YES" id="e8Y-8E-bM5"/>
-                        <constraint firstItem="erD-2Q-gdm" firstAttribute="centerY" secondItem="Uxr-rs-eVp" secondAttribute="centerY" id="sLC-j0-bTJ"/>
-                    </constraints>
-                    <connections>
-                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="faA-ip-9Zw"/>
-                    </connections>
-                </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RaJ-9Z-1Sn" userLabel="line2">
                     <rect key="frame" x="-4" y="76" width="326" height="1"/>
                     <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -171,18 +130,18 @@
                             <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6j-Eq-yjk">
-                            <rect key="frame" x="132" y="12" width="163" height="21"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="1YO-Jw-Dwe">
                             <rect key="frame" x="303" y="15" width="9" height="15"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="9" id="KCY-NE-9Zi"/>
                             </constraints>
                         </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6j-Eq-yjk">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -280,6 +239,47 @@
                         <constraint firstAttribute="height" constant="1" id="QRK-k4-Pf9"/>
                     </constraints>
                 </imageView>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Hz-9g-oji" userLabel="手机号" customClass="LightControl">
+                    <rect key="frame" x="-1" y="32" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFD-4O-44W">
+                            <rect key="frame" x="37" y="12" width="61" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="61" id="yy4-XI-u2z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cpy_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="erD-2Q-gdm">
+                            <rect key="frame" x="303" y="15" width="9" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="9" id="oMT-7W-cNR"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxr-rs-eVp">
+                            <rect key="frame" x="132" y="12" width="163" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.45098039220000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Uxr-rs-eVp" firstAttribute="top" secondItem="eFD-4O-44W" secondAttribute="top" id="1eE-0C-LZC"/>
+                        <constraint firstItem="eFD-4O-44W" firstAttribute="leading" secondItem="0Hz-9g-oji" secondAttribute="leading" constant="37" id="AFz-em-xKx"/>
+                        <constraint firstItem="Uxr-rs-eVp" firstAttribute="centerY" secondItem="0Hz-9g-oji" secondAttribute="centerY" id="Dxt-om-2Aw"/>
+                        <constraint firstItem="eFD-4O-44W" firstAttribute="top" secondItem="0Hz-9g-oji" secondAttribute="top" constant="12" id="DzD-8Z-zxW"/>
+                        <constraint firstItem="eFD-4O-44W" firstAttribute="baseline" secondItem="Uxr-rs-eVp" secondAttribute="baseline" id="PGN-lC-Q7A"/>
+                        <constraint firstItem="Uxr-rs-eVp" firstAttribute="leading" secondItem="eFD-4O-44W" secondAttribute="trailing" constant="34" id="UPy-2I-Hyk"/>
+                        <constraint firstItem="erD-2Q-gdm" firstAttribute="trailing" secondItem="0Hz-9g-oji" secondAttribute="trailingMargin" id="ddK-W6-0B1"/>
+                        <constraint firstItem="erD-2Q-gdm" firstAttribute="leading" secondItem="Uxr-rs-eVp" secondAttribute="trailing" constant="8" symbolic="YES" id="e8Y-8E-bM5"/>
+                        <constraint firstItem="erD-2Q-gdm" firstAttribute="centerY" secondItem="Uxr-rs-eVp" secondAttribute="centerY" id="sLC-j0-bTJ"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="faA-ip-9Zw"/>
+                    </connections>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

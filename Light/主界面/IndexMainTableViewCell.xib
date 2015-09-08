@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -15,10 +15,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9xY-ix-AYd">
-                        <rect key="frame" x="8" y="8" width="304" height="154"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJ8-1e-iSP">
-                        <rect key="frame" x="21" y="128" width="282" height="29"/>
+                        <rect key="frame" x="10" y="128" width="300" height="29"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="29" id="qIv-x2-MdE"/>
                         </constraints>
@@ -31,11 +31,11 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="9xY-ix-AYd" secondAttribute="bottom" constant="7" id="L2a-Rs-HwA"/>
                     <constraint firstAttribute="bottom" secondItem="eJ8-1e-iSP" secondAttribute="bottom" constant="12" id="O89-zh-3At"/>
-                    <constraint firstAttribute="trailing" secondItem="eJ8-1e-iSP" secondAttribute="trailing" constant="17" id="SPS-Tf-fVU"/>
-                    <constraint firstItem="9xY-ix-AYd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="U1g-Qn-t1y"/>
-                    <constraint firstItem="9xY-ix-AYd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="lPF-17-hBN"/>
-                    <constraint firstAttribute="trailing" secondItem="9xY-ix-AYd" secondAttribute="trailing" constant="8" id="mw9-uN-DPi"/>
-                    <constraint firstItem="eJ8-1e-iSP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="tNH-TL-gGO"/>
+                    <constraint firstAttribute="trailing" secondItem="eJ8-1e-iSP" secondAttribute="trailing" constant="10" id="SPS-Tf-fVU"/>
+                    <constraint firstItem="9xY-ix-AYd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="U1g-Qn-t1y"/>
+                    <constraint firstItem="9xY-ix-AYd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lPF-17-hBN"/>
+                    <constraint firstAttribute="trailing" secondItem="9xY-ix-AYd" secondAttribute="trailing" id="mw9-uN-DPi"/>
+                    <constraint firstItem="eJ8-1e-iSP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tNH-TL-gGO"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -43,7 +43,7 @@
                 <outlet property="avatarImageView" destination="9xY-ix-AYd" id="cah-2d-8Fg"/>
                 <outlet property="titleLabel" destination="eJ8-1e-iSP" id="Vkb-LX-zAS"/>
             </connections>
-            <point key="canvasLocation" x="288" y="450.5"/>
+            <point key="canvasLocation" x="288" y="450"/>
         </tableViewCell>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
