@@ -8,6 +8,7 @@
 
 #import "PhoneEditViewController.h"
 #import "PhoneEditContentView.h"
+#import "PhoneValidateViewController.h"
 #import "UIView+Hud.h"
 #import "NSString+Extention.h"
 #import "LightUser+Register.h"
@@ -61,7 +62,7 @@
         return;
         
     }
-    if (!phone.isEmailFormat) {
+    if (!phone.isPhoneFormat) {
         
         [self.view showTipAlertWithContent:@"请填写正确的手机号码"];
         return;
@@ -112,7 +113,10 @@
                 
                 if (isSuccess) {
                     
-                   
+                    NSLog(@"go to PhoneValidate");
+                    PhoneValidateViewController *c = [PhoneValidateViewController new];
+                    [self.navigationController pushViewController:c animated:YES];
+
                 }
                 else
                 {

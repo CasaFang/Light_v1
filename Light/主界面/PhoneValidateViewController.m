@@ -7,15 +7,15 @@
 //
 
 #import "PhoneValidateViewController.h"
-#import "EmailValidateContentView.h"
+#import "PhoneValidateContentView.h"
 #import "LightMyShareManager.h"
 #import "LightUser+Change.h"
 #import "LightUser+Register.h"
 #import "UIView+Hud.h"
 
-@interface PhoneValidateViewController ()<EmailValidateContentViewDelegate>{
+@interface PhoneValidateViewController ()<PhoneValidateContentViewDelegate>{
 
-    EmailValidateContentView *contentView;
+    PhoneValidateContentView *contentView;
 }
 
 @end
@@ -52,7 +52,7 @@
     container.alwaysBounceVertical = YES;
     
     
-    contentView = [EmailValidateContentView initFromNib];
+    contentView = [PhoneValidateContentView initFromNib];
     CGRect f = contentView.frame;
     f.size.width = WINSIZE.width;
     contentView.frame = f;
@@ -62,8 +62,8 @@
     container.contentSize = contentView.frame.size;
 }
 
-#pragma mark --EmailValidateContentViewDelegate
-- (void)emailValidateContentViewDidBinding:(EmailValidateContentView *)view{
+#pragma mark --PhoneValidateContentViewDelegate
+- (void)phoneValidateContentViewDidBinding:(PhoneValidateContentView *)view{
     
     LightUser *user = [LightMyShareManager shareUser].owner;
     
@@ -82,7 +82,19 @@
                 [weakSelf.view hideHud];
                 
                 if (isSuccess) {
-                    
+                    [[LightMyShareManager shareUser].owner changeNameWithNewName:contentView. andBlock:^(BOOL isSuccess, NSError *error) {
+                        
+                        [self.view hideHud];
+                        if (isSuccess) {
+                            
+                            [self.navigationController popViewControllerAnimated:YES];
+                            
+                        }
+                        else{
+                            
+                            [self.view showTipAlertWithContent:error.domain];
+                        }
+                    }];
                 }
                 else{
                 
