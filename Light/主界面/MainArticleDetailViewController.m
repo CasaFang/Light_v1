@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor=[UIColor whiteColor];
     [self buildUI];
     
 }
@@ -52,7 +52,7 @@
 #pragma mark -- actions
 - (void)buildUI{
     
-    UIScrollView *container = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, WINSIZE.width, WINSIZE.height)];
+    UIScrollView *container = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 20, WINSIZE.width, WINSIZE.height)];
     [self.view addSubview:container];
     container.backgroundColor = [UIColor whiteColor];
     container.alwaysBounceVertical = YES;
