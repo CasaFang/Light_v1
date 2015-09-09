@@ -68,20 +68,22 @@
     
      __weak typeof(self) weakSelf = self;
     
-    [user validateCodeWithCode:contentView.codeTextField.text checkType:3 andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
+    [user validateCodeWithCode:contentView.codeTextField.text checkType:1 andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
         
         [weakSelf.view hideHud];
         
         if (isSuccess) {
             
             [self.view showHudWithText:@"正在绑定邮箱..."];
-            
+            NSLog(_email);
             [user updateEmailWithEmail:_email andCompletedBlock:^(BOOL isSuccess, NSError *error) {
                 
                 [weakSelf.view hideHud];
                 
                 if (isSuccess) {
-                    
+                    [self.view showHudWithText:@"绑定成功"];
+                    [weakSelf.navigationController popToRootViewControllerAnimated:YES];
+
                 }
                 else{
                     

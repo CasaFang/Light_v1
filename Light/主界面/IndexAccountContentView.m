@@ -7,6 +7,8 @@
 //
 
 #import "IndexAccountContentView.h"
+#import "BindingEmailContentView.h"
+#import "BindingPhoneContentView.h"
 
 @implementation IndexAccountContentView
 

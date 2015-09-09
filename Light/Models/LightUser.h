@@ -21,7 +21,10 @@
 @property (strong , nonatomic) NSString   *sigNature;
 
 
-
+//用户的手机号
+@property (strong , nonatomic) NSString   *phone;
+//用户的邮箱
+@property (strong , nonatomic) NSString   *email;
 
 // 用户注册用的密码
 @property (strong , nonatomic) NSString   *password;

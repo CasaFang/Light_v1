@@ -12,7 +12,7 @@
 @interface UnBindingEmailContentView : UIView
 
 @property (weak , nonatomic) IBOutlet UIButton *btn;
-@property (weak , nonatomic) IBOutlet UITextField *phoneTextField;
+@property (weak , nonatomic) IBOutlet UITextField *emailTextField;
 
 @property (weak , nonatomic) id<UnBindingEmailContentViewDelegate >delegate;
 

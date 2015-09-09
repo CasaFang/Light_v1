@@ -18,11 +18,9 @@
 
 
 - (IBAction)onClicked:(id)sender{
-
     if ([_delegate respondsToSelector:@selector(bindingPhoneContentViewDidBinding:)])
     {
-        [_delegate bindingPhoneContentViewDidBinding:self
-         ];
+        [_delegate bindingPhoneContentViewDidBinding:self];
     }
 }
 @end

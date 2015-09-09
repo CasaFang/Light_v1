@@ -82,19 +82,8 @@
                 [weakSelf.view hideHud];
                 
                 if (isSuccess) {
-                    [[LightMyShareManager shareUser].owner changeNameWithNewName:contentView. andBlock:^(BOOL isSuccess, NSError *error) {
-                        
-                        [self.view hideHud];
-                        if (isSuccess) {
-                            
-                            [self.navigationController popViewControllerAnimated:YES];
-                            
-                        }
-                        else{
-                            
-                            [self.view showTipAlertWithContent:error.domain];
-                        }
-                    }];
+                    [self.view showHudWithText:@"绑定成功"];
+                    [weakSelf.navigationController popToRootViewControllerAnimated:YES];
                 }
                 else{
                 

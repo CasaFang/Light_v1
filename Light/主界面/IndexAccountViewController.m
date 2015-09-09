@@ -81,13 +81,19 @@
     switch (section) {
         case 0:
         {
-            BindingPhoneViewController *c = [BindingPhoneViewController new];
+            BindingPhoneViewController *c = [[BindingPhoneViewController alloc]init];
+            if(![contentView.phoneLabel.text isEqualToString:@"未绑定"]){
+                c.phone=contentView.phoneLabel.text;
+            }
             [self.navigationController pushViewController:c animated:YES];
         }
             break;
         case 1:
         {
-            BindingEmailViewController *c = [BindingEmailViewController new];
+            BindingEmailViewController *c = [[BindingEmailViewController alloc]init];
+            if(![contentView.emailLabel.text isEqualToString:@"未绑定"]){
+                c.email=contentView.emailLabel.text;
+            }
             [self.navigationController pushViewController:c animated:YES];
         }
             break;
