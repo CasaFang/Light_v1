@@ -68,7 +68,7 @@
     
      __weak typeof(self) weakSelf = self;
     
-    [user validateCodeWithCode:contentView.codeTextField.text checkType:1 andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
+    [user validateCodeWithCode:contentView.codeTextField.text checkType:3 andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
         
         [weakSelf.view hideHud];
         

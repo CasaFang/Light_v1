@@ -312,12 +312,14 @@
 		C9EDADC61B9EC45400CE99A0 /* BindingPhoneContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9EDADC51B9EC45400CE99A0 /* BindingPhoneContentView.xib */; };
 		C9EDADC91B9EC6F400CE99A0 /* BindingEmailContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EDADC81B9EC6F400CE99A0 /* BindingEmailContentView.m */; };
 		C9EDADCB1B9EC70300CE99A0 /* BindingEmailContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9EDADCA1B9EC70300CE99A0 /* BindingEmailContentView.xib */; };
-		C9EDADCE1B9EC83A00CE99A0 /* left_email.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EDADCC1B9EC83A00CE99A0 /* left_email.png */; };
 		C9EDADCF1B9EC83A00CE99A0 /* left_phone.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EDADCD1B9EC83A00CE99A0 /* left_phone.png */; };
 		C9EDADD31B9ECE5800CE99A0 /* EmailValidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EDADD21B9ECE5800CE99A0 /* EmailValidateViewController.m */; };
 		C9EDADD61B9ECE7700CE99A0 /* EmailValidateContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EDADD51B9ECE7700CE99A0 /* EmailValidateContentView.m */; };
 		C9EDADD81B9ECE8900CE99A0 /* EmailValidateContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9EDADD71B9ECE8900CE99A0 /* EmailValidateContentView.xib */; };
 		DC4EDC581B5E0A220056EC40 /* skip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4EDC571B5E0A220056EC40 /* skip@2x.png */; };
+		DC802A221B9F5D170094EE03 /* left_email.png in Resources */ = {isa = PBXBuildFile; fileRef = DC802A211B9F5D170094EE03 /* left_email.png */; };
+		DC802A281B9F61020094EE03 /* PhoneValidateContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC802A271B9F61020094EE03 /* PhoneValidateContentView.m */; };
+		DC802A2C1B9F61FE0094EE03 /* PhoneValidateContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC802A2B1B9F61FE0094EE03 /* PhoneValidateContentView.xib */; };
 		DCE178391B9CB9010080D8A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE178381B9CB9010080D8A4 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -825,7 +827,6 @@
 		C9EDADC71B9EC6F400CE99A0 /* BindingEmailContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BindingEmailContentView.h; path = "主界面/BindingEmailContentView.h"; sourceTree = "<group>"; };
 		C9EDADC81B9EC6F400CE99A0 /* BindingEmailContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BindingEmailContentView.m; path = "主界面/BindingEmailContentView.m"; sourceTree = "<group>"; };
 		C9EDADCA1B9EC70300CE99A0 /* BindingEmailContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BindingEmailContentView.xib; path = "主界面/BindingEmailContentView.xib"; sourceTree = "<group>"; };
-		C9EDADCC1B9EC83A00CE99A0 /* left_email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_email.png; sourceTree = "<group>"; };
 		C9EDADCD1B9EC83A00CE99A0 /* left_phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_phone.png; sourceTree = "<group>"; };
 		C9EDADD11B9ECE5800CE99A0 /* EmailValidateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmailValidateViewController.h; path = "主界面/EmailValidateViewController.h"; sourceTree = "<group>"; };
 		C9EDADD21B9ECE5800CE99A0 /* EmailValidateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmailValidateViewController.m; path = "主界面/EmailValidateViewController.m"; sourceTree = "<group>"; };
@@ -834,6 +835,10 @@
 		C9EDADD71B9ECE8900CE99A0 /* EmailValidateContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmailValidateContentView.xib; path = "主界面/EmailValidateContentView.xib"; sourceTree = "<group>"; };
 		D8EC1FD83FEC27A3928D6EC6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4EDC571B5E0A220056EC40 /* skip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skip@2x.png"; sourceTree = "<group>"; };
+		DC802A211B9F5D170094EE03 /* left_email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_email.png; sourceTree = "<group>"; };
+		DC802A261B9F61020094EE03 /* PhoneValidateContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhoneValidateContentView.h; path = "主界面/PhoneValidateContentView.h"; sourceTree = "<group>"; };
+		DC802A271B9F61020094EE03 /* PhoneValidateContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhoneValidateContentView.m; path = "主界面/PhoneValidateContentView.m"; sourceTree = "<group>"; };
+		DC802A2B1B9F61FE0094EE03 /* PhoneValidateContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhoneValidateContentView.xib; path = "主界面/PhoneValidateContentView.xib"; sourceTree = "<group>"; };
 		DCE178381B9CB9010080D8A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Light/Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1612,7 +1617,7 @@
 			children = (
 				C9E7EF8A1B9F26FC0003ABD1 /* left_eye@2x.png */,
 				C9E7EF8B1B9F26FC0003ABD1 /* left_eyebrown@2x.png */,
-				C9EDADCC1B9EC83A00CE99A0 /* left_email.png */,
+				DC802A211B9F5D170094EE03 /* left_email.png */,
 				C9EDADCD1B9EC83A00CE99A0 /* left_phone.png */,
 				C9DAA5F11B95F84F00545D21 /* 捐助.jpg */,
 				C9E744111B70822500AA31E8 /* left_head_bg@2x.png */,
@@ -2134,6 +2139,9 @@
 			children = (
 				C9E7EF801B9F22DE0003ABD1 /* PhoneValidateViewController.h */,
 				C9E7EF811B9F22DE0003ABD1 /* PhoneValidateViewController.m */,
+				DC802A261B9F61020094EE03 /* PhoneValidateContentView.h */,
+				DC802A271B9F61020094EE03 /* PhoneValidateContentView.m */,
+				DC802A2B1B9F61FE0094EE03 /* PhoneValidateContentView.xib */,
 			);
 			name = "手机号验证";
 			sourceTree = "<group>";
@@ -2293,6 +2301,7 @@
 				C9DB05461B836ABF004BC7C4 /* NeedPeopleDetailContentView.xib in Resources */,
 				C9E3EE3C1B6F5FEE002FBD64 /* about@2x.png in Resources */,
 				C9E7449E1B71270B00AA31E8 /* love_32_defalut@2x.png in Resources */,
+				DC802A2C1B9F61FE0094EE03 /* PhoneValidateContentView.xib in Resources */,
 				C9E7447E1B7119BF00AA31E8 /* eyeUnSee@2x.png in Resources */,
 				C9E7EF8D1B9F26FC0003ABD1 /* left_eyebrown@2x.png in Resources */,
 				C9E58D441B9317AC00D85071 /* IndexMainNPCSTableViewCell.xib in Resources */,
@@ -2354,7 +2363,6 @@
 				C9E3EDA31B6DF684002FBD64 /* cpy_lvShi@2x.png in Resources */,
 				C9E744851B71210400AA31E8 /* male_blue@2x.png in Resources */,
 				C9E744A31B71270B00AA31E8 /* same_32_selected@2x.png in Resources */,
-				C9EDADCE1B9EC83A00CE99A0 /* left_email.png in Resources */,
 				049F3D201B2D5AAC0014F09A /* Default-568h@2x.png in Resources */,
 				C9E3EDFC1B6EF42D002FBD64 /* love2@2x.png in Resources */,
 				C9E3EDC81B6E1602002FBD64 /* LightFPResetPwdViewController.xib in Resources */,
@@ -2367,6 +2375,7 @@
 				C9E744A81B712AE400AA31E8 /* point_default@2x.png in Resources */,
 				04D1A4A71B2C944D005823E4 /* Intro02.png in Resources */,
 				C9E7448C1B71218D00AA31E8 /* male_btn@2x.png in Resources */,
+				DC802A221B9F5D170094EE03 /* left_email.png in Resources */,
 				C9E7440B1B707ADD00AA31E8 /* CPYMingLiTaLuoTableViewCell.xib in Resources */,
 				048385111B2F2C0500ED7693 /* LightRegSexViewController.xib in Resources */,
 				C9E744121B70822500AA31E8 /* left_head_bg@2x.png in Resources */,
@@ -2482,6 +2491,7 @@
 				C9E744E11B71E81200AA31E8 /* UnBindingPhoneContentView.m in Sources */,
 				048384ED1B2F09F800ED7693 /* LightTableViewCell.m in Sources */,
 				C9E3EE211B6F23D5002FBD64 /* IndexLeftUserContentView.m in Sources */,
+				DC802A281B9F61020094EE03 /* PhoneValidateContentView.m in Sources */,
 				048384E31B2D64BF00ED7693 /* LightValidateCode.m in Sources */,
 				C9381E911B6A799900D8C804 /* LightUser.m in Sources */,
 				C9E3EDEA1B6E6E85002FBD64 /* IndexSettingViewController.m in Sources */,
@@ -2636,6 +2646,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -2681,7 +2692,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -2708,7 +2720,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: zheng Laixian (597K7ZRE8U)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2723,9 +2735,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Light/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Lightdomain.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wearelight.light;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5a578224-d452-403f-bc81-278cfd254887";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -2752,9 +2764,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Light/JPush",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Lightdomain.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wearelight.light;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5a578224-d452-403f-bc81-278cfd254887";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -2776,7 +2788,7 @@
 				);
 				INFOPLIST_FILE = LightTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Lightdomain.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearelight.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Light.app/Light";
@@ -2795,7 +2807,7 @@
 				);
 				INFOPLIST_FILE = LightTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Lightdomain.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearelight.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Light.app/Light";

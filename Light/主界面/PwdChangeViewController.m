@@ -95,7 +95,7 @@
        
         [weakSelf.view hideHud];
         if (isSuccess) {
-            
+            [weakSelf.navigationController popToRootViewControllerAnimated:YES];
         }
         else{
         
