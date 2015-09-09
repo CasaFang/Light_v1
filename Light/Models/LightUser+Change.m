@@ -13,6 +13,9 @@
  NSString *const  LightUserChangeNickNameSuccessNoti = @"LightUserChangeNickNameSuccessNoti";
  NSString *const  LightUserChangeSigntureSuccessNoti = @"LightUserChangeSigntureSuccessNoti";
  NSString *const  LightUserChangeAvatarSuccessNoti   = @"LightUserChangeAvatarSuccessNoti";
+ NSString *const  LightUserChangePhoneSuccessNoti = @"LightUserChangePhoneSuccessNoti";
+ NSString *const  LightUserChangeEmailSuccessNoti = @"LightUserChangeEmailSuccessNoti";
+ NSString *const  LightUserChangePWDSuccessNoti = @"LightUserChangePWDSuccessNoti";
 
 
 
@@ -316,8 +319,112 @@
     }];
 }
 
-- (void)updateEmailWithEmail:(NSString *)email{
+- (void)updateEmailWithEmail:(NSString *)email andCompletedBlock:(changeInfoBlock)completedBlock
+{
 
+    NSMutableDictionary *parameters = [NSMutableDictionary new];
+    [parameters setValue:[NSNumber numberWithInteger:self.Id] forKey:@"id"];
+    
+    [parameters setValue:email forKey:@"email"];
+    
+    NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/changeEmail.shtml";
+    
+    [HtttpReques httpRequestWithUlr:server andParameters:parameters andBlock:^(BOOL isSuccess, NSDictionary *resturnDic, NSError *error) {
+        
+        if (isSuccess) {
+            
+            LightValidateCode *validate = [[LightValidateCode alloc]initWithDic:resturnDic];
+            
+            if (validate.result_code == 0) {
+                
+                self.email = email;
+                
+                [[NSNotificationCenter defaultCenter] postNotificationName:LightUserChangeEmailSuccessNoti object:self];
+                
+                completedBlock(YES,nil);
+            }
+            else
+            {
+                completedBlock(NO,[NSError errorWithDomain:validate.result_msg code:validate.result_code userInfo:nil]);
+            }
+            
+        }
+        else
+        {
+            completedBlock(NO,error);
+        }
+        
+    }];
+
+}
+- (void)updatePhoneWithPhone:(NSString *)phone andCompletedBlock:(changeInfoBlock)completedBlock{
+
+    NSMutableDictionary *parameters = [NSMutableDictionary new];
+    [parameters setValue:[NSNumber numberWithInteger:self.Id] forKey:@"id"];
+    
+    [parameters setValue:phone forKey:@"tel"];
+    
+    NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/changeTel.shtml";
+    
+    [HtttpReques httpRequestWithUlr:server andParameters:parameters andBlock:^(BOOL isSuccess, NSDictionary *resturnDic, NSError *error) {
+        
+        if (isSuccess) {
+            
+            LightValidateCode *validate = [[LightValidateCode alloc]initWithDic:resturnDic];
+            
+            if (validate.result_code == 0) {
+                
+                self.phone = phone;
+                
+                [[NSNotificationCenter defaultCenter] postNotificationName:LightUserChangePhoneSuccessNoti object:self];
+                
+                completedBlock(YES,nil);
+            }
+            else
+            {
+                completedBlock(NO,[NSError errorWithDomain:validate.result_msg code:validate.result_code userInfo:nil]);
+            }
+            
+        }
+        else
+        {
+            completedBlock(NO,error);
+        }
+        
+    }];
+}
+
+- (void)updatePwdWithNewPwd:(NSString *)newPwd andOriginalPwd:(NSString *)originalPwd andCompletedBlock:(changeInfoBlock)completedBlock{
+    NSMutableDictionary *parameters = [NSMutableDictionary new];
+    [parameters setValue:newPwd forKey:@"pwd"];
+    
+    NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/changePwd.shtml";
+    
+    [HtttpReques httpRequestWithUlr:server andParameters:parameters andBlock:^(BOOL isSuccess, NSDictionary *resturnDic, NSError *error) {
+        
+        if (isSuccess) {
+            
+            LightValidateCode *validate = [[LightValidateCode alloc]initWithDic:resturnDic];
+            
+            if (validate.result_code == 0) {
+                
+                self.password = newPwd;
+                
+                [[NSNotificationCenter defaultCenter] postNotificationName:LightUserChangePWDSuccessNoti object:nil];
+                completedBlock(YES,nil);
+            }
+            else
+            {
+                completedBlock(NO,[NSError errorWithDomain:validate.result_msg code:validate.result_code userInfo:nil]);
+            }
+            
+        }
+        else
+        {
+            completedBlock(NO,error);
+        }
+        
+    }];
 
 }
 

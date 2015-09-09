@@ -82,12 +82,16 @@
         case 0:
         {
             BindingPhoneViewController *c = [BindingPhoneViewController new];
+            LightUser *user = [[LightMyShareManager shareUser] owner];
+            c.phone = user.phone;
             [self.navigationController pushViewController:c animated:YES];
         }
             break;
         case 1:
         {
             BindingEmailViewController *c = [BindingEmailViewController new];
+            LightUser *user = [[LightMyShareManager shareUser] owner];
+            c.email = user.email;
             [self.navigationController pushViewController:c animated:YES];
         }
             break;

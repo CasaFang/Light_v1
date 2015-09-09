@@ -10,4 +10,6 @@
 
 @interface PhoneEditViewController : UIViewController
 
+@property (strong , nonatomic) NSString *phone;
+
 @end

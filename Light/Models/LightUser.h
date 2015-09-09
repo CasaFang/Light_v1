@@ -20,8 +20,9 @@
 @property (strong , nonatomic) NSString   *area;
 @property (strong , nonatomic) NSString   *sigNature;
 
-
-
+// 账户
+@property (strong , nonatomic) NSString   *phone;
+@property (strong , nonatomic) NSString   *email;
 
 // 用户注册用的密码
 @property (strong , nonatomic) NSString   *password;
