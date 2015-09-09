@@ -122,6 +122,7 @@
     c.phone = [LightMyShareManager shareUser].owner.phone;
     c.title = @"绑定手机号";
     [self.navigationController pushViewController:c animated:YES];
+    
 }
 
 
