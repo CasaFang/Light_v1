@@ -55,6 +55,8 @@
 - (void)edit:(UIButton *)btn{
     
     EmailEditViewController *c =[EmailEditViewController new];
+    c.email = [LightMyShareManager shareUser].owner.email;
+    c.title = @"修改邮箱";
     [self.navigationController pushViewController:c  animated:YES];
 }
 
@@ -76,11 +78,20 @@
         CGRect f = unbindingcontentView.frame;
         f.size.width = WINSIZE.width;
         unbindingcontentView.frame = f;
+<<<<<<< HEAD
         unbindingcontentView.emailTextField.text=_email;
         
         [container addSubview:unbindingcontentView];
         container.contentSize = unbindingcontentView.frame.size;
         
+=======
+        unbindingcontentView.delegate = self;
+        
+        [container addSubview:unbindingcontentView];
+        container.contentSize = unbindingcontentView.frame.size;
+        unbindingcontentView.phoneTextField.text = _email;
+        unbindingcontentView.phoneTextField.enabled = NO;
+>>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
     }
     else{
     
@@ -100,9 +111,10 @@
 - (void)bindingEmailContentViewDidBindingEmail:(BindingEmailContentView *)v{
 
     EmailEditViewController *c = [[EmailEditViewController alloc]init];
-  
-    [self.navigationController pushViewController:c animated:YES];
+    c.email = [LightMyShareManager shareUser].owner.email;
     c.title = @"绑定邮箱";
+    [self.navigationController pushViewController:c animated:YES];
+   
 }
 
 #pragma mark -- UnBindingEmailContentViewDelegate
@@ -111,7 +123,7 @@
     LightUser *user = [LightMyShareManager shareUser].owner;
     if (!user.phone) {
         
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"解绑失败" message:@"您缺少一个账号信息来登录到LIGHT，请先绑定邮箱，再解绑该手机号。" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"解绑失败" message:@"您缺少一个账号信息来登录到LIGHT，请先绑定手机号，再解绑该此邮箱地址。" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
         alert.tag = 201;
         [alert show];
         
@@ -135,7 +147,7 @@
             __weak typeof(self) weakSelf = self;
             LightUser *user = [LightMyShareManager shareUser].owner;
             
-            [user updateEmailWithEmail:nil andCompletedBlock:^(BOOL isSuccess, NSError *error) {
+            [user updateEmailWithEmail:@"" andCompletedBlock:^(BOOL isSuccess, NSError *error) {
                 
                 [weakSelf.view hideHud];
                 

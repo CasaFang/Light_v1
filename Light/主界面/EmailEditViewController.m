@@ -27,8 +27,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"修改邮箱";
-    
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"regiser_back"] style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = leftItem;
     
@@ -36,6 +34,8 @@
     self.navigationItem.rightBarButtonItem = rightItem;
     
     [self buildUI];
+    
+    contentView.emailTextField.text = _email;
     
 }
 
@@ -63,6 +63,11 @@
     if (!email.isEmailFormat) {
         
         [self.view showTipAlertWithContent:@"请填写正确的邮箱格式"];
+        return;
+    }
+    
+    if ([_email isEqualToString:email]) {
+        [self.view showTipAlertWithContent:@"俩次邮箱一致，确定要修改邮箱吗?"];
         return;
     }
     

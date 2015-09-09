@@ -51,6 +51,8 @@
 - (void)edit:(UIButton *)btn{
     
     PhoneEditViewController *c = [PhoneEditViewController new];
+    c.phone = [LightMyShareManager shareUser].owner.phone;
+    c.title = @"修改手机号";
     [self.navigationController pushViewController:c animated:YES];
 }
 
@@ -72,10 +74,17 @@
         CGRect f = unbindingcontentView.frame;
         f.size.width = WINSIZE.width;
         unbindingcontentView.frame = f;
+<<<<<<< HEAD
         unbindingcontentView.phoneTextField.text=_phone;
+=======
+        unbindingcontentView.delegate = self;
+>>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
         
         [container addSubview:unbindingcontentView];
         container.contentSize = unbindingcontentView.frame.size;
+        
+        unbindingcontentView.phoneTextField.text = _phone;
+        unbindingcontentView.phoneTextField.enabled = NO;
     }
     else{
         
@@ -83,6 +92,7 @@
         CGRect f = bindingContentView.frame;
         f.size.width = WINSIZE.width;
         bindingContentView.frame = f;
+        bindingContentView.delegate = self;
         
         [container addSubview:bindingContentView];
         container.contentSize = bindingContentView.frame.size;
@@ -97,7 +107,7 @@
     LightUser *user = [LightMyShareManager shareUser].owner;
     if (!user.email) {
         
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"解绑失败" message:@"您缺少一个账号信息来登录到LIGHT，请先绑定手机号，再解绑该邮箱地址。" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"解绑失败" message:@"您缺少一个账号信息来登录到LIGHT，请先绑定邮箱，再解绑该手机号。" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
         alert.tag = 201;
         [alert show];
         
@@ -113,7 +123,10 @@
 - (void)bindingPhoneContentViewDidBinding:(BindingPhoneContentView *)v{
 
     PhoneEditViewController *c = [PhoneEditViewController new];
+    c.phone = [LightMyShareManager shareUser].owner.phone;
+    c.title = @"绑定手机号";
     [self.navigationController pushViewController:c animated:YES];
+    
 }
 
 
@@ -127,7 +140,7 @@
             [self.view showHudWithText:@"正在解绑手机..."];
             __weak typeof(self) weakSelf = self;
             
-            [[LightMyShareManager shareUser].owner updatePhoneWithPhone:nil andCompletedBlock:^(BOOL isSuccess, NSError *error) {
+            [[LightMyShareManager shareUser].owner updatePhoneWithPhone:@"" andCompletedBlock:^(BOOL isSuccess, NSError *error) {
                 
                 [weakSelf.view hideHud];
                 

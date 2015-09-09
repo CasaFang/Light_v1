@@ -28,8 +28,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"修改手机号";
-    
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"regiser_back"] style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = leftItem;
     
@@ -65,6 +63,11 @@
     if (!phone.isPhoneFormat) {
         
         [self.view showTipAlertWithContent:@"请填写正确的手机号码"];
+        return;
+    }
+    
+    if ([_phone isEqualToString:phone]) {
+        [self.view showTipAlertWithContent:@"俩次手机号一样,确定要修改吗?"];
         return;
     }
     

@@ -20,10 +20,15 @@
 @property (strong , nonatomic) NSString   *area;
 @property (strong , nonatomic) NSString   *sigNature;
 
+<<<<<<< HEAD
 
 //用户的手机号
 @property (strong , nonatomic) NSString   *phone;
 //用户的邮箱
+=======
+// 账户
+@property (strong , nonatomic) NSString   *phone;
+>>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
 @property (strong , nonatomic) NSString   *email;
 
 // 用户注册用的密码
