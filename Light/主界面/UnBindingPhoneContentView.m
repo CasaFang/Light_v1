@@ -18,11 +18,11 @@
 
 - (IBAction)onClicked:(id)sender{
 
-//    if (_phoneTextField.text) {
+    if (_phoneTextField.text) {
         
         if ([_delegate respondsToSelector:@selector(unbindingPhoneContentViewDidUnbinding:)]) {
             [_delegate unbindingPhoneContentViewDidUnbinding:self];
         }
-//    }
+    }
 }
 @end

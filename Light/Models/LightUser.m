@@ -47,16 +47,6 @@
         _Id = [Id1 integerValue];
     }
     
-    NSString *email = Light_GetStringValueFromDicWithKey(dic, @"email");
-    if (![email isEqualToString:@""]&&email) {
-        _email = email;
-    }
-    
-    NSString *phone = Light_GetStringValueFromDicWithKey(dic, @"tel");
-    if (![phone isEqualToString:@""]&&phone) {
-        _phone = phone;
-    }
-    
     NSString *physiology_gender = Light_GetStringValueFromDicWithKey(dic, @"physiology_gender");
     
     if (![physiology_gender isEqualToString:@""]&&physiology_gender) {
@@ -88,6 +78,14 @@
     NSString *birthday = Light_GetStringValueFromDicWithKey(dic, @"birthday");
     if (![birthday isEqualToString:@""]&&birthday) {
         _birthday = [birthday integerValue];
+    }
+    NSString *email = Light_GetStringValueFromDicWithKey(dic, @"email");
+    if (![email isEqualToString:@""]&&email) {
+        _email = email;
+    }
+    NSString *phone = Light_GetStringValueFromDicWithKey(dic, @"tel");
+    if (![phone isEqualToString:@""]&&phone) {
+        _phone = phone;
     }
 
 }

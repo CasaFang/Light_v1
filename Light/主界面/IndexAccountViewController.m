@@ -81,31 +81,17 @@
     switch (section) {
         case 0:
         {
-<<<<<<< HEAD
-            BindingPhoneViewController *c = [[BindingPhoneViewController alloc]init];
-            if(![contentView.phoneLabel.text isEqualToString:@"未绑定"]){
-                c.phone=contentView.phoneLabel.text;
-            }
-=======
             BindingPhoneViewController *c = [BindingPhoneViewController new];
             LightUser *user = [[LightMyShareManager shareUser] owner];
             c.phone = user.phone;
->>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
             [self.navigationController pushViewController:c animated:YES];
         }
             break;
         case 1:
         {
-<<<<<<< HEAD
-            BindingEmailViewController *c = [[BindingEmailViewController alloc]init];
-            if(![contentView.emailLabel.text isEqualToString:@"未绑定"]){
-                c.email=contentView.emailLabel.text;
-            }
-=======
             BindingEmailViewController *c = [BindingEmailViewController new];
             LightUser *user = [[LightMyShareManager shareUser] owner];
             c.email = user.email;
->>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
             [self.navigationController pushViewController:c animated:YES];
         }
             break;

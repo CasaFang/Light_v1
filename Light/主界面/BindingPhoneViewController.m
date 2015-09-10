@@ -74,11 +74,7 @@
         CGRect f = unbindingcontentView.frame;
         f.size.width = WINSIZE.width;
         unbindingcontentView.frame = f;
-<<<<<<< HEAD
-        unbindingcontentView.phoneTextField.text=_phone;
-=======
         unbindingcontentView.delegate = self;
->>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
         
         [container addSubview:unbindingcontentView];
         container.contentSize = unbindingcontentView.frame.size;

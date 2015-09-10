@@ -78,20 +78,12 @@
         CGRect f = unbindingcontentView.frame;
         f.size.width = WINSIZE.width;
         unbindingcontentView.frame = f;
-<<<<<<< HEAD
-        unbindingcontentView.emailTextField.text=_email;
-        
-        [container addSubview:unbindingcontentView];
-        container.contentSize = unbindingcontentView.frame.size;
-        
-=======
         unbindingcontentView.delegate = self;
         
         [container addSubview:unbindingcontentView];
         container.contentSize = unbindingcontentView.frame.size;
         unbindingcontentView.phoneTextField.text = _email;
         unbindingcontentView.phoneTextField.enabled = NO;
->>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
     }
     else{
     

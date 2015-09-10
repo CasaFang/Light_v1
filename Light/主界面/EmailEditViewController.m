@@ -12,7 +12,6 @@
 #import "NSString+Extention.h"
 #import "EmailValidateViewController.h"
 #import "LightUser+Register.h"
-#import "LightUser+Change.h"
 
 @interface EmailEditViewController ()<UIAlertViewDelegate>
 {
@@ -108,7 +107,7 @@
             
             LightUser *user = [LightMyShareManager shareUser].owner;
             
-            [user changeWithEmailCode:contentView.emailTextField.text andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
+            [user registerWithEmailCode:contentView.emailTextField.text andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
                 
                 [weakSelf.view hideHud];
                 
@@ -116,7 +115,6 @@
                     
                     EmailValidateViewController *c = [[EmailValidateViewController alloc]init];
                     c.email = contentView.emailTextField.text;
-                    NSLog(c.email);
                     
                     [self.navigationController pushViewController:c  animated:YES];
                 }

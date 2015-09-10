@@ -8,22 +8,15 @@
 
 #import "LightUser+Change.h"
 #import "ModelConfig.h"
-#import <SMS_SDK/SMS_SDK.h>
 
 
  NSString *const  LightUserChangeNickNameSuccessNoti = @"LightUserChangeNickNameSuccessNoti";
  NSString *const  LightUserChangeSigntureSuccessNoti = @"LightUserChangeSigntureSuccessNoti";
  NSString *const  LightUserChangeAvatarSuccessNoti   = @"LightUserChangeAvatarSuccessNoti";
-<<<<<<< HEAD
- NSString *const  LightUserChangePhoneSuccessNoti    = @"LightUserChangePhoneSuccessNoti";
- NSString *const  LightUserChangePWDSuccessNoti      = @"LightUserChangePWDSuccessNoti";
- NSString *const  LightUserChangeEmailSuccessNoti    = @"LightUserChangeEmailSuccessNoti";
-=======
  NSString *const  LightUserChangePhoneSuccessNoti = @"LightUserChangePhoneSuccessNoti";
  NSString *const  LightUserChangeEmailSuccessNoti = @"LightUserChangeEmailSuccessNoti";
  NSString *const  LightUserChangePWDSuccessNoti = @"LightUserChangePWDSuccessNoti";
 
->>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
 
 
 @implementation LightUser (Change)
@@ -255,7 +248,6 @@
     }];
 
 }
-
 - (void)changeSociety_gender:(NSInteger)society_gender andBlock:(changeNameBlock)block
 {
 
@@ -327,29 +319,6 @@
     }];
 }
 
-<<<<<<< HEAD
-- (void)changeWithEmailCode:(NSString *)code
-         andCompeletedBlock:(changeBlock)compeletedBLock
-{
-    code = [code trimWhiteSpace];
-    
-    if (code.length == 0) {
-        compeletedBLock(NO,[NSError errorWithDomain:@"请填写邮箱" code:1000 userInfo:nil]);
-        return;
-    }
-    
-    if (![code isEmailFormat]) {
-        
-        compeletedBLock(NO,[NSError errorWithDomain:@"邮箱格式不正确" code:1000 userInfo:nil]);
-        return;
-    }
-    NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/getValCode.shtml";
-    
-    NSMutableDictionary *parameters = [NSMutableDictionary new];
-    [parameters setValue:[NSNumber numberWithLong:self.Id] forKey:@"userId"];
-    [parameters setValue:code forKey:@"email"];
-    NSLog(@"入参: %@",parameters);
-=======
 - (void)updateEmailWithEmail:(NSString *)email andCompletedBlock:(changeInfoBlock)completedBlock
 {
 
@@ -359,7 +328,6 @@
     [parameters setValue:email forKey:@"email"];
     
     NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/changeEmail.shtml";
->>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
     
     [HtttpReques httpRequestWithUlr:server andParameters:parameters andBlock:^(BOOL isSuccess, NSDictionary *resturnDic, NSError *error) {
         
@@ -367,79 +335,6 @@
             
             LightValidateCode *validate = [[LightValidateCode alloc]initWithDic:resturnDic];
             
-<<<<<<< HEAD
-            
-            if (validate.result_code == 0) {
-                
-                [self parseData:resturnDic];
-                compeletedBLock(YES,nil);
-            }
-            else
-            {
-                compeletedBLock(NO,[NSError errorWithDomain:validate.result_msg code:validate.result_code userInfo:nil]);
-            }
-        }
-        else
-        {
-            compeletedBLock(NO,error);
-        }
-    }];
-
-}
-
-- (void)changeWithPhoneCode:(NSString *)code
-         andCompeletedBlock:(changeBlock)compeletedBLock
-{
-    code = [code trimWhiteSpace];
-    
-    if (code.length == 0) {
-        compeletedBLock(NO,[NSError errorWithDomain:@"请填写邮箱" code:1000 userInfo:nil]);
-        return;
-    }
-    
-    if (![code isPhoneFormat]) {
-        
-        compeletedBLock(NO,[NSError errorWithDomain:@"手机号格式不正确" code:1000 userInfo:nil]);
-        return;
-    }
-    
-    
-    [SMS_SDK getVerificationCodeBySMSWithPhone:code zone:@"86" result:^(SMS_SDKError *error) {
-        
-        if(!error){
-            
-            NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/changeTel.shtml";
-            
-            NSMutableDictionary *parameters = [NSMutableDictionary new];
-            [parameters setValue:[NSNumber numberWithLong:self.Id] forKey:@"id"];
-            [parameters setValue:code forKey:@"tel"];
-            
-            [HtttpReques httpRequestWithUlr:server andParameters:parameters andBlock:^(BOOL isSuccess, NSDictionary *resturnDic, NSError *error) {
-                
-                if (isSuccess) {
-                    
-                    LightValidateCode *validate = [[LightValidateCode alloc]initWithDic:resturnDic];
-                    
-                    
-                    if (validate.result_code == 0) {
-                        
-                        [self parseData:resturnDic];
-                        
-                        compeletedBLock(YES,nil);
-                    }
-                    else
-                    {
-                        compeletedBLock(NO,[NSError errorWithDomain:validate.result_msg code:validate.result_code userInfo:nil]);
-                    }
-                    
-                    
-                }
-                else
-                {
-                    compeletedBLock(NO,error);
-                }
-            }];
-=======
             if (validate.result_code == 0) {
                 
                 self.email = email;
@@ -452,31 +347,10 @@
             {
                 completedBlock(NO,[NSError errorWithDomain:validate.result_msg code:validate.result_code userInfo:nil]);
             }
->>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
             
         }
         else
         {
-<<<<<<< HEAD
-            compeletedBLock(NO,error);
-        }
-    }];
-
-}
-
-
-
-- (void)updateEmailWithEmail:(NSString *)email  andCompletedBlock:(changeInfoBlock)completedBlock
-{
-    NSMutableDictionary *parameters = [NSMutableDictionary new];
-    
-    [parameters setValue:[NSNumber numberWithLong:self.Id] forKey:@"id"];
-    
-    NSLog(@"email的值 %@",email);
-    [parameters setValue:email forKey:@"email"];
-    
-    NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/changeEmail.shtml";
-=======
             completedBlock(NO,error);
         }
         
@@ -491,7 +365,6 @@
     [parameters setValue:phone forKey:@"tel"];
     
     NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/changeTel.shtml";
->>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
     
     [HtttpReques httpRequestWithUlr:server andParameters:parameters andBlock:^(BOOL isSuccess, NSDictionary *resturnDic, NSError *error) {
         
@@ -501,17 +374,10 @@
             
             if (validate.result_code == 0) {
                 
-<<<<<<< HEAD
-                [LightMyShareManager shareUser].owner.email = email;
-                
-                [[NSNotificationCenter defaultCenter] postNotificationName:LightUserChangeEmailSuccessNoti object:email];
-
-=======
                 self.phone = phone;
                 
                 [[NSNotificationCenter defaultCenter] postNotificationName:LightUserChangePhoneSuccessNoti object:self];
                 
->>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
                 completedBlock(YES,nil);
             }
             else
@@ -526,21 +392,6 @@
         }
         
     }];
-<<<<<<< HEAD
-
-}
-
-
-- (void)updatePhoneWithPhone:(NSString *)phone andCompletedBlock:(changeInfoBlock)completedBlock
-{
-    NSMutableDictionary *parameters = [NSMutableDictionary new];
-    
-    [parameters setValue:[NSNumber numberWithLong:self.Id] forKey:@"id"];
-    
-    [parameters setValue:phone forKey:@"tel"];
-    
-    NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/changeTel.shtml";
-=======
 }
 
 - (void)updatePwdWithNewPwd:(NSString *)newPwd andOriginalPwd:(NSString *)originalPwd andCompletedBlock:(changeInfoBlock)completedBlock{
@@ -548,7 +399,6 @@
     [parameters setValue:newPwd forKey:@"pwd"];
     
     NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/changePwd.shtml";
->>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
     
     [HtttpReques httpRequestWithUlr:server andParameters:parameters andBlock:^(BOOL isSuccess, NSDictionary *resturnDic, NSError *error) {
         
@@ -557,16 +407,10 @@
             LightValidateCode *validate = [[LightValidateCode alloc]initWithDic:resturnDic];
             
             if (validate.result_code == 0) {
-<<<<<<< HEAD
-                [LightMyShareManager shareUser].owner.phone = phone;
-                
-                [[NSNotificationCenter defaultCenter] postNotificationName:LightUserChangePhoneSuccessNoti object:phone];
-=======
                 
                 self.password = newPwd;
                 
                 [[NSNotificationCenter defaultCenter] postNotificationName:LightUserChangePWDSuccessNoti object:nil];
->>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
                 completedBlock(YES,nil);
             }
             else
@@ -581,51 +425,7 @@
         }
         
     }];
-<<<<<<< HEAD
+
 }
-=======
->>>>>>> 26d60bf05ddb130190ea3cc25a17da4aeeb299b3
-
-- (void)updatePwdWithNewPwd:(NSString *)newPwd andOriginalPwd:(NSString *)originalPwd andCompletedBlock:(changeInfoBlock)completedBlock
-{
-    NSMutableDictionary *parameters = [NSMutableDictionary new];
-    
-    [parameters setValue:[NSNumber numberWithLong:self.Id] forKey:@"id"];
-    
-    [parameters setValue:newPwd forKey:@"pwd"];
-    
-    NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/changePwd.shtml";
-    
-    [HtttpReques httpRequestWithUlr:server andParameters:parameters andBlock:^(BOOL isSuccess, NSDictionary *resturnDic, NSError *error) {
-        
-        if (isSuccess) {
-            
-            LightValidateCode *validate = [[LightValidateCode alloc]initWithDic:resturnDic];
-            
-            if (validate.result_code == 0) {
-                
-                [LightMyShareManager shareUser].owner.password = newPwd;
-                
-                [[NSNotificationCenter defaultCenter] postNotificationName:LightUserChangePWDSuccessNoti object:newPwd];
-                
-                completedBlock(YES,nil);
-            }
-            else
-            {
-                completedBlock(NO,[NSError errorWithDomain:validate.result_msg code:validate.result_code userInfo:nil]);
-            }
-            
-        }
-        else
-        {
-            completedBlock(NO,error);
-        }
-        
-    }];
-}
-
-
-
-
 
 @end

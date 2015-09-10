@@ -24,7 +24,7 @@ static NSString *cellIdentifier = @"cpyminglitaluocellidentifier";;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"Light 塔罗";
+    self.title = @"Light 命理师";
     
     _tableArray = [NSMutableArray new];
     

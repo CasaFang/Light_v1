@@ -110,7 +110,7 @@
             
              LightUser *user = [LightMyShareManager shareUser].owner;
             
-            [user changeWithPhoneCode:contentView.phoneTextField.text andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
+            [user registerWithPhoneCode:contentView.phoneTextField.text andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
                 
                 [weakSelf.view hideHud];
                 
@@ -118,7 +118,6 @@
                     
                     NSLog(@"go to PhoneValidate");
                     PhoneValidateViewController *c = [PhoneValidateViewController new];
-                    c.phone=contentView.phoneTextField.text;
                     [self.navigationController pushViewController:c animated:YES];
 
                 }

@@ -10,7 +10,6 @@
 @protocol BindingPhoneContentViewDelegate;
 @interface BindingPhoneContentView : UIView
 
-@property (weak, nonatomic) IBOutlet UIButton *btn;
 @property (weak , nonatomic ) id<BindingPhoneContentViewDelegate > delegate;
 
 + (instancetype)initFromNib;

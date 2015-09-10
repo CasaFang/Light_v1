@@ -22,7 +22,6 @@ typedef void(^changeInfoBlock)(BOOL isSuccess ,NSError *error);
 typedef void(^getUserInfoBlock)(BOOL isSuccess ,NSError *error);
 typedef void(^uploadImageBlock)(BOOL isSuccess, NSError *error);
 typedef void(^uploadImageProgressBlock)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite);
-typedef void(^changeBlock) (BOOL isSuccess , NSError *error);
 
 
 
@@ -43,12 +42,6 @@ typedef void(^changeBlock) (BOOL isSuccess , NSError *error);
 - (void)changeSociety_gender:(NSInteger )society_gender andBlock:(changeNameBlock )block;
 
 - (void)upLoadAvatarWithImageData:(NSData *)data andBlock:(uploadImageBlock)compeletedBLock andProgressBlock:(uploadImageProgressBlock)progressBlock;
-
-- (void)changeWithEmailCode:(NSString *)code
-           andCompeletedBlock:(changeBlock)compeletedBLock;
-
-- (void)changeWithPhoneCode:(NSString *)code
-           andCompeletedBlock:(changeBlock)compeletedBLock;
 
 
 - (void)updateEmailWithEmail:(NSString *)email andCompletedBlock:(changeInfoBlock)completedBlock;

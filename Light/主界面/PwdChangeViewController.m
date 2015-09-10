@@ -80,7 +80,7 @@
         [self.view showTipAlertWithContent:@"密码不能为空"];
         return;
     }
-    if (![pwd isEqualToString:pwd2]) {
+    if ([pwd isEqualToString:pwd2]) {
         [self.view showTipAlertWithContent:@"俩次密码输入不一致"];
         return;
     }
