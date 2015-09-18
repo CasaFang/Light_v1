@@ -67,6 +67,8 @@ NSString *const LightUserMarryNoti = @"LightUserMarryNoti";
                 
                 [[NSNotificationCenter defaultCenter] postNotificationName:LightUserMarryNoti object:nil];
                 
+                [LightMyShareManager shareUser].owner.marryPageId = [resturnDic valueForKey:@"marryPageId"];
+                
                 completedBlock(YES,nil);
             }
             else

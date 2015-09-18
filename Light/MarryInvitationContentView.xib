@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,10 +15,6 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BAu-uH-BZ3">
                     <rect key="frame" x="212" y="79" width="50" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="Ufk-8w-6px"/>
-                        <constraint firstAttribute="height" constant="50" id="qIC-AB-mwc"/>
-                    </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -24,18 +22,15 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bMU-AU-ew9">
-                    <rect key="frame" x="119" y="89" width="82" height="29"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left_marry.png" translatesAutoresizingMaskIntoConstraints="NO" id="bMU-AU-ew9">
+                    <rect key="frame" x="119" y="93" width="82" height="22"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="29" id="ShN-nd-0xQ"/>
-                        <constraint firstAttribute="width" constant="82" id="wkw-ZR-YEa"/>
+                        <constraint firstAttribute="height" constant="22" id="e1O-xT-eW2"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xq-IX-dwc">
                     <rect key="frame" x="28" y="151" width="257" height="29"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="29" id="udV-Mm-AIX"/>
-                    </constraints>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -44,14 +39,15 @@
                     <rect key="frame" x="28" y="227" width="110" height="30"/>
                     <color key="backgroundColor" red="0.0" green="0.61568627450000002" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="HhD-4X-Hi6"/>
+                        <constraint firstAttribute="height" constant="30" id="Mb9-I8-S0y"/>
+                        <constraint firstAttribute="width" constant="110" id="QA4-g1-SoV"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                     <state key="normal" title="同意">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="cipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
@@ -64,7 +60,7 @@
                     <rect key="frame" x="175" y="227" width="110" height="30"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="ayx-Ez-C40"/>
+                        <constraint firstAttribute="height" constant="30" id="7JO-xl-pSG"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                     <state key="normal" title="拒绝">
@@ -84,8 +80,7 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dk7-l9-3Zq">
                     <rect key="frame" x="60" y="79" width="50" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="IZ1-lb-7Zk"/>
-                        <constraint firstAttribute="width" constant="50" id="kh4-q3-jNH"/>
+                        <constraint firstAttribute="width" constant="50" id="sOr-Jm-3dY"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
@@ -95,23 +90,29 @@
                     </userDefinedRuntimeAttributes>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="ui3-Nf-nYa" firstAttribute="width" secondItem="aKq-U4-ocn" secondAttribute="width" id="0fX-iP-qAg"/>
-                <constraint firstAttribute="trailing" secondItem="0xq-IX-dwc" secondAttribute="trailing" constant="35" id="BAS-a4-0q0"/>
-                <constraint firstItem="ui3-Nf-nYa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="227" id="C2D-oa-mEk"/>
-                <constraint firstItem="BAu-uH-BZ3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="79" id="CDs-DE-wco"/>
-                <constraint firstAttribute="centerX" secondItem="bMU-AU-ew9" secondAttribute="centerX" id="EOz-Fk-AYx"/>
-                <constraint firstItem="aKq-U4-ocn" firstAttribute="leading" secondItem="ui3-Nf-nYa" secondAttribute="trailing" constant="37" id="MvA-7F-OOL"/>
-                <constraint firstAttribute="trailing" secondItem="aKq-U4-ocn" secondAttribute="trailing" constant="35" id="R5A-Wo-1GS"/>
-                <constraint firstItem="0xq-IX-dwc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="Tnc-5b-Fas"/>
-                <constraint firstItem="aKq-U4-ocn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="227" id="XD5-NI-GT5"/>
-                <constraint firstItem="bMU-AU-ew9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="89" id="cLx-zA-h0u"/>
-                <constraint firstItem="BAu-uH-BZ3" firstAttribute="leading" secondItem="bMU-AU-ew9" secondAttribute="trailing" constant="11" id="g92-xX-cLv"/>
-                <constraint firstItem="0xq-IX-dwc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="151" id="gEx-Wx-yVB"/>
-                <constraint firstItem="dk7-l9-3Zq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="79" id="h69-kh-JAM"/>
-                <constraint firstItem="bMU-AU-ew9" firstAttribute="leading" secondItem="dk7-l9-3Zq" secondAttribute="trailing" constant="9" id="lsm-94-rby"/>
-                <constraint firstItem="ui3-Nf-nYa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="quF-gL-aZF"/>
+                <constraint firstItem="0xq-IX-dwc" firstAttribute="trailing" secondItem="aKq-U4-ocn" secondAttribute="trailing" id="0Vd-z8-uBX"/>
+                <constraint firstItem="bMU-AU-ew9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6F8-Ws-luH"/>
+                <constraint firstAttribute="trailing" secondItem="BAu-uH-BZ3" secondAttribute="trailing" constant="58" id="6Ul-5m-guG"/>
+                <constraint firstItem="bMU-AU-ew9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="93" id="8wx-sE-2VU"/>
+                <constraint firstItem="aKq-U4-ocn" firstAttribute="leading" secondItem="ui3-Nf-nYa" secondAttribute="trailing" constant="37" id="91e-jQ-kCr"/>
+                <constraint firstItem="aKq-U4-ocn" firstAttribute="baseline" secondItem="ui3-Nf-nYa" secondAttribute="firstBaseline" id="AZu-x9-7q0"/>
+                <constraint firstItem="dk7-l9-3Zq" firstAttribute="top" secondItem="BAu-uH-BZ3" secondAttribute="top" id="GB5-yc-nJs"/>
+                <constraint firstItem="dk7-l9-3Zq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="Gnh-xe-rsx"/>
+                <constraint firstItem="ui3-Nf-nYa" firstAttribute="top" secondItem="aKq-U4-ocn" secondAttribute="top" id="Gx3-pt-wVF"/>
+                <constraint firstItem="0xq-IX-dwc" firstAttribute="top" secondItem="bMU-AU-ew9" secondAttribute="bottom" constant="36" id="JE6-jR-I6U"/>
+                <constraint firstItem="0xq-IX-dwc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="JbQ-Nz-Qxq"/>
+                <constraint firstItem="bMU-AU-ew9" firstAttribute="leading" secondItem="dk7-l9-3Zq" secondAttribute="trailing" constant="9" id="NFC-dm-RbC"/>
+                <constraint firstItem="dk7-l9-3Zq" firstAttribute="bottom" secondItem="BAu-uH-BZ3" secondAttribute="bottom" id="Phw-5p-ARy"/>
+                <constraint firstItem="ui3-Nf-nYa" firstAttribute="leading" secondItem="0xq-IX-dwc" secondAttribute="leading" id="PtO-Ex-5cS"/>
+                <constraint firstItem="ui3-Nf-nYa" firstAttribute="baseline" secondItem="aKq-U4-ocn" secondAttribute="firstBaseline" id="ULI-rW-esK"/>
+                <constraint firstItem="ui3-Nf-nYa" firstAttribute="top" secondItem="0xq-IX-dwc" secondAttribute="bottom" constant="47" id="WoL-DB-8RO"/>
+                <constraint firstItem="0xq-IX-dwc" firstAttribute="top" secondItem="dk7-l9-3Zq" secondAttribute="bottom" constant="22" id="Xpa-kT-iPy"/>
+                <constraint firstItem="dk7-l9-3Zq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="79" id="fLr-7j-Xx7"/>
+                <constraint firstAttribute="trailing" secondItem="0xq-IX-dwc" secondAttribute="trailing" constant="35" id="izF-ur-Ybv"/>
+                <constraint firstAttribute="bottom" secondItem="ui3-Nf-nYa" secondAttribute="bottom" constant="20" id="rBW-nk-HIk"/>
+                <constraint firstItem="BAu-uH-BZ3" firstAttribute="leading" secondItem="bMU-AU-ew9" secondAttribute="trailing" constant="11" id="sh6-Ba-hvW"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
@@ -126,6 +127,9 @@
             <point key="canvasLocation" x="188" y="234.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="left_marry.png" width="50" height="44"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

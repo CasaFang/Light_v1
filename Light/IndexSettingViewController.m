@@ -13,6 +13,8 @@
 #import "AppDelegate.h"
 #import "AppInfo.h"
 #import "UIView+Hud.h"
+#import "LightUser+Login.h"
+#import "LightMyShareManager.h"
 
 @interface IndexSettingViewController ()<IndexSettingContentViewDelegate,UIAlertViewDelegate>
 {
@@ -122,6 +124,8 @@
         case 3:
         {
             [[LightRongYunManager shareManager] logout];
+            
+            [[LightMyShareManager shareUser].owner logout];
             
             AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
             [delegate toLogin];

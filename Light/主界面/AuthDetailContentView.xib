@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AuthDetailContentView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="757"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="auth_home_default.png" translatesAutoresizingMaskIntoConstraints="NO" id="m1B-ht-DFZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="187"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="187" id="bGD-dq-zju"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我们的爱情主页" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpf-Tz-uVd">
+                    <rect key="frame" x="8" y="198" width="304" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="l3L-Tr-1MC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BTm-KB-mPh">
+                    <rect key="frame" x="62" y="226" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Lbz-aq-gp8"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aFB-0h-GgR">
+                    <rect key="frame" x="8" y="226" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="WWQ-1E-7fJ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzR-Oy-Two">
+                    <rect key="frame" x="110" y="235" width="202" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="XnW-x3-lYR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXg-8S-yfK" customClass="HPGrowingTextView">
+                    <rect key="frame" x="8" y="274" width="304" height="135"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="他们的爱情相册" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTI-LO-caM">
+                    <rect key="frame" x="8" y="417" width="304" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="HMy-kb-08x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Tdl-n9-yId">
+                    <rect key="frame" x="8" y="451" width="304" height="310"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="310" id="ICZ-s1-2Rs"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nyj-ff-1nv">
+                        <size key="itemSize" width="96" height="96"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="hbU-qO-Ka3"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Sst-wE-4RA"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KXg-8S-yfK" firstAttribute="top" secondItem="CzR-Oy-Two" secondAttribute="bottom" constant="18" id="290-ES-smd"/>
+                <constraint firstItem="aFB-0h-GgR" firstAttribute="leading" secondItem="Zpf-Tz-uVd" secondAttribute="leading" id="4X5-pd-bfY"/>
+                <constraint firstItem="BTm-KB-mPh" firstAttribute="top" secondItem="aFB-0h-GgR" secondAttribute="top" id="8Bt-E1-6mg"/>
+                <constraint firstItem="KXg-8S-yfK" firstAttribute="leading" secondItem="MTI-LO-caM" secondAttribute="leading" id="9Hc-8B-6DB"/>
+                <constraint firstItem="aFB-0h-GgR" firstAttribute="top" secondItem="Zpf-Tz-uVd" secondAttribute="bottom" constant="2" id="CVY-iP-gQi"/>
+                <constraint firstItem="KXg-8S-yfK" firstAttribute="leading" secondItem="aFB-0h-GgR" secondAttribute="leading" id="D1S-On-dyI"/>
+                <constraint firstItem="KXg-8S-yfK" firstAttribute="top" secondItem="BTm-KB-mPh" secondAttribute="bottom" constant="8" symbolic="YES" id="ELF-ky-Eol"/>
+                <constraint firstItem="Zpf-Tz-uVd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="MY6-VG-0LC"/>
+                <constraint firstItem="KXg-8S-yfK" firstAttribute="trailing" secondItem="CzR-Oy-Two" secondAttribute="trailing" id="OuG-Mx-Soc"/>
+                <constraint firstItem="KXg-8S-yfK" firstAttribute="top" secondItem="aFB-0h-GgR" secondAttribute="bottom" constant="8" symbolic="YES" id="PfT-XQ-pVy"/>
+                <constraint firstItem="CzR-Oy-Two" firstAttribute="top" secondItem="Zpf-Tz-uVd" secondAttribute="bottom" constant="11" id="Pwy-aZ-DoC"/>
+                <constraint firstItem="BTm-KB-mPh" firstAttribute="leading" secondItem="aFB-0h-GgR" secondAttribute="trailing" constant="14" id="XHS-a9-v0F"/>
+                <constraint firstItem="CzR-Oy-Two" firstAttribute="trailing" secondItem="Zpf-Tz-uVd" secondAttribute="trailing" id="ai6-ay-f9C"/>
+                <constraint firstItem="Tdl-n9-yId" firstAttribute="top" secondItem="MTI-LO-caM" secondAttribute="bottom" constant="8" symbolic="YES" id="c7N-M0-DVq"/>
+                <constraint firstItem="MTI-LO-caM" firstAttribute="trailing" secondItem="KXg-8S-yfK" secondAttribute="trailing" id="dMQ-Tg-vOs"/>
+                <constraint firstItem="Tdl-n9-yId" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" constant="12" id="hYV-IG-AhT"/>
+                <constraint firstItem="aFB-0h-GgR" firstAttribute="top" secondItem="m1B-ht-DFZ" secondAttribute="bottom" constant="39" id="ks2-On-9FN"/>
+                <constraint firstItem="MTI-LO-caM" firstAttribute="leading" secondItem="Tdl-n9-yId" secondAttribute="leading" id="lJW-xB-rNz"/>
+                <constraint firstItem="MTI-LO-caM" firstAttribute="top" secondItem="KXg-8S-yfK" secondAttribute="bottom" constant="8" symbolic="YES" id="lJb-ak-nTk"/>
+                <constraint firstAttribute="trailing" secondItem="m1B-ht-DFZ" secondAttribute="trailing" id="mdf-Eu-IDA"/>
+                <constraint firstItem="m1B-ht-DFZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="t9O-yT-xKm"/>
+                <constraint firstItem="Tdl-n9-yId" firstAttribute="trailing" secondItem="MTI-LO-caM" secondAttribute="trailing" id="tTp-7T-udb"/>
+                <constraint firstItem="Zpf-Tz-uVd" firstAttribute="centerX" secondItem="m1B-ht-DFZ" secondAttribute="centerX" id="yk0-iR-p65"/>
+                <constraint firstItem="CzR-Oy-Two" firstAttribute="leading" secondItem="BTm-KB-mPh" secondAttribute="trailing" constant="8" symbolic="YES" id="yzF-VS-4dK"/>
+                <constraint firstItem="m1B-ht-DFZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zXh-dg-Mql"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="coverImageView" destination="m1B-ht-DFZ" id="Cy4-Pq-DNC"/>
+                <outlet property="marryStory" destination="KXg-8S-yfK" id="G1L-WK-p4w"/>
+                <outlet property="marryTime" destination="CzR-Oy-Two" id="5Kv-Hp-MwN"/>
+                <outlet property="marryedAvatar" destination="BTm-KB-mPh" id="t3O-bG-NQa"/>
+                <outlet property="marryerAvatar" destination="aFB-0h-GgR" id="tgK-k2-4yt"/>
+                <outlet property="picCollection" destination="Tdl-n9-yId" id="jaq-dH-lpW"/>
+            </connections>
+            <point key="canvasLocation" x="300" y="471.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="auth_home_default.png" width="720" height="420"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

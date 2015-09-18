@@ -17,4 +17,6 @@ typedef void(^loginBlock)(BOOL isSuccess, NSError *error);
           andPassword:(NSString *)password
    andCompeletedBlock:(loginBlock)compeletedBLock;
 
+- (void)logout;
+
 @end

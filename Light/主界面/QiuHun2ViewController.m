@@ -62,10 +62,14 @@
             
             UIAlertView *alert = [self.view  showTipAlertWithContent:@"邀请函发送成功!您的邀请对象同意后会通知您!同时系统管理员也会联系您"];
             alert.delegate = self;
+            
         }
         else{
         
-            [weakSelf.view showTipAlertWithContent:error.domain];
+            NSString *content = [NSString stringWithFormat:@"邀请函发送失败!您的已经像@%@ 发送了求婚认证请求",_selectedUser.name];
+            UIAlertView *alert = [self.view  showTipAlertWithContent:content];
+            alert.delegate = self;
+
         }
     }];
 

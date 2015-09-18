@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LightMarryPage.h"
 
 @protocol MarryCertificationContentViewDelegate;
 @interface MarryCertificationContentView : UIView
@@ -17,11 +18,20 @@
 
 @property (weak , nonatomic) id<MarryCertificationContentViewDelegate >delegate;
 
+- (void)displayWithMarryPage:(LightMarryPage *)marryPage;
+
+
+-(void)disMarryPagePicsWithPics:(NSArray *)pics;
+
+
 @end
 
 
 @protocol MarryCertificationContentViewDelegate <NSObject>
 
 - (void)marryCertificationContentViewDidBack:(MarryCertificationContentView *)v;
+- (void)marryCertificationContentViewDidAddPic:(MarryCertificationContentView *)v;
+- (void)marryCertificationContentViewDidClickedPic:(MarryCertificationContentView *)v andPicArray:(NSArray *)pics andCurrentIndex:(NSIndexPath *)path;
+
 
 @end

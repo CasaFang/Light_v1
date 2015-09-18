@@ -52,7 +52,7 @@
     
     UIScrollView *container = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, WINSIZE.width, WINSIZE.height- (64))];
     [self.view addSubview:container];
-    container.backgroundColor = [UIColor whiteColor];
+    container.backgroundColor = LightColor(242, 242, 242);
     
     
     contentView = [MarryInvitationContentView initFromNib];

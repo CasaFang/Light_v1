@@ -81,13 +81,52 @@
     }
     NSString *email = Light_GetStringValueFromDicWithKey(dic, @"email");
     if (![email isEqualToString:@""]&&email) {
-        _email = email;
+        self.email = email;
     }
     NSString *phone = Light_GetStringValueFromDicWithKey(dic, @"tel");
     if (![phone isEqualToString:@""]&&phone) {
-        _phone = phone;
+        self.phone = phone;
+    }
+    NSString *marryId = Light_GetStringValueFromDicWithKey(dic, @"marryId");
+    if (![marryId isEqualToString:@""]&&marryId) {
+        self.marryId = marryId;
+    }
+    NSString *marryPageId = Light_GetStringValueFromDicWithKey(dic, @"marryPageId");
+    if (![marryPageId isEqualToString:@""]&&marryPageId) {
+        self.marryPageId = marryPageId;
     }
 
+}
+
+
+- (void)setPhone:(NSString *)phone{
+
+    _phone =  phone;
+    [[NSUserDefaults standardUserDefaults] setValue:phone forKey:@"phone"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+
+- (void)setEmail:(NSString *)email{
+
+    _email =  email;
+    [[NSUserDefaults standardUserDefaults] setValue:email forKey:@"email"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void)setPassword:(NSString *)password{
+
+    _password = password;
+    [[NSUserDefaults standardUserDefaults] setValue:password forKey:@"password"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+}
+- (void)setLogin:(BOOL)login{
+
+    _login = login;
+    
+    [[NSUserDefaults standardUserDefaults] setBool:login forKey:@"login"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (instancetype)initWithDic:(NSDictionary *)dic

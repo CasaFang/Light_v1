@@ -11,6 +11,10 @@
 #import <SVPullToRefresh.h>
 #import "LightAuth.h"
 #import "LoveAuthAddViewController.h"
+#import "MarryCertificationViewController.h"
+#import "AuthDetailViewController.h"
+#import "LightMyShareManager.h"
+#import "LightUser.h"
 
 static NSString * const cellIdentifer = @"loveAuthCellIdentifier";
 static int TableViewRequestInterval = 10;
@@ -35,6 +39,9 @@ static int TableViewRequestInterval = 10;
     
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"regiser_back"] style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = leftItem;
+    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"我的认证" style:UIBarButtonItemStyleDone target:self action:@selector(myAuth:)];
+    self.navigationItem.rightBarButtonItem = rightItem;
     
     
 //    UIButton *addBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -74,6 +81,14 @@ static int TableViewRequestInterval = 10;
 - (void)back:(UIButton *)btn{
     
     [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)myAuth:(UIButton *)btn{
+
+    AuthDetailViewController *c = [AuthDetailViewController new];
+    c.title = @"我的认证";
+    c.marryPageId = [LightMyShareManager shareUser].owner.marryPageId;
+    [self.navigationController pushViewController:c animated:YES];
+    
 }
 #pragma mark  ---
 - (void)addAuth:(UIButton *)btn{
@@ -148,6 +163,11 @@ static int TableViewRequestInterval = 10;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+     LightAuth *auth = [tableAuths objectAtIndex:indexPath.row];
+    AuthDetailViewController *c = [AuthDetailViewController new];
+    c.marryPageId = [NSString stringWithFormat:@"%ld",(long)auth.Id];
+    c.title = @"认证详情";
+    [self.navigationController pushViewController:c animated:YES];
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

@@ -34,7 +34,17 @@
     if (noti.type == 3) {
         
         LightMarry *marry = noti.notiObject;
-        contentStr = [NSString stringWithFormat:@"@ %@像你发出了求婚请求",marry.marryerName];
+        
+        if (marry.status == 1) {
+           
+             contentStr = [NSString stringWithFormat:@"你接受了@ %@像你发出了求婚请求,light为你们创建认证主页",marry.marryerName];
+        }
+        else{
+        
+            contentStr = [NSString stringWithFormat:@"@ %@像你发出了求婚请求",marry.marryerName];
+        
+        }
+        
     }
     else if (noti.type == 4){
         

@@ -55,8 +55,8 @@ static NSString *cellIdentifier = @"indexsettingnoticellidentifier";
         cell = [IndexSettingNotiTableViewCell initFromNib];
     }
     
-    LightNoti *expert = [_tableArray objectAtIndex:indexPath.row];
-    [cell displayCellWithNoti:expert];
+    LightNoti *noti = [_tableArray objectAtIndex:indexPath.row];
+    [cell displayCellWithNoti:noti];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

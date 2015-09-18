@@ -23,4 +23,5 @@ typedef void(^marryBlock)(BOOL isSuccess ,NSError *error);
                       andStatus:(NSInteger )status
                        andBlock:(marryBlock )completedBlock;
 
+
 @end

@@ -96,14 +96,36 @@ static NSString *cellIdentifier = @"indexleftnoticellidentifier";
     
     if (noti.type == 3) {
         
-        MarryInvitationViewController *c = [MarryInvitationViewController new];
-        c.noti = noti;
-        [self.navigationController pushViewController:c animated:YES];
+        LightMarry *marry = noti.notiObject;
+        
+        if (marry.status == 1) {
+            
+            MarryCertificationViewController *c = [MarryCertificationViewController new];
+            [self.navigationController pushViewController:c animated:YES];
+        }
+        else{
+        
+            MarryInvitationViewController *c = [MarryInvitationViewController new];
+            c.noti = noti;
+            [self.navigationController pushViewController:c animated:YES];
+
+        }
     }
     else if(noti.type == 4)
     {
-        MarryCertificationViewController *c = [MarryCertificationViewController new];
-        [self.navigationController pushViewController:c animated:YES];
+        
+        LightMarry *marry = noti.notiObject;
+        if (marry.status == 1) {
+            
+            MarryCertificationViewController *c = [MarryCertificationViewController new];
+            [self.navigationController pushViewController:c animated:YES];
+            
+        }
+        else{
+        
+            
+        }
+        
     }
    
     

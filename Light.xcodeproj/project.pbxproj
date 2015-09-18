@@ -81,6 +81,15 @@
 		C980F7591B6B511700E640E9 /* IndexLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C980F7571B6B511700E640E9 /* IndexLeftViewController.m */; };
 		C980F75E1B6B657500E640E9 /* IndexMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C980F75C1B6B657500E640E9 /* IndexMainTableViewCell.m */; };
 		C980F75F1B6B657500E640E9 /* IndexMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C980F75D1B6B657500E640E9 /* IndexMainTableViewCell.xib */; };
+		C9CFBEA81BAC4FBB000C3B2F /* LightMarryPage.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CFBEA71BAC4FBB000C3B2F /* LightMarryPage.m */; };
+		C9CFBEAC1BAC5B46000C3B2F /* MarryPagePicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CFBEAA1BAC5B46000C3B2F /* MarryPagePicCollectionViewCell.m */; };
+		C9CFBEAD1BAC5B46000C3B2F /* MarryPagePicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CFBEAB1BAC5B46000C3B2F /* MarryPagePicCollectionViewCell.xib */; };
+		C9CFBEB11BAC5C40000C3B2F /* MarryPagePicAddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CFBEAF1BAC5C40000C3B2F /* MarryPagePicAddCollectionViewCell.m */; };
+		C9CFBEB21BAC5C40000C3B2F /* MarryPagePicAddCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CFBEB01BAC5C40000C3B2F /* MarryPagePicAddCollectionViewCell.xib */; };
+		C9CFBEC71BAC6258000C3B2F /* UIViewController+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CFBEC61BAC6258000C3B2F /* UIViewController+ImagePicker.m */; };
+		C9CFBECB1BAC6E54000C3B2F /* AuthDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CFBECA1BAC6E54000C3B2F /* AuthDetailViewController.m */; };
+		C9CFBECE1BAC6E86000C3B2F /* AuthDetailContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CFBECD1BAC6E86000C3B2F /* AuthDetailContentView.m */; };
+		C9CFBED01BAC6E98000C3B2F /* AuthDetailContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CFBECF1BAC6E98000C3B2F /* AuthDetailContentView.xib */; };
 		C9DAA5E71B95E30700545D21 /* AvatarEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DAA5E61B95E30700545D21 /* AvatarEditViewController.m */; };
 		C9DAA5EA1B95E32A00545D21 /* AvatarEditContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DAA5E91B95E32A00545D21 /* AvatarEditContentView.m */; };
 		C9DAA5EC1B95E33800545D21 /* AvatarEditContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DAA5EB1B95E33800545D21 /* AvatarEditContentView.xib */; };
@@ -122,6 +131,11 @@
 		C9DFC5091B94BB7000A064F1 /* ContactsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFC5081B94BB7000A064F1 /* ContactsDetailViewController.m */; };
 		C9DFC50C1B94BB8F00A064F1 /* ContactsDetailContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DFC50B1B94BB8F00A064F1 /* ContactsDetailContentView.m */; };
 		C9DFC50E1B94BB9E00A064F1 /* ContactsDetailContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DFC50D1B94BB9E00A064F1 /* ContactsDetailContentView.xib */; };
+		C9E366B81BA5B84500FE2314 /* left_marry.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E366B71BA5B84500FE2314 /* left_marry.png */; };
+		C9E366BD1BA5BD8100FE2314 /* auth_home_default.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E366B91BA5BD8100FE2314 /* auth_home_default.png */; };
+		C9E366BE1BA5BD8100FE2314 /* auth_homeedit_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E366BA1BA5BD8100FE2314 /* auth_homeedit_white@3x.png */; };
+		C9E366BF1BA5BD8100FE2314 /* auth_home_edit@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E366BB1BA5BD8100FE2314 /* auth_home_edit@3x.png */; };
+		C9E366C01BA5BD8100FE2314 /* auth_home_heart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E366BC1BA5BD8100FE2314 /* auth_home_heart@3x.png */; };
 		C9E3ED721B6D1B36002FBD64 /* LightRongYunManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E3ED711B6D1B36002FBD64 /* LightRongYunManager.m */; };
 		C9E3ED751B6D1F5D002FBD64 /* ChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E3ED741B6D1F5D002FBD64 /* ChatListViewController.m */; };
 		C9E3ED7C1B6D977D002FBD64 /* LightExperts.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E3ED7B1B6D977D002FBD64 /* LightExperts.m */; };
@@ -316,6 +330,15 @@
 		C9EDADD31B9ECE5800CE99A0 /* EmailValidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EDADD21B9ECE5800CE99A0 /* EmailValidateViewController.m */; };
 		C9EDADD61B9ECE7700CE99A0 /* EmailValidateContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EDADD51B9ECE7700CE99A0 /* EmailValidateContentView.m */; };
 		C9EDADD81B9ECE8900CE99A0 /* EmailValidateContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9EDADD71B9ECE8900CE99A0 /* EmailValidateContentView.xib */; };
+		DC22027E1BAC83BD00158478 /* add_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2202751BAC83BD00158478 /* add_frame.png */; };
+		DC22027F1BAC83BD00158478 /* add_photo_all.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2202761BAC83BD00158478 /* add_photo_all.png */; };
+		DC2202801BAC83BD00158478 /* add_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2202771BAC83BD00158478 /* add_photo.png */; };
+		DC2202811BAC83BD00158478 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2202781BAC83BD00158478 /* bg.png */; };
+		DC2202821BAC83BD00158478 /* edit_white.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2202791BAC83BD00158478 /* edit_white.png */; };
+		DC2202831BAC83BD00158478 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = DC22027A1BAC83BD00158478 /* edit.png */; };
+		DC2202841BAC83BD00158478 /* heartbeat.png in Resources */ = {isa = PBXBuildFile; fileRef = DC22027B1BAC83BD00158478 /* heartbeat.png */; };
+		DC2202851BAC83BD00158478 /* marry.png in Resources */ = {isa = PBXBuildFile; fileRef = DC22027C1BAC83BD00158478 /* marry.png */; };
+		DC2202861BAC83BD00158478 /* yes.png in Resources */ = {isa = PBXBuildFile; fileRef = DC22027D1BAC83BD00158478 /* yes.png */; };
 		DC4EDC581B5E0A220056EC40 /* skip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4EDC571B5E0A220056EC40 /* skip@2x.png */; };
 		DC802A221B9F5D170094EE03 /* left_email.png in Resources */ = {isa = PBXBuildFile; fileRef = DC802A211B9F5D170094EE03 /* left_email.png */; };
 		DC802A281B9F61020094EE03 /* PhoneValidateContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC802A271B9F61020094EE03 /* PhoneValidateContentView.m */; };
@@ -474,6 +497,21 @@
 		C980F75B1B6B657500E640E9 /* IndexMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndexMainTableViewCell.h; path = "主界面/IndexMainTableViewCell.h"; sourceTree = "<group>"; };
 		C980F75C1B6B657500E640E9 /* IndexMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndexMainTableViewCell.m; path = "主界面/IndexMainTableViewCell.m"; sourceTree = "<group>"; };
 		C980F75D1B6B657500E640E9 /* IndexMainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IndexMainTableViewCell.xib; path = "主界面/IndexMainTableViewCell.xib"; sourceTree = "<group>"; };
+		C9CFBEA61BAC4FBB000C3B2F /* LightMarryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightMarryPage.h; sourceTree = "<group>"; };
+		C9CFBEA71BAC4FBB000C3B2F /* LightMarryPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightMarryPage.m; sourceTree = "<group>"; };
+		C9CFBEA91BAC5B46000C3B2F /* MarryPagePicCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarryPagePicCollectionViewCell.h; path = "主界面/MarryPagePicCollectionViewCell.h"; sourceTree = "<group>"; };
+		C9CFBEAA1BAC5B46000C3B2F /* MarryPagePicCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarryPagePicCollectionViewCell.m; path = "主界面/MarryPagePicCollectionViewCell.m"; sourceTree = "<group>"; };
+		C9CFBEAB1BAC5B46000C3B2F /* MarryPagePicCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MarryPagePicCollectionViewCell.xib; path = "主界面/MarryPagePicCollectionViewCell.xib"; sourceTree = "<group>"; };
+		C9CFBEAE1BAC5C40000C3B2F /* MarryPagePicAddCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarryPagePicAddCollectionViewCell.h; path = "主界面/MarryPagePicAddCollectionViewCell.h"; sourceTree = "<group>"; };
+		C9CFBEAF1BAC5C40000C3B2F /* MarryPagePicAddCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarryPagePicAddCollectionViewCell.m; path = "主界面/MarryPagePicAddCollectionViewCell.m"; sourceTree = "<group>"; };
+		C9CFBEB01BAC5C40000C3B2F /* MarryPagePicAddCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MarryPagePicAddCollectionViewCell.xib; path = "主界面/MarryPagePicAddCollectionViewCell.xib"; sourceTree = "<group>"; };
+		C9CFBEC51BAC6258000C3B2F /* UIViewController+ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImagePicker.h"; sourceTree = "<group>"; };
+		C9CFBEC61BAC6258000C3B2F /* UIViewController+ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImagePicker.m"; sourceTree = "<group>"; };
+		C9CFBEC91BAC6E54000C3B2F /* AuthDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthDetailViewController.h; path = "主界面/AuthDetailViewController.h"; sourceTree = "<group>"; };
+		C9CFBECA1BAC6E54000C3B2F /* AuthDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthDetailViewController.m; path = "主界面/AuthDetailViewController.m"; sourceTree = "<group>"; };
+		C9CFBECC1BAC6E86000C3B2F /* AuthDetailContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthDetailContentView.h; path = "主界面/AuthDetailContentView.h"; sourceTree = "<group>"; };
+		C9CFBECD1BAC6E86000C3B2F /* AuthDetailContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthDetailContentView.m; path = "主界面/AuthDetailContentView.m"; sourceTree = "<group>"; };
+		C9CFBECF1BAC6E98000C3B2F /* AuthDetailContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AuthDetailContentView.xib; path = "主界面/AuthDetailContentView.xib"; sourceTree = "<group>"; };
 		C9DAA5E51B95E30700545D21 /* AvatarEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvatarEditViewController.h; path = "主界面/AvatarEditViewController.h"; sourceTree = "<group>"; };
 		C9DAA5E61B95E30700545D21 /* AvatarEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AvatarEditViewController.m; path = "主界面/AvatarEditViewController.m"; sourceTree = "<group>"; };
 		C9DAA5E81B95E32A00545D21 /* AvatarEditContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AvatarEditContentView.h; path = "主界面/AvatarEditContentView.h"; sourceTree = "<group>"; };
@@ -540,6 +578,11 @@
 		C9DFC50A1B94BB8F00A064F1 /* ContactsDetailContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactsDetailContentView.h; path = "主界面/ContactsDetailContentView.h"; sourceTree = "<group>"; };
 		C9DFC50B1B94BB8F00A064F1 /* ContactsDetailContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactsDetailContentView.m; path = "主界面/ContactsDetailContentView.m"; sourceTree = "<group>"; };
 		C9DFC50D1B94BB9E00A064F1 /* ContactsDetailContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContactsDetailContentView.xib; path = "主界面/ContactsDetailContentView.xib"; sourceTree = "<group>"; };
+		C9E366B71BA5B84500FE2314 /* left_marry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_marry.png; sourceTree = "<group>"; };
+		C9E366B91BA5BD8100FE2314 /* auth_home_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auth_home_default.png; sourceTree = "<group>"; };
+		C9E366BA1BA5BD8100FE2314 /* auth_homeedit_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auth_homeedit_white@3x.png"; sourceTree = "<group>"; };
+		C9E366BB1BA5BD8100FE2314 /* auth_home_edit@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auth_home_edit@3x.png"; sourceTree = "<group>"; };
+		C9E366BC1BA5BD8100FE2314 /* auth_home_heart@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "auth_home_heart@3x.png"; sourceTree = "<group>"; };
 		C9E3ED701B6D1B36002FBD64 /* LightRongYunManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightRongYunManager.h; sourceTree = "<group>"; };
 		C9E3ED711B6D1B36002FBD64 /* LightRongYunManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightRongYunManager.m; sourceTree = "<group>"; };
 		C9E3ED731B6D1F5D002FBD64 /* ChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatListViewController.h; sourceTree = "<group>"; };
@@ -834,6 +877,15 @@
 		C9EDADD51B9ECE7700CE99A0 /* EmailValidateContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmailValidateContentView.m; path = "主界面/EmailValidateContentView.m"; sourceTree = "<group>"; };
 		C9EDADD71B9ECE8900CE99A0 /* EmailValidateContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmailValidateContentView.xib; path = "主界面/EmailValidateContentView.xib"; sourceTree = "<group>"; };
 		D8EC1FD83FEC27A3928D6EC6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC2202751BAC83BD00158478 /* add_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_frame.png; sourceTree = "<group>"; };
+		DC2202761BAC83BD00158478 /* add_photo_all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_photo_all.png; sourceTree = "<group>"; };
+		DC2202771BAC83BD00158478 /* add_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_photo.png; sourceTree = "<group>"; };
+		DC2202781BAC83BD00158478 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		DC2202791BAC83BD00158478 /* edit_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit_white.png; sourceTree = "<group>"; };
+		DC22027A1BAC83BD00158478 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		DC22027B1BAC83BD00158478 /* heartbeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartbeat.png; sourceTree = "<group>"; };
+		DC22027C1BAC83BD00158478 /* marry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marry.png; sourceTree = "<group>"; };
+		DC22027D1BAC83BD00158478 /* yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yes.png; sourceTree = "<group>"; };
 		DC4EDC571B5E0A220056EC40 /* skip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skip@2x.png"; sourceTree = "<group>"; };
 		DC802A211B9F5D170094EE03 /* left_email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_email.png; sourceTree = "<group>"; };
 		DC802A261B9F61020094EE03 /* PhoneValidateContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhoneValidateContentView.h; path = "主界面/PhoneValidateContentView.h"; sourceTree = "<group>"; };
@@ -921,6 +973,7 @@
 		049F3CFD1B2D559A0014F09A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C9CFBEC41BAC6257000C3B2F /* imagePicker */,
 				049F3D031B2D57DD0014F09A /* ViewsUtils */,
 				C9E58D3A1B92F7D700D85071 /* LightPushCenter.h */,
 				C9E58D3B1B92F7D700D85071 /* LightPushCenter.m */,
@@ -1290,6 +1343,7 @@
 		04D1A4531B2C944D005823E4 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				DC2202741BAC83A000158478 /* 我要求婚 */,
 				C9E41F731B99E11F00415456 /* common */,
 				C9E7448F1B71270B00AA31E8 /* tab */,
 				C9E3EDF71B6EF42D002FBD64 /* love */,
@@ -1382,6 +1436,8 @@
 				C9381EB31B6B15C400D8C804 /* ModelConfig.h */,
 				048384E11B2D64BF00ED7693 /* LightValidateCode.h */,
 				048384E21B2D64BF00ED7693 /* LightValidateCode.m */,
+				C9CFBEA61BAC4FBB000C3B2F /* LightMarryPage.h */,
+				C9CFBEA71BAC4FBB000C3B2F /* LightMarryPage.m */,
 				C9E58D4D1B934E1700D85071 /* address */,
 				C9E7442A1B70913400AA31E8 /* noti */,
 				C9E3EE0F1B6EFD23002FBD64 /* auth */,
@@ -1443,6 +1499,27 @@
 				C95DB85E1B8257090054EAA1 /* AccompanyBriefContentView.xib */,
 			);
 			name = addBiref;
+			sourceTree = "<group>";
+		};
+		C9CFBEC41BAC6257000C3B2F /* imagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C9CFBEC51BAC6258000C3B2F /* UIViewController+ImagePicker.h */,
+				C9CFBEC61BAC6258000C3B2F /* UIViewController+ImagePicker.m */,
+			);
+			path = imagePicker;
+			sourceTree = "<group>";
+		};
+		C9CFBEC81BAC6E0D000C3B2F /* 认证详情 */ = {
+			isa = PBXGroup;
+			children = (
+				C9CFBEC91BAC6E54000C3B2F /* AuthDetailViewController.h */,
+				C9CFBECA1BAC6E54000C3B2F /* AuthDetailViewController.m */,
+				C9CFBECC1BAC6E86000C3B2F /* AuthDetailContentView.h */,
+				C9CFBECD1BAC6E86000C3B2F /* AuthDetailContentView.m */,
+				C9CFBECF1BAC6E98000C3B2F /* AuthDetailContentView.xib */,
+			);
+			name = "认证详情";
 			sourceTree = "<group>";
 		};
 		C9DAA5E41B95E2D500545D21 /* 头像修改 */ = {
@@ -1615,6 +1692,7 @@
 		C9E3EDDC1B6E675C002FBD64 /* indexLeft */ = {
 			isa = PBXGroup;
 			children = (
+				C9E366B71BA5B84500FE2314 /* left_marry.png */,
 				C9E7EF8A1B9F26FC0003ABD1 /* left_eye@2x.png */,
 				C9E7EF8B1B9F26FC0003ABD1 /* left_eyebrown@2x.png */,
 				DC802A211B9F5D170094EE03 /* left_email.png */,
@@ -1691,6 +1769,10 @@
 		C9E41F731B99E11F00415456 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				C9E366B91BA5BD8100FE2314 /* auth_home_default.png */,
+				C9E366BA1BA5BD8100FE2314 /* auth_homeedit_white@3x.png */,
+				C9E366BB1BA5BD8100FE2314 /* auth_home_edit@3x.png */,
+				C9E366BC1BA5BD8100FE2314 /* auth_home_heart@3x.png */,
 				C9E41F741B99E11F00415456 /* arrow@2x.png */,
 			);
 			path = common;
@@ -1704,6 +1786,12 @@
 				C9E41F7B1B99EFC900415456 /* MarryCertificationContentView.h */,
 				C9E41F7C1B99EFC900415456 /* MarryCertificationContentView.m */,
 				C9E41F7E1B99EFE000415456 /* MarryCertificationContentView.xib */,
+				C9CFBEA91BAC5B46000C3B2F /* MarryPagePicCollectionViewCell.h */,
+				C9CFBEAA1BAC5B46000C3B2F /* MarryPagePicCollectionViewCell.m */,
+				C9CFBEAB1BAC5B46000C3B2F /* MarryPagePicCollectionViewCell.xib */,
+				C9CFBEAE1BAC5C40000C3B2F /* MarryPagePicAddCollectionViewCell.h */,
+				C9CFBEAF1BAC5C40000C3B2F /* MarryPagePicAddCollectionViewCell.m */,
+				C9CFBEB01BAC5C40000C3B2F /* MarryPagePicAddCollectionViewCell.xib */,
 			);
 			name = "认证主页";
 			sourceTree = "<group>";
@@ -2097,6 +2185,7 @@
 				C9E3EE161B6F0BC3002FBD64 /* LoveAuthAddContentView.h */,
 				C9E3EE171B6F0BC3002FBD64 /* LoveAuthAddContentView.m */,
 				C9E3EE191B6F0BD4002FBD64 /* LoveAuthAddContentView.xib */,
+				C9CFBEC81BAC6E0D000C3B2F /* 认证详情 */,
 			);
 			name = "证书";
 			sourceTree = "<group>";
@@ -2156,6 +2245,22 @@
 				C9EDADD71B9ECE8900CE99A0 /* EmailValidateContentView.xib */,
 			);
 			name = "邮箱验证";
+			sourceTree = "<group>";
+		};
+		DC2202741BAC83A000158478 /* 我要求婚 */ = {
+			isa = PBXGroup;
+			children = (
+				DC2202751BAC83BD00158478 /* add_frame.png */,
+				DC2202761BAC83BD00158478 /* add_photo_all.png */,
+				DC2202771BAC83BD00158478 /* add_photo.png */,
+				DC2202781BAC83BD00158478 /* bg.png */,
+				DC2202791BAC83BD00158478 /* edit_white.png */,
+				DC22027A1BAC83BD00158478 /* edit.png */,
+				DC22027B1BAC83BD00158478 /* heartbeat.png */,
+				DC22027C1BAC83BD00158478 /* marry.png */,
+				DC22027D1BAC83BD00158478 /* yes.png */,
+			);
+			name = "我要求婚";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2244,12 +2349,15 @@
 			files = (
 				C9DAA5F21B95F84F00545D21 /* 捐助.jpg in Resources */,
 				C9E7448D1B71218D00AA31E8 /* white_btn@2x.png in Resources */,
+				C9E366BD1BA5BD8100FE2314 /* auth_home_default.png in Resources */,
 				C9E3EDC31B6E15BA002FBD64 /* LightFPValidateViewController.xib in Resources */,
 				04D1A4A81B2C944D005823E4 /* Intro03.png in Resources */,
 				C9381E7F1B6A636B00D8C804 /* LightRegViewController.xib in Resources */,
 				C9E743F11B70600600AA31E8 /* 命理为什么适用于LGBT.rtf in Resources */,
+				DC2202851BAC83BD00158478 /* marry.png in Resources */,
 				C9E743E01B70475B00AA31E8 /* CPYLayerTableViewCell.xib in Resources */,
 				C9E744A51B712A8000AA31E8 /* cpy_needPepole@2x.png in Resources */,
+				DC2202801BAC83BD00158478 /* add_photo.png in Resources */,
 				C9E744E31B71E82A00AA31E8 /* UnBindingPhoneContentView.xib in Resources */,
 				C9E744A91B712AE400AA31E8 /* point_selected@2x.png in Resources */,
 				C95DB85F1B8257090054EAA1 /* AccompanyBriefContentView.xib in Resources */,
@@ -2263,12 +2371,14 @@
 				C9E3EDF61B6EF374002FBD64 /* LoveContentView.xib in Resources */,
 				C9E3EDDE1B6E676C002FBD64 /* left_setting@2x.png in Resources */,
 				C9E744181B7083D100AA31E8 /* left_feedback@2x.png in Resources */,
+				DC2202861BAC83BD00158478 /* yes.png in Resources */,
 				C95DB85A1B8256DF0054EAA1 /* AccompanyTagContentView.xib in Resources */,
 				C9E3EE351B6F59BA002FBD64 /* IndexFeedBackContentView.xib in Resources */,
 				C9E743DB1B70470C00AA31E8 /* CPYCounselorTableViewCell.xib in Resources */,
 				04D1A4A61B2C944D005823E4 /* Intro01.png in Resources */,
 				C9DC81D81B6C46B900BDAA37 /* MsgContactsTableViewCell.xib in Resources */,
 				C9E744191B7083D100AA31E8 /* left_account@2x.png in Resources */,
+				DC2202831BAC83BD00158478 /* edit.png in Resources */,
 				C9E745071B71FE5000AA31E8 /* PhoneEditContentView.xib in Resources */,
 				C9381E9D1B6A8C6200D8C804 /* regiser_back@2x.png in Resources */,
 				C9EDADCB1B9EC70300CE99A0 /* BindingEmailContentView.xib in Resources */,
@@ -2276,6 +2386,7 @@
 				C9E745021B71FE1100AA31E8 /* EmailEditContentView.xib in Resources */,
 				C9E3EE2B1B6F514E002FBD64 /* IndexAccountContentView.xib in Resources */,
 				C9E3EDA11B6DF684002FBD64 /* cpy_xinLiZiXunShi@2x.png in Resources */,
+				C9E366BF1BA5BD8100FE2314 /* auth_home_edit@3x.png in Resources */,
 				C9DAA5EE1B95E9C100545D21 /* left_info.png in Resources */,
 				C9DF1ED71B823F4A000FABC1 /* AccompanyAddContentView.xib in Resources */,
 				C9E744451B70A18600AA31E8 /* MsgMsgHeadView.xib in Resources */,
@@ -2295,13 +2406,16 @@
 				C9E744A11B71270B00AA31E8 /* msg_32_selected@2x.png in Resources */,
 				C9E743EA1B70533800AA31E8 /* CPYMinLiContentView.xib in Resources */,
 				C9E744A01B71270B00AA31E8 /* msg_32_default@2x.png in Resources */,
+				DC2202841BAC83BD00158478 /* heartbeat.png in Resources */,
 				C9E3EE231B6F23E8002FBD64 /* IndexLeftUserContentView.xib in Resources */,
+				DC2202821BAC83BD00158478 /* edit_white.png in Resources */,
 				C9E3EE301B6F566B002FBD64 /* IndexSettingContentView.xib in Resources */,
 				C9E58D581B93642D00D85071 /* EditSignatureContentView.xib in Resources */,
 				C9DB05461B836ABF004BC7C4 /* NeedPeopleDetailContentView.xib in Resources */,
 				C9E3EE3C1B6F5FEE002FBD64 /* about@2x.png in Resources */,
 				C9E7449E1B71270B00AA31E8 /* love_32_defalut@2x.png in Resources */,
 				DC802A2C1B9F61FE0094EE03 /* PhoneValidateContentView.xib in Resources */,
+				C9E366C01BA5BD8100FE2314 /* auth_home_heart@3x.png in Resources */,
 				C9E7447E1B7119BF00AA31E8 /* eyeUnSee@2x.png in Resources */,
 				C9E7EF8D1B9F26FC0003ABD1 /* left_eyebrown@2x.png in Resources */,
 				C9E58D441B9317AC00D85071 /* IndexMainNPCSTableViewCell.xib in Resources */,
@@ -2312,6 +2426,7 @@
 				C9E3EDA51B6DF75E002FBD64 /* cpy_arrow@2x.png in Resources */,
 				C9E744651B70DEAF00AA31E8 /* NewFriendsTableViewCell.xib in Resources */,
 				C9E744291B708FF300AA31E8 /* IndexSettingNotiTableViewCell.xib in Resources */,
+				C9CFBEB21BAC5C40000C3B2F /* MarryPagePicAddCollectionViewCell.xib in Resources */,
 				C980F75F1B6B657500E640E9 /* IndexMainTableViewCell.xib in Resources */,
 				C9381E7A1B6A5D1000D8C804 /* LightRegPhoneViewController.xib in Resources */,
 				C9381EA51B6A908800D8C804 /* LightValidateCodeViewController.xib in Resources */,
@@ -2336,9 +2451,11 @@
 				C9381E891B6A646500D8C804 /* LightLoginNewViewController.xib in Resources */,
 				04D1A4AA1B2C944D005823E4 /* Intro05.png in Resources */,
 				C9E41F711B99D9DB00415456 /* MarryInvitationContentView.xib in Resources */,
+				C9CFBED01BAC6E98000C3B2F /* AuthDetailContentView.xib in Resources */,
 				C9EDADCF1B9EC83A00CE99A0 /* left_phone.png in Resources */,
 				C9E7449F1B71270B00AA31E8 /* love_32_selected@2x.png in Resources */,
 				04D1A4A91B2C944D005823E4 /* Intro04.png in Resources */,
+				DC22027F1BAC83BD00158478 /* add_photo_all.png in Resources */,
 				C9DC81C31B6BBD0100BDAA37 /* index_swipe@2x.png in Resources */,
 				C9E3EDB91B6E0E39002FBD64 /* Light服务协议.rtf in Resources */,
 				C9E7449D1B71270B00AA31E8 /* knowledge_32_selected@2x.png in Resources */,
@@ -2348,11 +2465,13 @@
 				C9E744BC1B71AFB100AA31E8 /* LoveQiuHunContentView.xib in Resources */,
 				C9E3EE0E1B6EFCE4002FBD64 /* LoveAuthTableViewCell.xib in Resources */,
 				C9E3EDCD1B6E17AA002FBD64 /* LightFPCodeConfirmViewController.xib in Resources */,
+				DC22027E1BAC83BD00158478 /* add_frame.png in Resources */,
 				04D1A43E1B2C915C005823E4 /* LaunchScreen.xib in Resources */,
 				04D1A4831B2C944D005823E4 /* blue_login_normal@2x.png in Resources */,
 				C9E7446E1B710A9E00AA31E8 /* PushConfig.plist in Resources */,
 				C9381EAA1B6A936B00D8C804 /* LightRegUserInfoViewController.xib in Resources */,
 				C9DFC50E1B94BB9E00A064F1 /* ContactsDetailContentView.xib in Resources */,
+				C9E366BE1BA5BD8100FE2314 /* auth_homeedit_white@3x.png in Resources */,
 				C9E7EF8C1B9F26FC0003ABD1 /* left_eye@2x.png in Resources */,
 				C9E3EDFB1B6EF42D002FBD64 /* love1@2x.png in Resources */,
 				C9E7449C1B71270B00AA31E8 /* knowledge_32_default@2x.png in Resources */,
@@ -2363,6 +2482,7 @@
 				C9E3EDA31B6DF684002FBD64 /* cpy_lvShi@2x.png in Resources */,
 				C9E744851B71210400AA31E8 /* male_blue@2x.png in Resources */,
 				C9E744A31B71270B00AA31E8 /* same_32_selected@2x.png in Resources */,
+				DC2202811BAC83BD00158478 /* bg.png in Resources */,
 				049F3D201B2D5AAC0014F09A /* Default-568h@2x.png in Resources */,
 				C9E3EDFC1B6EF42D002FBD64 /* love2@2x.png in Resources */,
 				C9E3EDC81B6E1602002FBD64 /* LightFPResetPwdViewController.xib in Resources */,
@@ -2371,6 +2491,7 @@
 				C9E744C01B71B2D400AA31E8 /* love_ok@2x.png in Resources */,
 				C9E744D41B71C02D00AA31E8 /* QiuHun1ContentView.xib in Resources */,
 				04D1A4821B2C944D005823E4 /* blue_login_highlight@2x.png in Resources */,
+				C9E366B81BA5B84500FE2314 /* left_marry.png in Resources */,
 				C9DFC4F81B94A73F00A064F1 /* city_list_server.json in Resources */,
 				C9E744A81B712AE400AA31E8 /* point_default@2x.png in Resources */,
 				04D1A4A71B2C944D005823E4 /* Intro02.png in Resources */,
@@ -2379,6 +2500,7 @@
 				C9E7440B1B707ADD00AA31E8 /* CPYMingLiTaLuoTableViewCell.xib in Resources */,
 				048385111B2F2C0500ED7693 /* LightRegSexViewController.xib in Resources */,
 				C9E744121B70822500AA31E8 /* left_head_bg@2x.png in Resources */,
+				C9CFBEAD1BAC5B46000C3B2F /* MarryPagePicCollectionViewCell.xib in Resources */,
 				C9E744A21B71270B00AA31E8 /* same_32_default@2x.png in Resources */,
 				C9381E8C1B6A680700D8C804 /* user_icon@2x.png in Resources */,
 				C9E3EE3A1B6F5F98002FBD64 /* IndexAboutContentView.xib in Resources */,
@@ -2479,6 +2601,7 @@
 				048AC0721B3018D40076DB17 /* LightIntroViewController.m in Sources */,
 				C9DC82061B6CB22400BDAA37 /* LightMyShareManager.m in Sources */,
 				C9E3EE0D1B6EFCE4002FBD64 /* LoveAuthTableViewCell.m in Sources */,
+				C9CFBECE1BAC6E86000C3B2F /* AuthDetailContentView.m in Sources */,
 				C9E3EE031B6EF90C002FBD64 /* LoveQiuHunViewController.m in Sources */,
 				C9E41F6F1B99D9DB00415456 /* MarryInvitationViewController.m in Sources */,
 				C9E3EDBD1B6E1287002FBD64 /* LightFPCodeViewController.m in Sources */,
@@ -2486,6 +2609,7 @@
 				C9E3EE471B6F6772002FBD64 /* IndexAboutDonationViewController.m in Sources */,
 				C9E3EDC21B6E15BA002FBD64 /* LightFPValidateViewController.m in Sources */,
 				C9DB05441B836AA8004BC7C4 /* NeedPeopleDetailContentView.m in Sources */,
+				C9CFBEB11BAC5C40000C3B2F /* MarryPagePicAddCollectionViewCell.m in Sources */,
 				C9E3EDCC1B6E17AA002FBD64 /* LightFPCodeConfirmViewController.m in Sources */,
 				C9EDADC41B9EC44700CE99A0 /* BindingPhoneContentView.m in Sources */,
 				C9E744E11B71E81200AA31E8 /* UnBindingPhoneContentView.m in Sources */,
@@ -2497,6 +2621,7 @@
 				C9E3EDEA1B6E6E85002FBD64 /* IndexSettingViewController.m in Sources */,
 				C9E3EE291B6F513C002FBD64 /* IndexAccountContentView.m in Sources */,
 				C9E744C61B71BF9400AA31E8 /* QiuHun1ViewController.m in Sources */,
+				C9CFBEA81BAC4FBB000C3B2F /* LightMarryPage.m in Sources */,
 				C9E744DE1B71E7D500AA31E8 /* BindingPhoneViewController.m in Sources */,
 				C9DFC5031B94AF5500A064F1 /* KDHeaderView.m in Sources */,
 				048384E71B2D68E000ED7693 /* LightArticle.m in Sources */,
@@ -2512,10 +2637,12 @@
 				C9E744EE1B71E8E700AA31E8 /* PwdChangeViewController.m in Sources */,
 				C9E58D4C1B934DFE00D85071 /* LightAddress.m in Sources */,
 				C9E744281B708FF300AA31E8 /* IndexSettingNotiTableViewCell.m in Sources */,
+				C9CFBECB1BAC6E54000C3B2F /* AuthDetailViewController.m in Sources */,
 				C980F7541B6B50FE00E640E9 /* IndexMainViewController.m in Sources */,
 				C9E3EDB51B6E053D002FBD64 /* LightServerContactViewController.m in Sources */,
 				C9DFC50C1B94BB8F00A064F1 /* ContactsDetailContentView.m in Sources */,
 				C9381E881B6A646500D8C804 /* LightLoginNewViewController.m in Sources */,
+				C9CFBEC71BAC6258000C3B2F /* UIViewController+ImagePicker.m in Sources */,
 				C9E3EE151B6F0B7D002FBD64 /* LoveAuthAddViewController.m in Sources */,
 				C95DB8451B82474F0054EAA1 /* AccompanyUploadImageViewController.m in Sources */,
 				C9381EB21B6AE7AD00D8C804 /* NSString+Extention.m in Sources */,
@@ -2593,6 +2720,7 @@
 				C9381E791B6A5D1000D8C804 /* LightRegPhoneViewController.m in Sources */,
 				C9DC81FF1B6C6D2200BDAA37 /* LightUser+Login.m in Sources */,
 				048385001B2F19A600ED7693 /* LightTextField.m in Sources */,
+				C9CFBEAC1BAC5B46000C3B2F /* MarryPagePicCollectionViewCell.m in Sources */,
 				C9EDADD61B9ECE7700CE99A0 /* EmailValidateContentView.m in Sources */,
 				C9E744601B70DDC200AA31E8 /* MsgNewFriendsTableViewController.m in Sources */,
 				04D1A4301B2C915C005823E4 /* main.m in Sources */,
@@ -2737,7 +2865,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearelight.light;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5a578224-d452-403f-bc81-278cfd254887";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -2766,7 +2894,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearelight.light;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5a578224-d452-403f-bc81-278cfd254887";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};

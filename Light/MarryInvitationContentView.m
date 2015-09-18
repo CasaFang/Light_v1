@@ -27,6 +27,11 @@
 
     _refusedBtn.layer.borderColor = LightColor(0, 157, 212).CGColor;
     _refusedBtn.layer.borderWidth = 1.0f;
+    _contentLabel.layer.cornerRadius = 5.0f;
+    _contentLabel.clipsToBounds = YES;
+//    _contentLabel.shadowOffset = CGSizeMake(1, 1);
+//    _contentLabel.shadowColor = [UIColor grayColor];
+    
 }
 + (instancetype)initFromNib{
 

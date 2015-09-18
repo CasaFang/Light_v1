@@ -55,6 +55,7 @@
 
 - (void)done:(UIButton *)btn{
 
+
     [_accompany upLoadImageWithImageData:UIImageJPEGRepresentation(contentView.imageView.image, .5) andBlock:^(BOOL isSuccess, NSError *error) {
         
         [self.view hideHud];

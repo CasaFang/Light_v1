@@ -20,8 +20,15 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - DACircularProgress (2.3.1)
   - FDFullscreenPopGesture (1.1)
+  - HPGrowingTextView (1.1)
   - JSONKit-NoWarning (1.2)
+  - MBProgressHUD (0.9.1)
+  - MWPhotoBrowser (2.1.1):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
   - PKRevealController (2.0.6)
   - RongCloudIMKit (2.2.5)
   - RSKImageCropper (1.2.1)
@@ -30,6 +37,7 @@ PODS:
   - SDWebImage/Core (3.7.3)
   - Shimmer (1.0.2)
   - SVPullToRefresh (0.4.1)
+  - TPKeyboardAvoiding (1.2.9)
   - UIActivityIndicator-for-SDWebImage (1.2):
     - SDWebImage (~> 3.7)
   - WSProgressHUD (1.0.5):
@@ -38,24 +46,32 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - FDFullscreenPopGesture (~> 1.1)
+  - HPGrowingTextView (~> 1.1)
   - JSONKit-NoWarning (~> 1.2)
+  - MWPhotoBrowser (~> 2.1.1)
   - PKRevealController
   - RongCloudIMKit
   - RSKImageCropper (~> 1.2.0)
   - SVPullToRefresh
+  - TPKeyboardAvoiding (~> 1.2.4)
   - UIActivityIndicator-for-SDWebImage
   - WSProgressHUD (~> 1.0.5)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
   PKRevealController: ffb45a16f5a5032ad90a3d16e5cbb0d8e035bd58
   RongCloudIMKit: b596312663bf2c1a451c649968f3b69ed993c328
   RSKImageCropper: e912419809d3a4eac47864d6fbc22f84c14879d5
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  TPKeyboardAvoiding: ff1ee4e5a5a0c119b965552af8f183868ea20207
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   WSProgressHUD: da053b2380eb5b44c2be374661992ca4179d51fe
 

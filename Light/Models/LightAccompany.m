@@ -101,7 +101,7 @@ NSString  * const LightAccompanyAddSuccessNoti = @"LightAccompanyAddSuccessNoti"
             
             if (validate.result_code == 0) {
             
-                self.picId = [returnDic[@"picId"] integerValue];
+                self.picId = [returnDic[@"pic_id"] integerValue];
                 compeletedBLock(YES , nil);
             }
             else{

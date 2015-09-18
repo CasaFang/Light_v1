@@ -63,6 +63,7 @@
                     self.email = code;
                 }
                 
+                self.login = YES;
                 
                 [LightMyShareManager shareUser].owner = self;
                 
@@ -85,6 +86,11 @@
         }
         
     }];
+}
+
+- (void)logout{
+
+    self.login = NO;
 }
 
 

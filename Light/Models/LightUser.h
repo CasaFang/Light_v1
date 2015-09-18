@@ -23,6 +23,7 @@
 // 账户
 @property (strong , nonatomic) NSString   *phone;
 @property (strong , nonatomic) NSString   *email;
+@property (assign , nonatomic) BOOL login;
 
 // 用户注册用的密码
 @property (strong , nonatomic) NSString   *password;
@@ -30,6 +31,8 @@
 // 添加好友的时候用到
 
 @property (assign , nonatomic) NSInteger req_id;
+@property (strong , nonatomic) NSString *marryId;
+@property (strong , nonatomic) NSString *marryPageId;
 
 //状态，0:对方已请求，自己未同意；1:已经成功添加好友
 @property (assign , nonatomic) NSInteger status;

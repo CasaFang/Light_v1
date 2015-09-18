@@ -25,12 +25,13 @@
 #import "APService.h"
 #import "UIView+Hud.h"
 #import "LightPushCenter.h"
+#import "LightUser+Login.h"
 
 
 #define LightKey @"93cfed023500" 
 #define LightSecret  @"1d831db03ca4cfbb26630d846fd9d468"
 
-#define RONGCLOUD_IM_APPKEY @"25wehl3uwr33w"//@"pwe86ga5elcq6"
+#define RONGCLOUD_IM_APPKEY @"6tnym1brnsdi7"//@"pwe86ga5elcq6"
 #define kDeviceToken @"kDeviceToken"
 #define JPushKey @"963d312127bc743b25d0dd2b"
 
@@ -85,7 +86,33 @@
     }
     else
     {
-        [self toLogin];
+        
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:@"login"])
+        {
+            NSString *phone = [[NSUserDefaults standardUserDefaults] valueForKey:@"phone"];
+            NSString *email = [[NSUserDefaults standardUserDefaults] valueForKey:@"email"];
+            NSString *pwd = [[NSUserDefaults standardUserDefaults] valueForKey:@"password"];
+            
+            NSString *account = phone?phone:email;
+           
+            [[LightUser new] loginWithCode:account andPassword:pwd andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
+                
+                if (isSuccess) {
+                    
+                    [self toMain];
+                }
+                else{
+                
+                    [self toLogin];
+                }
+            }];
+            
+            
+        }
+        else{
+            
+            [self toLogin];
+        }
     }
     [APService setupWithOption:launchOptions];
     
