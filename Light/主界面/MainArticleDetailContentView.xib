@@ -46,7 +46,7 @@
                         <action selector="onGeiMoney:" destination="iN0-l3-epB" eventType="touchUpInside" id="OOm-lp-5FP"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOr-HP-QL3">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOr-HP-QL3">
                     <rect key="frame" x="12" y="127" width="296" height="48"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="zNC-NE-95T"/>
