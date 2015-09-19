@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -69,7 +69,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpk-zI-9Jv">
-                    <rect key="frame" x="8" y="188" width="296" height="141"/>
+                    <rect key="frame" x="8" y="183" width="304" height="150"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -80,19 +80,19 @@
                 <constraint firstItem="OKr-LN-YD0" firstAttribute="top" secondItem="ym8-bn-f0q" secondAttribute="bottom" constant="3" id="09T-Ha-AUT"/>
                 <constraint firstItem="ym8-bn-f0q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4Dx-uS-qNn"/>
                 <constraint firstItem="AOr-HP-QL3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="127" id="8eu-FW-oYI"/>
-                <constraint firstItem="Gpk-zI-9Jv" firstAttribute="top" secondItem="OKr-LN-YD0" secondAttribute="bottom" constant="-62" id="8v6-V7-xUN"/>
-                <constraint firstAttribute="trailing" secondItem="Gpk-zI-9Jv" secondAttribute="trailing" constant="16" id="AYB-fL-8nL"/>
                 <constraint firstItem="AOr-HP-QL3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Axb-ah-Vh8"/>
                 <constraint firstItem="fCa-OR-Cos" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="BKV-iB-oqN"/>
                 <constraint firstItem="ym8-bn-f0q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="E2f-5t-O00"/>
                 <constraint firstAttribute="trailing" secondItem="AOr-HP-QL3" secondAttribute="trailing" constant="12" id="Icd-ok-emd"/>
                 <constraint firstAttribute="trailing" secondItem="ym8-bn-f0q" secondAttribute="trailing" id="J4F-HP-9uT"/>
-                <constraint firstItem="Gpk-zI-9Jv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="JC2-dJ-P9K"/>
                 <constraint firstAttribute="centerX" secondItem="5AZ-3f-oUe" secondAttribute="centerX" id="PVy-19-sfm"/>
                 <constraint firstAttribute="bottom" secondItem="5AZ-3f-oUe" secondAttribute="bottom" constant="-115" id="bwe-1j-m7M"/>
                 <constraint firstAttribute="trailing" secondItem="OKr-LN-YD0" secondAttribute="trailing" id="fe6-lw-BIZ"/>
+                <constraint firstItem="5AZ-3f-oUe" firstAttribute="top" secondItem="Gpk-zI-9Jv" secondAttribute="bottom" constant="96" id="hwb-sL-Pol"/>
                 <constraint firstItem="fCa-OR-Cos" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="igV-h6-5hD"/>
-                <constraint firstItem="5AZ-3f-oUe" firstAttribute="top" secondItem="Gpk-zI-9Jv" secondAttribute="bottom" constant="100" id="rCc-jM-aou"/>
+                <constraint firstItem="Gpk-zI-9Jv" firstAttribute="centerX" secondItem="OKr-LN-YD0" secondAttribute="centerX" id="ll2-VU-eRc"/>
+                <constraint firstItem="Gpk-zI-9Jv" firstAttribute="leading" secondItem="fCa-OR-Cos" secondAttribute="leading" id="nil-SJ-PTb"/>
+                <constraint firstItem="Gpk-zI-9Jv" firstAttribute="top" secondItem="ym8-bn-f0q" secondAttribute="bottom" constant="3" id="rbj-tX-Dg2"/>
                 <constraint firstItem="OKr-LN-YD0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xiU-BK-nDC"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
