@@ -14,6 +14,8 @@
 #import "CPYLawyerTableViewController.h"
 #import "CPYNeedPeopleTableViewController.h"
 #import "CPYMingLiTaLuoTableViewController.h"
+#import "CPYFriendsTableViewController.h"
+#import "CPYFriendTableViewController.h"
 
 @interface CPYViewController ()<CPYContentViewDelegate>
 
@@ -95,6 +97,20 @@
         case 4:
         {
             CPYLawyerTableViewController *c = [CPYLawyerTableViewController new];
+            c.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:c  animated:YES];
+        }
+            break;
+        case 5:
+        {
+            CPYFriendsTableViewController *c = [CPYFriendsTableViewController new];
+            c.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:c  animated:YES];
+        }
+            break;
+        case 6:
+        {
+            CPYFriendTableViewController *c = [CPYFriendTableViewController new];
             c.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:c  animated:YES];
         }

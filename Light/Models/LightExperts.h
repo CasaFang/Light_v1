@@ -18,6 +18,8 @@ typedef NS_ENUM(NSInteger, LightExpertField) {
     LightExpertFieldXinLiZiXunShi = 11,
     LightExpertFieldMingLiShi     = 20,
     LightExpertFieldLvShi         = 30,
+    LightExpertFieldFriend        =50
+    
 };
 
 
