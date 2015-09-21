@@ -69,7 +69,7 @@ static UIColor *WSProgressHUDBackGroundColor;
 static UIImage *WSProgressHUDSuccessImage;
 static UIImage *WSProgressHUDErrorImage;
 
-static CGFloat const WSProgressHUDIndicatorBig = 35;
+static CGFloat const WSProgressHUDIndicatorBig = 31;
 static CGFloat const WSProgressHUDIndicatorSmall = 20;
 
 static CGFloat WSProgressHUDRingThickness = 2;
@@ -341,10 +341,10 @@ static CGFloat const WSProgressHUDImageTypeWidthEdgeOffset = 30;
         self.ringLayer.strokeEnd = progress;
         return;
     }
-    
     objc_setAssociatedObject(self, @selector(maskType), @(maskType), OBJC_ASSOCIATION_ASSIGN);
     objc_setAssociatedObject(self, @selector(hudType), @(WSProgressHUDTypeProgress), OBJC_ASSOCIATION_ASSIGN);
     objc_setAssociatedObject(self, @selector(withoutType), @(withoutType), OBJC_ASSOCIATION_ASSIGN);
+    
     [self invalidateTimer];
     
     [self setMaskEdgeWithType:self.maskType];
@@ -566,6 +566,7 @@ static CGFloat const WSProgressHUDImageTypeWidthEdgeOffset = 30;
                     WSProgressHUDStringRect.origin.y = imageOffset;
                     [self startIndicatorAnimation:NO];
                     self.labelView.center = CGPointMake(hudCenterX , hudCenterY + 20);
+					self.labelView.textAlignment = NSTextAlignmentCenter;
                     self.imageView.center = CGPointMake(hudCenterX, 30);
                 } else {
                     self.labelView.text = string;
@@ -981,7 +982,7 @@ static CGFloat const WSProgressHUDImageTypeWidthEdgeOffset = 30;
     switch (self.maskType) {
         case WSProgressHUDMaskTypeClear: {
             CGContextRef context = UIGraphicsGetCurrentContext();
-            [[UIColor colorWithWhite:0 alpha:0.5] set];
+			[[UIColor clearColor] set];
             CGRect bounds = self.bounds;
             CGContextFillRect(context, bounds);
         }break;
@@ -1042,13 +1043,8 @@ static CGFloat const WSProgressHUDImageTypeWidthEdgeOffset = 30;
         UIImage *successImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"success@2x" ofType:@"png"]];
         UIImage *failurImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"error@2x" ofType:@"png"]];
         
-        if ([[UIImage class] instancesRespondToSelector:@selector(imageWithRenderingMode:)]) {
-            WSProgressHUDSuccessImage = [successImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-            WSProgressHUDErrorImage = [failurImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-        } else {
-            WSProgressHUDErrorImage = failurImage;
-            WSProgressHUDSuccessImage = successImage;
-        }
+        WSProgressHUDSuccessImage = [self image:successImage withTintColor:WSProgressHUDForeGroundColor];
+        WSProgressHUDErrorImage = [self image:failurImage withTintColor:WSProgressHUDForeGroundColor];
         
         [self addSubview:self.hudView];
         
@@ -1095,7 +1091,7 @@ static CGFloat const WSProgressHUDImageTypeWidthEdgeOffset = 30;
     if (!_labelView) {
         _labelView = [[UILabel alloc] initWithFrame:CGRectZero];
         _labelView.textColor = [UIColor whiteColor];
-        
+        _labelView.backgroundColor = [UIColor clearColor];
         if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
             _labelView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
         } else {
@@ -1103,7 +1099,7 @@ static CGFloat const WSProgressHUDImageTypeWidthEdgeOffset = 30;
         }
         _labelView.adjustsFontSizeToFitWidth = YES;
         _labelView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        _labelView.textAlignment = NSTextAlignmentLeft;
+        _labelView.textAlignment = NSTextAlignmentCenter;
         _labelView.numberOfLines = 0;
     }
     return _labelView;
@@ -1124,6 +1120,7 @@ static CGFloat const WSProgressHUDImageTypeWidthEdgeOffset = 30;
 - (UILabel *)shimmeringLabel {
     if (!_shimmeringLabel) {
         _shimmeringLabel = [[UILabel alloc] initWithFrame:self.shimmeringView.bounds];
+        _shimmeringLabel.backgroundColor = [UIColor clearColor];
         _shimmeringLabel.textColor = [UIColor whiteColor];
         if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
             _shimmeringLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
@@ -1154,11 +1151,6 @@ static CGFloat const WSProgressHUDImageTypeWidthEdgeOffset = 30;
     if (!_imageView) {
         _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 28, 28)];
         _imageView.hidden = YES;
-        if ([_imageView respondsToSelector:@selector(setTintColor:)]) {
-            [_imageView setTintColor:WSProgressHUDForeGroundColor];
-        } else {
-            
-        }
     }
     return _imageView;
 }
@@ -1180,7 +1172,7 @@ static CGFloat const WSProgressHUDImageTypeWidthEdgeOffset = 30;
     if (!_spinnerView) {
         _spinnerView = [[MMMaterialDesignSpinner alloc] initWithFrame:CGRectZero];
         _spinnerView.bounds = CGRectMake(0, 0, 20, 20);
-        _spinnerView.tintColor = WSProgressHUDForeGroundColor;
+        [_spinnerView setSpinnerColor:[UIColor whiteColor]];
     }
     return _spinnerView;
 }

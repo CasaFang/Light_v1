@@ -119,6 +119,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    UIViewController *vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+    self.window.rootViewController = vc;
+    
     pushCenter = [LightPushCenter shareCenter];
     
     
@@ -165,7 +168,14 @@
     
     [[RCIMClient sharedRCIMClient] setDeviceToken:pushToken];
     [APService registerDeviceToken:deviceToken];
+    NSLog(@"获取苹果推送权限成功。");
 }
+
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(nonnull NSError *)error
+{
+    NSLog(@"获取苹果推送权限失败");
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -195,7 +205,6 @@
 {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     LightIntroViewController *intro = [[LightIntroViewController alloc]init];
-    
     self.window.rootViewController = intro;
     
 }

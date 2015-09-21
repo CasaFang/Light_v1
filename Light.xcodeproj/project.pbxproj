@@ -339,6 +339,15 @@
 		C9EDADD31B9ECE5800CE99A0 /* EmailValidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EDADD21B9ECE5800CE99A0 /* EmailValidateViewController.m */; };
 		C9EDADD61B9ECE7700CE99A0 /* EmailValidateContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EDADD51B9ECE7700CE99A0 /* EmailValidateContentView.m */; };
 		C9EDADD81B9ECE8900CE99A0 /* EmailValidateContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9EDADD71B9ECE8900CE99A0 /* EmailValidateContentView.xib */; };
+		DC062CDF1BAFD40100A78CBD /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC062CDE1BAFD40100A78CBD /* SMS_SDK.framework */; settings = {ASSET_TAGS = (); }; };
+		DC062CE01BB003E800A78CBD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049F3D1B1B2D5A0F0014F09A /* CFNetwork.framework */; };
+		DC062CE21BB0040400A78CBD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC062CE11BB0040400A78CBD /* CoreFoundation.framework */; };
+		DC062CE31BB0040D00A78CBD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044E2A9A1B4F529B00C8AA2D /* CoreTelephony.framework */; };
+		DC062CE41BB0041D00A78CBD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049F3D131B2D59EF0014F09A /* SystemConfiguration.framework */; };
+		DC062CE51BB0042400A78CBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044E2AA01B4F52A700C8AA2D /* CoreGraphics.framework */; };
+		DC062CE71BB0043100A78CBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC062CE61BB0043100A78CBD /* Foundation.framework */; };
+		DC062CE91BB0044000A78CBD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC062CE81BB0044000A78CBD /* Security.framework */; };
+		DC062CEB1BB0044D00A78CBD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC062CEA1BB0044D00A78CBD /* libz.tbd */; };
 		DC22027E1BAC83BD00158478 /* add_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2202751BAC83BD00158478 /* add_frame.png */; };
 		DC22027F1BAC83BD00158478 /* add_photo_all.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2202761BAC83BD00158478 /* add_photo_all.png */; };
 		DC2202801BAC83BD00158478 /* add_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2202771BAC83BD00158478 /* add_photo.png */; };
@@ -900,6 +909,11 @@
 		C9EDADD51B9ECE7700CE99A0 /* EmailValidateContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmailValidateContentView.m; path = "主界面/EmailValidateContentView.m"; sourceTree = "<group>"; };
 		C9EDADD71B9ECE8900CE99A0 /* EmailValidateContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmailValidateContentView.xib; path = "主界面/EmailValidateContentView.xib"; sourceTree = "<group>"; };
 		D8EC1FD83FEC27A3928D6EC6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC062CDE1BAFD40100A78CBD /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SMS_SDK.framework; path = Light/SMS_SDK.framework; sourceTree = "<group>"; };
+		DC062CE11BB0040400A78CBD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		DC062CE61BB0043100A78CBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC062CE81BB0044000A78CBD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DC062CEA1BB0044D00A78CBD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DC2202751BAC83BD00158478 /* add_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_frame.png; sourceTree = "<group>"; };
 		DC2202761BAC83BD00158478 /* add_photo_all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_photo_all.png; sourceTree = "<group>"; };
 		DC2202771BAC83BD00158478 /* add_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_photo.png; sourceTree = "<group>"; };
@@ -922,13 +936,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC062CEB1BB0044D00A78CBD /* libz.tbd in Frameworks */,
+				DC062CE91BB0044000A78CBD /* Security.framework in Frameworks */,
+				044E2AB51B4F53F000C8AA2D /* UIKit.framework in Frameworks */,
+				DC062CE71BB0043100A78CBD /* Foundation.framework in Frameworks */,
+				DC062CE51BB0042400A78CBD /* CoreGraphics.framework in Frameworks */,
+				DC062CE41BB0041D00A78CBD /* SystemConfiguration.framework in Frameworks */,
+				DC062CE31BB0040D00A78CBD /* CoreTelephony.framework in Frameworks */,
+				DC062CE21BB0040400A78CBD /* CoreFoundation.framework in Frameworks */,
+				DC062CE01BB003E800A78CBD /* CFNetwork.framework in Frameworks */,
 				C9DFC4F61B94A5DF00A064F1 /* libxml2.dylib in Frameworks */,
 				048E6FDE1B50DB9D00EF995B /* libz.dylib in Frameworks */,
 				C9E7446C1B71075700AA31E8 /* libPushSDK-1.8.5.a in Frameworks */,
 				048E6FDC1B50DB9700EF995B /* libicucore.dylib in Frameworks */,
-				044E2AB51B4F53F000C8AA2D /* UIKit.framework in Frameworks */,
 				044E2A951B4F524F00C8AA2D /* AVFoundation.framework in Frameworks */,
 				049F3D1E1B2D5A470014F09A /* SMS_SDK.framework in Frameworks */,
+				DC062CDF1BAFD40100A78CBD /* SMS_SDK.framework in Frameworks */,
 				049F3D161B2D59F70014F09A /* MessageUI.framework in Frameworks */,
 				82A48D23DA85FA16C51A39D8 /* libPods.a in Frameworks */,
 			);
@@ -947,6 +970,7 @@
 		044E2AB61B4F5F8200C8AA2D /* framework */ = {
 			isa = PBXGroup;
 			children = (
+				DC062CDE1BAFD40100A78CBD /* SMS_SDK.framework */,
 				C9E744691B71075700AA31E8 /* JPush */,
 				048E6FDF1B50DBCF00EF995B /* libc++.dylib */,
 				048E6FE01B50DBCF00EF995B /* libc++abi.dylib */,
@@ -1465,6 +1489,10 @@
 		9C2D09B810BC74C789F912CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC062CEA1BB0044D00A78CBD /* libz.tbd */,
+				DC062CE81BB0044000A78CBD /* Security.framework */,
+				DC062CE61BB0043100A78CBD /* Foundation.framework */,
+				DC062CE11BB0040400A78CBD /* CoreFoundation.framework */,
 				D8EC1FD83FEC27A3928D6EC6 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -2912,13 +2940,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Light",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Light/PrefixHeader.pch";
 				INFOPLIST_FILE = Light/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_NO_PIE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2927,7 +2956,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearelight.light;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5a578224-d452-403f-bc81-278cfd254887";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -2941,13 +2970,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Light",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Light/PrefixHeader.pch";
 				INFOPLIST_FILE = Light/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_NO_PIE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2956,7 +2986,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearelight.light;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5a578224-d452-403f-bc81-278cfd254887";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D9AB86894003452EED6136482C991BF4B4381A93",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D9AB86894003452EED6136482C991BF4B4381A93" : 0,
+    "a97e2a2a-aaa1-e2ae-e683-ce57b7db7bff++7158" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "064E031A-B3D5-4506-9E8B-60A72F4D26E8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D9AB86894003452EED6136482C991BF4B4381A93" : "Light_v1",
+    "a97e2a2a-aaa1-e2ae-e683-ce57b7db7bff++7158" : "Light%205"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Light",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Light.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CasaFang\/Light_v1",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D9AB86894003452EED6136482C991BF4B4381A93"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CasaFang\/Light",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "a97e2a2a-aaa1-e2ae-e683-ce57b7db7bff++7158"
+    }
+  ]
+}
