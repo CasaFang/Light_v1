@@ -64,9 +64,9 @@
     //初始化融云SDK，
     [[RCIM sharedRCIM] initWithAppKey:RONGCLOUD_IM_APPKEY];
     
-        
-#ifdef __IPHONE_8_0
-    // 在 iOS 8 下注册苹果推送，申请推送权限。
+    
+#ifdef __IPHONE_9_0
+    // 在 iOS 9 下注册苹果推送，申请推送权限。
     UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge
                                                                                          |UIUserNotificationTypeSound
                                                                                          |UIUserNotificationTypeAlert) categories:nil];
@@ -79,6 +79,8 @@
     
     //windows初始化
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
+    UIViewController *vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+    self.window.rootViewController = vc;
     
     if ([LightIntroManager isShowIntro]) {
         
@@ -119,8 +121,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    UIViewController *vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
-    self.window.rootViewController = vc;
+//    UIViewController *vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+//    self.window.rootViewController = vc;
     
     pushCenter = [LightPushCenter shareCenter];
     
@@ -170,12 +172,6 @@
     [APService registerDeviceToken:deviceToken];
     NSLog(@"获取苹果推送权限成功。");
 }
-
--(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(nonnull NSError *)error
-{
-    NSLog(@"获取苹果推送权限失败");
-}
-
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
