@@ -107,7 +107,7 @@
             
             LightUser *user = [LightMyShareManager shareUser].owner;
             
-            [user registerWithEmailCode:contentView.emailTextField.text andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
+            [user ChangeWithEmailCode:contentView.emailTextField.text andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
                 
                 [weakSelf.view hideHud];
                 
@@ -115,7 +115,6 @@
                     
                     EmailValidateViewController *c = [[EmailValidateViewController alloc]init];
                     c.email = contentView.emailTextField.text;
-                    
                     [self.navigationController pushViewController:c  animated:YES];
                 }
                 else

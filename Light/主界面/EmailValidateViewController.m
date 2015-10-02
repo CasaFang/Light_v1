@@ -8,6 +8,7 @@
 
 #import "EmailValidateViewController.h"
 #import "EmailValidateContentView.h"
+#import "LightMyShareManager.h"
 #import "UIView+Hud.h"
 #import "LightUser+Register.h"
 
@@ -68,7 +69,7 @@
     
      __weak typeof(self) weakSelf = self;
     
-    [user validateCodeWithCode:contentView.codeTextField.text checkType:3 andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
+    [user validateCodeWithCode:contentView.codeTextField.text checkType:1 andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
         
         [weakSelf.view hideHud];
         
@@ -81,6 +82,8 @@
                 [weakSelf.view hideHud];
                 
                 if (isSuccess) {
+                    
+                    [self.navigationController popViewControllerAnimated:YES];
                     
                 }
                 else{

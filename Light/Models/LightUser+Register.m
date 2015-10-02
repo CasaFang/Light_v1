@@ -17,7 +17,7 @@
     code = [code trimWhiteSpace];
     
     if (code.length == 0) {
-        compeletedBLock(NO,[NSError errorWithDomain:@"请填写邮箱" code:1000 userInfo:nil]);
+        compeletedBLock(NO,[NSError errorWithDomain:@"请填写手机" code:1000 userInfo:nil]);
         return;
     }
     
@@ -116,9 +116,113 @@
             compeletedBLock(NO,error);
         }
     }];
-
-
 }
+
+
+
+- (void)ChangeWithPhoneCode:(NSString *)code andCompeletedBlock:(changeBlock)compeletedBLock
+{
+    code = [code trimWhiteSpace];
+    
+    if (code.length == 0) {
+        compeletedBLock(NO,[NSError errorWithDomain:@"请填写手机" code:1000 userInfo:nil]);
+        return;
+    }
+    
+    if (![code isPhoneFormat]) {
+        
+        compeletedBLock(NO,[NSError errorWithDomain:@"手机号格式不正确" code:1000 userInfo:nil]);
+        return;
+    }
+    
+    
+    [SMS_SDK getVerificationCodeBySMSWithPhone:code zone:@"86" result:^(SMS_SDKError *error) {
+        
+        if(!error){
+            /*
+            NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/register.shtml";
+            
+            NSMutableDictionary *parameters = [NSMutableDictionary new];
+            [parameters setValue:code forKey:@"code"];
+            
+            [HtttpReques httpRequestWithUlr:server andParameters:parameters andBlock:^(BOOL isSuccess, NSDictionary *resturnDic, NSError *error) {
+                
+                if (isSuccess) {
+                    
+                    LightValidateCode *validate = [[LightValidateCode alloc]initWithDic:resturnDic];
+                    
+                    
+                    if (validate.result_code == 0) {
+                        
+                        [self parseData:resturnDic];
+                        
+                        compeletedBLock(YES,nil);
+                    }
+                    else
+                    {
+                        compeletedBLock(NO,[NSError errorWithDomain:validate.result_msg code:validate.result_code userInfo:nil]);
+                    }
+                */
+            compeletedBLock(YES,nil);
+        }
+        else
+        {
+            compeletedBLock(NO,error);
+        }
+    }];
+    
+}
+
+- (void)ChangeWithEmailCode:(NSString *)code andCompeletedBlock:(changeBlock)compeletedBLock{
+    
+    code = [code trimWhiteSpace];
+    
+    if (code.length == 0) {
+        compeletedBLock(NO,[NSError errorWithDomain:@"请填写邮箱" code:1000 userInfo:nil]);
+        return;
+    }
+    
+    if (![code isEmailFormat]) {
+        
+        compeletedBLock(NO,[NSError errorWithDomain:@"邮箱格式不正确" code:1000 userInfo:nil]);
+        return;
+    }
+    
+    NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/getValCode.shtml";
+    
+    NSMutableDictionary *parameters = [NSMutableDictionary new];
+    [parameters setValue:[NSNumber numberWithInteger:self.Id] forKey:@"userId"];
+    [parameters setValue:code forKey:@"code"];
+    
+    [HtttpReques httpRequestWithUlr:server andParameters:parameters andBlock:^(BOOL isSuccess, NSDictionary *resturnDic, NSError *error) {
+        
+        if (isSuccess) {
+            
+            LightValidateCode *validate = [[LightValidateCode alloc]initWithDic:resturnDic];
+            
+            
+            if (validate.result_code == 0) {
+                
+                [self parseData:resturnDic];
+                
+                compeletedBLock(YES,nil);
+            }
+            else
+            {
+                compeletedBLock(NO,[NSError errorWithDomain:validate.result_msg code:validate.result_code userInfo:nil]);
+            }
+            
+            
+        }
+        else
+        {
+            compeletedBLock(NO,error);
+        }
+     
+    }];
+}
+
+
 
 - (void)validateCodeWithCode:(NSString *)code checkType:(int)type andCompeletedBlock:(validateBlock)compeletedBlock
 {
@@ -148,7 +252,7 @@
                 NSInteger  validate_result = [Light_GetStringValueFromDicWithKey(resturnDic, @"validate_result") integerValue];
                 
                 if (validate_result == 1) {
-                    
+                    NSLog(@"验证成功");
                     compeletedBlock(YES,nil);
                 }
                 else
@@ -167,14 +271,18 @@
     }
     else
     {
+        NSLog(@"code is %@",code);
         [SMS_SDK commitVerifyCode:code result:^(enum SMS_ResponseState state) {
             
             if (1 == state)
             {
+                NSLog(@"validate");
                 NSString *server = @"http://123.57.221.116:8080/light-server/intf/user/validate.shtml";
                 
                 NSMutableDictionary *parameters = [NSMutableDictionary new];
-                [parameters setValue:code forKey:@"val_code"];
+                [parameters setValue:00000000 forKey:@"val_code"];
+                //[parameters setValue:code forKey:@"val_code"];
+                NSLog(@"self id is %li",(long)self.Id);
                 [parameters setValue:[NSNumber numberWithInteger:self.Id] forKey:@"user_id"];
                 
                 [HtttpReques httpRequestWithUlr:server andParameters:parameters andBlock:^(BOOL isSuccess, NSDictionary *resturnDic, NSError *error) {

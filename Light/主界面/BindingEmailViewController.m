@@ -36,13 +36,12 @@
     self.navigationItem.leftBarButtonItem = leftItem;
     
     
-    if (_email) {
+    if (_email&&_email.trimWhiteSpace.length >0) {
         
         UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"修改" style:UIBarButtonItemStyleDone target:self action:@selector(edit:)];
         self.navigationItem.rightBarButtonItem = rightItem;
     }
    
-    
     [self buildUI];
     
 }
@@ -144,8 +143,7 @@
                 [weakSelf.view hideHud];
                 
                 if (isSuccess) {
-                    
-                     [weakSelf.view showStatus:@"解绑成功"];
+                    [self.navigationController popViewControllerAnimated:YES];
                 }
                 else{
                     

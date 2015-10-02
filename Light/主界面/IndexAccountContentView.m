@@ -7,6 +7,7 @@
 //
 
 #import "IndexAccountContentView.h"
+#import "NSString+Extention.h"
 
 @implementation IndexAccountContentView
 
@@ -25,10 +26,10 @@
 }
 
 - (void)displayViewUser:(LightUser *)user{
-
-    if (user.phone) {
+    
+    if (user.phone.trimWhiteSpace) {
         
-        _phoneLabel.text = user.phone;
+        _phoneLabel.text = user.phone.trimWhiteSpace;
         
     }
     else {
@@ -36,9 +37,9 @@
         _phoneLabel.text=  @"未绑定";
     }
     
-    if (user.email) {
+    if (user.email.trimWhiteSpace) {
         
-        _emailLabel.text = user.email;
+        _emailLabel.text = user.email.trimWhiteSpace;
         
     }
     else {

@@ -11,6 +11,7 @@
 typedef void(^registerBlock)(BOOL isSuccess,  NSError *error);
 typedef void(^AddRegisterBlock)(BOOL isSuccess, NSError *error);
 typedef void(^validateBlock)(BOOL isSuccess, NSError *error);
+typedef void(^changeBlock)(BOOL isSuccess, NSError *error);
 
 @interface LightUser (Register)
 
@@ -24,6 +25,13 @@ typedef void(^validateBlock)(BOOL isSuccess, NSError *error);
 
 - (void)registerWithPhoneCode:(NSString *)code
            andCompeletedBlock:(registerBlock)compeletedBLock;
+
+- (void)ChangeWithEmailCode:(NSString *)code
+           andCompeletedBlock:(changeBlock)compeletedBLock;
+
+- (void)ChangeWithPhoneCode:(NSString *)code
+           andCompeletedBlock:(changeBlock)compeletedBLock;
+
 
 - (void)addRegisterWithPassword:(NSString *)password
                         andName:(NSString *)name

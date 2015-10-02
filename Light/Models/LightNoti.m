@@ -147,13 +147,13 @@
     }
     
     
-    NSString *marryedName = Light_GetStringValueFromDicWithKey(dic, @"to_user_avatar");
+    NSString *marryedName = Light_GetStringValueFromDicWithKey(dic, @"to_user_name");
     
     if (![marryedName isEqualToString:@""]&&marryedName) {
         _marryedName = marryedName;
     }
     
-    NSString *marryedId = Light_GetStringValueFromDicWithKey(dic, @"to_user_avatar");
+    NSString *marryedId = Light_GetStringValueFromDicWithKey(dic, @"to_user_id");
     if (![marryedId isEqualToString:@""]&&marryedId) {
         _marryedId = [marryedId integerValue];
     }

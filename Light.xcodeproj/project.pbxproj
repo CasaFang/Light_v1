@@ -2947,7 +2947,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Light/PrefixHeader.pch";
 				INFOPLIST_FILE = Light/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_NO_PIE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2956,7 +2956,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearelight.light;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f1f9f981-9d32-43b6-ab89-97c9cf650859";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -2977,7 +2977,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Light/PrefixHeader.pch";
 				INFOPLIST_FILE = Light/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_NO_PIE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2986,7 +2986,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearelight.light;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f1f9f981-9d32-43b6-ab89-97c9cf650859";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};

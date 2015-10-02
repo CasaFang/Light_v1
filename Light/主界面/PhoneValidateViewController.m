@@ -12,6 +12,9 @@
 #import "LightUser+Change.h"
 #import "LightUser+Register.h"
 #import "UIView+Hud.h"
+#import <SMS_SDK/SMS_SDK.h>
+#import "NSString+Extention.h"
+
 
 @interface PhoneValidateViewController ()<PhoneValidateContentViewDelegate>{
 
@@ -69,11 +72,19 @@
     
     __weak typeof(self) weakSelf = self;
     
-    [user validateCodeWithCode:contentView.codeTextField.text checkType:2 andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
+    NSLog(@"%@",contentView.codeTextField.text);
+    
+    contentView.codeTextField.text = [contentView.codeTextField.text trimWhiteSpace];
+
+    
+    [SMS_SDK commitVerifyCode:contentView.codeTextField.text result:^(enum SMS_ResponseState state) {
+    
+//    [user validateCodeWithCode:contentView.codeTextField.text checkType:2 andCompeletedBlock:^(BOOL isSuccess, NSError *error) {
         
         [weakSelf.view hideHud];
         
-        if (isSuccess) {
+//        if (isSuccess) {
+        if (1==state){
             
             [self.view showHudWithText:@"正在绑定手机..."];
             
@@ -82,19 +93,7 @@
                 [weakSelf.view hideHud];
                 
                 if (isSuccess) {
-                    [[LightMyShareManager shareUser].owner changeNameWithNewName:contentView.codeTextField.text andBlock:^(BOOL isSuccess, NSError *error) {
-                        
-                        [self.view hideHud];
-                        if (isSuccess) {
-                            
-                            [self.navigationController popViewControllerAnimated:YES];
-                            
-                        }
-                        else{
-                            
-                            [self.view showTipAlertWithContent:error.domain];
-                        }
-                    }];
+                    [self.navigationController popViewControllerAnimated:YES];
                 }
                 else{
                 
@@ -104,7 +103,8 @@
         }
         else
         {
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:error.domain delegate:nil cancelButtonTitle:nil otherButtonTitles:@"知道了", nil];
+//            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:error.domain delegate:nil cancelButtonTitle:nil otherButtonTitles:@"知道了", nil];
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"验证码错误" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"知道了", nil];
             [alert show];
         }
     }];

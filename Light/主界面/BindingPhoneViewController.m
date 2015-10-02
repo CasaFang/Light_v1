@@ -36,8 +36,8 @@
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"regiser_back"] style:UIBarButtonItemStyleDone target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = leftItem;
     
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"修改" style:UIBarButtonItemStyleDone target:self action:@selector(edit:)];
-    self.navigationItem.rightBarButtonItem = rightItem;
+//    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"修改" style:UIBarButtonItemStyleDone target:self action:@selector(edit:)];
+//    self.navigationItem.rightBarButtonItem = rightItem;
     
     [self buildUI];
     
@@ -70,6 +70,9 @@
     
     if (_phone &&_phone.trimWhiteSpace.length >0) {
         
+        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"修改" style:UIBarButtonItemStyleDone target:self action:@selector(edit:)];
+        self.navigationItem.rightBarButtonItem = rightItem;
+
         unbindingcontentView = [UnBindingPhoneContentView initFromNib];
         CGRect f = unbindingcontentView.frame;
         f.size.width = WINSIZE.width;
@@ -83,7 +86,7 @@
         unbindingcontentView.phoneTextField.enabled = NO;
     }
     else{
-        
+
         bindingContentView = [BindingPhoneContentView initFromNib];
         CGRect f = bindingContentView.frame;
         f.size.width = WINSIZE.width;
