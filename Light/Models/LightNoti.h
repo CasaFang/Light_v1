@@ -13,8 +13,8 @@ typedef void(^getNotisBlock)(BOOL isSuccess , NSArray *notis,NSError *error);
 
 
 @property (nonatomic , assign) NSInteger Id;
-@property (nonatomic , assign) long create_time;
-@property (nonatomic , assign) long update_time;
+@property (nonatomic , assign) long long create_time;
+@property (nonatomic , assign) long long update_time;
 
 //type int 通知类型：3求婚请求，4求婚回复
 @property (nonatomic , assign) NSInteger type;
@@ -48,8 +48,8 @@ typedef void(^getNotisBlock)(BOOL isSuccess , NSArray *notis,NSError *error);
 
 //status int 求婚状态：-1已拒接，0已发送，1已同意
 @property (nonatomic , assign) NSInteger status;
-@property (nonatomic , assign) long create_time;
-@property (nonatomic , assign) long update_time;
+@property (nonatomic , assign) long long create_time;
+@property (nonatomic , assign) long long update_time;
 
 - (NSString *)getMarryStatusStringValue;
 

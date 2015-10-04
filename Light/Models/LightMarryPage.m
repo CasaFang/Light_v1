@@ -42,7 +42,7 @@
     self.content = Light_GetStringValueFromDicWithKey(dic, @"content");
     self.marryId = Light_GetStringValueFromDicWithKey(dic, @"marryId");
     
-    long createTime = [Light_GetStringValueFromDicWithKey(dic, @"createTime") longLongValue];
+    long long createTime = [Light_GetStringValueFromDicWithKey(dic, @"createTime") longLongValue];
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:createTime/1000];
     self.createTime = [date  dateToStringWithFormat:@"yyyy年MM月dd日"];
 }
